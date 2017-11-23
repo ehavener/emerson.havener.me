@@ -1,0 +1,39 @@
+.home {
+ height: 550px;
+  width: 100vw;
+}
+
+.home .content {
+  margin-top: 58.4px;
+
+  display: flex;
+  flex-direction: column;
+
+  height: 300px;
+
+  color: #EEEEEE;
+
+  padding-top: 40px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.home .content:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url(./photovoltaic-panels-texture.jpg);
+  width: 100vw;
+  height: 608.4px;
+
+  -webkit-filter: grayscale(.1) brightness(0.45) contrast(1.05);
+  filter: grayscale(.1) brightness(0.45) contrast(1.05);
+  box-shadow: inset 0px 0px 60px rgba(0,0,0,0.9);
+
+}
