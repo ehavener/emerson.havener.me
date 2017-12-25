@@ -1,5 +1,95 @@
 .portfolio {
-  height: 1000px;
   background-color: #fff;
   padding: 100px;
+}
+
+.portfolio .deck {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: space-between;
+}
+
+.portfolio .card {
+  text-align: center;
+  position: relative;
+  margin: 20px 0px 20px 0px;
+  background-color: #ffffff;
+}
+
+.portfolio .card:hover {
+
+}
+
+.portfolio .card img {
+  border: 1px solid #ccc;
+  /*box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);*/
+  max-width: 25vw;
+}
+
+/* https://github.com/rachelandrew/cssgrid-ama/issues/19 */
+
+.portfolio .card i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #000000;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #ffffff;
+}
+
+.portfolio .card.blue {
+  background-color: #34495e;
+}
+
+.portfolio .card.blue i {
+  color: #34495e;
+}
+
+.portfolio .card * {
+  transition: all .35s ease-in-out;
+}
+
+.portfolio .card:hover img {
+  opacity: 0.3;
+  filter: grayscale(90%); /* this is awesome */
+}
+
+.portfolio .card i {
+  transform:
+    translate(-50%, -50%)
+    scale(0);
+  transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+/* when hover over item, change icon properties */
+
+.portfolio .card:hover i {
+  transform:
+    translate(-50%, -50%)
+    scale(1);
+  transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* colors */
+.portfolio .card.red {
+  background-color: #e74c3c;
+}
+.portfolio .card.red i {
+  color: #e74c3c;
+}
+
+.portfolio .card.green {
+  background-color: #16a085;
+}
+.portfolio .card.green i {
+  color: #16a085;
 }

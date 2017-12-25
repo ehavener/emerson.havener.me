@@ -49,12 +49,12 @@ class Navbar extends Component {
           <input className="menu-btn" type="checkbox" id="menu-btn" />
           <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
           <ul className="menu">
-            <li><a>Home</a></li>
-            <li><a>About Me</a></li>
-            <li><a>Skills</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Services</a></li>
-            <li><a>Contact</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+            <li><a href="#Services">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>
           </ul>
         </header>
     );
