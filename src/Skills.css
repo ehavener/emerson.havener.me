@@ -1,5 +1,22 @@
 .skills {
-  height: 1600px;
-  background-color: lightblue;
-  padding: 0;
+  background-color: #fafafa;
+  padding: 100px;
+}
+
+.deck {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 350px 350px 350px;
+  grid-gap: 10px;
+  justify-content: center;	
+}
+
+.card {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.card:hover {
+  background-color: #2D4269;
+  color: #fff;
 }
