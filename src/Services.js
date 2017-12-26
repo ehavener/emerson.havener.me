@@ -11,20 +11,26 @@ class Services extends Component {
           <div className="card">
             <h2>Responsive Static Website Design</h2>
             <p>Custom websites to market your venture.</p>
-            <button name="button">Learn More</button>
-            <button name="button">Inquire</button>    
+            <div className="buttons">
+              <button name="button">Learn More</button>
+              <button name="button">Inquire</button>     
+            </div>  
           </div>
           <div className="card">
             <h2>Website Design with CMS Integration</h2>
             <p>Custom websites with the ability to easily publish and update content.</p>
-            <button name="button">Learn More</button>
-            <button name="button">Inquire</button>    
+            <div className="buttons">
+              <button name="button">Learn More</button>
+              <button name="button">Inquire</button>     
+            </div>  
           </div>
           <div className="card">
             <h2>Logo Design and Branding</h2>
             <p>An original graphical identity representing your venture.</p>
-            <button name="button">Learn More</button>
-            <button name="button">Inquire</button>          
+            <div className="buttons">
+              <button name="button">Learn More</button>
+              <button name="button">Inquire</button>     
+            </div>     
           </div>
         </div>
       </div>
