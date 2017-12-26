@@ -3,3 +3,21 @@
   background-color: #fafafa;
   padding: 100px;
 }
+
+.services .deck {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 350px 350px 350px;
+  grid-gap: 10px;
+  justify-content: center;	
+}
+
+.services .card {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.services .card:hover {
+  background-color: #2D4269;
+  color: #fff;
+}

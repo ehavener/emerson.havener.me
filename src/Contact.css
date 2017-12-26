@@ -1,5 +1,14 @@
 .contact {
-  height: 400px;
   background-color: #fff;
   padding: 100px;
+}
+
+.contact .deck {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contact .card {
+  
 }
