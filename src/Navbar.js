@@ -48,7 +48,7 @@ class Navbar extends Component {
         <header className={`header ${this.state.theme}`} onScroll={this.handleScroll}>
           <input className="menu-btn" type="checkbox" id="menu-btn" />
           <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
-          <div class="logo"><img src="http://localhost:3000/static/media/eh_imperfect.00ceaf38.png"/></div>
+          <div class="logo"><img src="http://i.cubeupload.com/uyr0jS.png"/></div>
           <ul className="menu">
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About Me</a></li>
