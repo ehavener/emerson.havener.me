@@ -23,32 +23,29 @@ class Navbar extends Component {
   }
 
   handleScroll(e) {
-    console.log(window.scrollY);
+    //console.log(window.scrollY);
     if (window.scrollY > 0) {
-      if(this.state.theme = "dark"){
+      if(this.state.theme === "dark"){
         this.setState({
           theme: "light"
         });
       }
     } else {
-      if(this.state.theme = "light"){
+      if(this.state.theme === "light"){
         this.setState({
           theme: "dark"
         });
       }
     }
-    console.log(this.state.theme);
+    //console.log(this.state.theme);
   }
 
   render() {
-    var dark = {
-
-    }
     return (
         <header className={`header ${this.state.theme}`} onScroll={this.handleScroll}>
           <input className="menu-btn" type="checkbox" id="menu-btn" />
           <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
-          <div class="logo"></div>
+          <div className="logo"></div>
           <ul className="menu">
             <li><a href="#Home">Home</a></li>
             <li><a href="#About">About Me</a></li>

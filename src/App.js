@@ -4,6 +4,7 @@ import Home from './Home';
 import About from './About';
 import Skills from './Skills';
 import Portfolio from './Portfolio';
+import Carousel from './Carousel';
 import Services from './Services';
 import Contact from './Contact';
 
@@ -13,13 +14,14 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+        <Carousel /> {/*
         <Home />
         <Navbar />
         <About />
         <Skills />
         <Portfolio />
         <Services />
-        <Contact />
+        <Contact />       */}
       </div>
     );
   }
