@@ -1,14 +1,14 @@
-@import url('https://s3-us-west-1.amazonaws.com/public-webfonts/fonts/fonts-akrobat.css');
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,800,900');
 
 .home {
  height: 550px;
  width: 100vw;
- padding: 40px 35px 60px 35px;
+ padding: 40px 0px 60px 0px;
 }
 
 .home .content {
   margin-top: 110px;
+  margin-right: 20px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
   height: 300px;

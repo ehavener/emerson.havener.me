@@ -1,14 +1,14 @@
 .skills {
   background-color: #fafafa;
-  padding: 100px;
+  padding: 40px 20px 60px 20px;
 }
 
 .skills .deck {
   display: grid;
-  grid-template-columns: 250px 250px 250px;
-  grid-template-rows: 350px 350px 350px;
+  grid-template-columns: calc(100vw-40px);
+  grid-template-rows: 200px 200px 200px;
   grid-gap: 10px;
-  justify-content: center;	
+  justify-content: center;
 }
 
 .skills .card {
@@ -19,4 +19,12 @@
 .skills .card:hover {
   background-color: #2D4269;
   color: #fff;
+}
+
+/* for-tablet-landscape-up */
+@media (min-width: 900px) {
+  .skills .deck {
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 350px 350px 350px;
+  }
 }

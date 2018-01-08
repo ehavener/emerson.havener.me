@@ -1,15 +1,15 @@
 .services {
-  height: 600px;
+  height: auto;
   background-color: #fafafa;
-  padding: 100px;
+  padding: 40px 20px 60px 20px;
 }
 
 .services .deck {
   display: grid;
-  grid-template-columns: 250px 250px 250px;
+  grid-template-columns: calc(100vw-40px);
   grid-template-rows: auto;
   grid-gap: 10px;
-  justify-content: center;	
+  justify-content: center;
 }
 
 .services .card {
@@ -20,7 +20,7 @@
 }
 
 .services .card .buttons {
-  
+
 }
 
 /*
@@ -29,6 +29,7 @@
   color: #fff;
 }
 */
+
 .services button {
   border: none;
   text-align: center;
@@ -54,4 +55,12 @@
 
 button:active {
   transform: translateY(.2vw);
+}
+
+/* for-tablet-landscape-up */
+@media (min-width: 900px) {
+  .services .deck {
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: auto;
+  }
 }

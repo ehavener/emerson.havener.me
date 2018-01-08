@@ -1,14 +1,23 @@
 .contact {
   background-color: #fff;
-  padding: 100px;
+  padding: 40px 20px 60px 20px;
 }
 
 .contact .deck {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 
 .contact .card {
-  
+
+}
+
+/* for-tablet-landscape-up */
+@media (min-width: 900px) {
+  .contact .deck {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

@@ -1,19 +1,21 @@
 .portfolio {
   background-color: #fff;
-  padding: 100px;
+  padding: 40px 20px 60px 20px;
 }
 
 .portfolio .deck {
-  height: 1000px;
+  height: auto;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-start;
   align-content: space-between;
 }
 
 .portfolio .card {
+  width: 100%;
+  height: auto;
   text-align: center;
   position: relative;
   margin: 20px 0px 20px 0px;
@@ -26,8 +28,7 @@
 
 .portfolio .card img {
   border: 1px solid #ccc;
-  /*box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);*/
-  max-width: 25vw;
+  max-width: 100%;
 }
 
 /* https://github.com/rachelandrew/cssgrid-ama/issues/19 */
@@ -93,3 +94,29 @@
 .portfolio .card.green i {
   color: #16a085;
 }
+
+/* for-tablet-portrait-up */
+@media (min-width: 600px) {
+
+}
+
+/* for-tablet-landscape-up */
+@media (min-width: 900px) {
+  .portfolio {
+    background-color: #fff;
+    padding: 100px;
+  }
+  .portfolio .deck {
+    height: 1000px;
+    flex-wrap: wrap;
+  }
+  .portfolio .card {
+    width: 25vw;
+    height: auto;
+  }
+  .portfolio .card img {
+    border: 1px solid #ccc;
+    max-width: 25vw;
+  }
+}
+
