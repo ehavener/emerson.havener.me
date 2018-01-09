@@ -24,7 +24,7 @@ export default class Carousel extends Component {
     };
     return (
       <div className="carousel">
-        <h1>Graphic Design</h1>
+        <h1>Graphic Design Portfolio</h1>
         <p>A collection of my favorite projects.</p>
         <Slider {...settings}>
           <div><img src={logo1_300} alt="logo1"/></div>

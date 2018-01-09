@@ -12,6 +12,7 @@ class Navbar extends Component {
       theme: "dark"
     }
     this.handleScroll = this.handleScroll.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
@@ -20,6 +21,11 @@ class Navbar extends Component {
 
   componentWillUnmount() {
       window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleClick(){
+    //console.log("handling");
+    document.getElementById("menu-btn").checked = false;
   }
 
   handleScroll(e) {
@@ -47,12 +53,12 @@ class Navbar extends Component {
           <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
           <div className="logo"></div>
           <ul className="menu">
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About Me</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Portfolio">Portfolio</a></li>
-            <li><a href="#Services">Services</a></li>
-            <li><a href="#Contact">Contact</a></li>
+            <li><a id="home-link" href="#Home" onClick={this.handleClick}>Home</a></li>
+            <li><a href="#About" onClick={this.handleClick}>About Me</a></li>
+            <li><a href="#Skills" onClick={this.handleClick}>Skills</a></li>
+            <li><a href="#Portfolio" onClick={this.handleClick}>Portfolio</a></li>
+            <li><a href="#Services" onClick={this.handleClick}>Services</a></li>
+            <li><a href="#Contact" onClick={this.handleClick}>Contact</a></li>
           </ul>
         </header>
     );
@@ -60,3 +66,5 @@ class Navbar extends Component {
 }
 
 export default Navbar;
+
+// add smooth anchor scrolling
