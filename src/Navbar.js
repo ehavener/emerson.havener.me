@@ -57,7 +57,6 @@ class Navbar extends Component {
             <li><a href="#About" onClick={this.handleClick}>About Me</a></li>
             <li><a href="#Skills" onClick={this.handleClick}>Skills</a></li>
             <li><a href="#Portfolio" onClick={this.handleClick}>Portfolio</a></li>
-            <li><a href="#Services" onClick={this.handleClick}>Services</a></li>
             <li><a href="#Contact" onClick={this.handleClick}>Contact</a></li>
           </ul>
         </header>

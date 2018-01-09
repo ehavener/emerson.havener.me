@@ -17,8 +17,7 @@
 }
 
 .skills .card:hover {
-  background-color: #2D4269;
-  color: #fff;
+
 }
 
 /* for-tablet-landscape-up */
@@ -30,12 +29,24 @@
 }
 
 .skills object {
+  transition-duration: .5s;
   width: 25vw;
   filter: saturate(0%) brightness(0%);
 
 }
 
 .skills .card:hover > div object {
+  transition-duration: .5s;
   width: 25vw;
-  filter: saturate(100%) brightness(100%) contrast(100%);
+  filter: saturate(80%) brightness(100%) contrast(100%);
+}
+
+h1:after {
+  background: none repeat scroll 0 0 #2D4269;
+  bottom: -5px;
+  content: "";
+  display: block;
+  height: 0px;
+  position: relative;
+  width: 100px;
 }
