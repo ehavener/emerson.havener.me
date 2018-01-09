@@ -14,14 +14,14 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Carousel /> {/*
         <Home />
         <Navbar />
         <About />
         <Skills />
         <Portfolio />
+        <Carousel />
         <Services />
-        <Contact />       */}
+        <Contact />
       </div>
     );
   }
