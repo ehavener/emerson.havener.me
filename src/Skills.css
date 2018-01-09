@@ -6,7 +6,7 @@
 .skills .deck {
   display: grid;
   grid-template-columns: calc(100vw-40px);
-  grid-template-rows: 200px 200px 200px;
+  grid-template-rows: 350px 250px 250px;
   grid-gap: 10px;
   justify-content: center;
 }
@@ -27,4 +27,15 @@
     grid-template-columns: 250px 250px 250px;
     grid-template-rows: 350px 350px 350px;
   }
+}
+
+.skills object {
+  width: 25vw;
+  filter: saturate(0%) brightness(0%);
+
+}
+
+.skills .card:hover > div object {
+  width: 25vw;
+  filter: saturate(100%) brightness(100%) contrast(100%);
 }
