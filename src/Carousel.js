@@ -29,7 +29,7 @@ export default class Carousel extends Component {
       centerPadding: '40px',
       dotsClass: 'slick-dots slick-thumb',
       infinite: true,
-      speed: 500,
+      speed: 600,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true

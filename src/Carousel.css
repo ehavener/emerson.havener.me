@@ -20,11 +20,15 @@
 }
 
 /* gallery slider */
+.slick-track {
+  display: flex;
+  align-items: center;
+}
 .slick-active {
-  transition: 1s filter ease-in;
+  transition: 1s filter ease-out;
 }
 .slick-slide:not(.slick-active) {
-  transition: 1s filter ease-in;
+  transition: 1s filter ease-out;
   filter: grayscale(100%);
 }
 
@@ -65,8 +69,8 @@
 }
 
 .slick-dots li {
-  width: 50px !important;
-  height: 50px !important;
+  width: 65px !important;
+  height: 65px !important;
   margin: 5px !important;
 }
 
