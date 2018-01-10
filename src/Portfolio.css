@@ -101,11 +101,12 @@
 }
 
 /* for-tablet-landscape-up */
+
 @media (min-width: 900px) {
-  .portfolio {
+/*  .portfolio {
     background-color: #fff;
     padding: 100px;
-  }
+  }*/
   .portfolio .deck {
     height: 1000px;
     flex-wrap: wrap;
