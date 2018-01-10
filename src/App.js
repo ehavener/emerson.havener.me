@@ -7,6 +7,7 @@ import Skills from './Skills';
 import Portfolio from './Portfolio';
 import Carousel from './Carousel';
 import Contact from './Contact';
+import Footer from './Footer';
 
 
 
@@ -21,6 +22,7 @@ class App extends Component {
         <Portfolio />
         <Carousel />
         <Contact />
+        <Footer />
       </div>
     );
   }

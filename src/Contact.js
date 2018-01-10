@@ -5,24 +5,31 @@ class Contact extends Component {
   render() {
     return (
       <div className="contact" id="Contact">
-        <h1>Contact</h1>
+        <h1>Contact Me</h1>
         <div className="deck">
           <div className="card">
-            <h2>Email</h2>
-            <a href="mailto:emerson@havener.me">emerson@havener.me</a>
+            <form action="/my-handling-form-page" method="post">
+              <input placeholder="Email" type="email"></input>
+              <input placeholder="Name" type="text"></input>
+              <textarea placeholder="Message" name="message"></textarea>
+              <button value="submit" type="button">Send</button>
+            </form>
           </div>
           <div className="card">
-            <h2>Location</h2>
-            <p>Reno, Nevada | Las Vegas, Nevada</p>
-          </div>
-          <div className="card">
-            <h2>Social Media</h2>
             <div className="social-icons">
-              <i className="fa fa-linkedin" aria-hidden="true"></i>
-              <i className="fa fa-github" aria-hidden="true"></i>
-              <i className="fa fa-dribbble" aria-hidden="true"></i>
-              <i className="fa fa-codepen" aria-hidden="true"></i>
-            </div>
+            <a href="https://www.linkedin.com/in/emerson-havener-8737a1121/" target="_blank" rel="noopener noreferrer">
+              <i className="fa fa-linkedin" title="LinkedIn" aria-hidden="true"></i>
+            </a>
+            <a href="https://github.com/ehavener" target="_blank" rel="noopener noreferrer">
+              <i className="fa fa-github" title="Github" aria-hidden="true"></i>
+            </a>
+            <a href="https://dribbble.com/emersonhavener" target="_blank" rel="noopener noreferrer">
+              <i className="fa fa-dribbble" title="Dribble" aria-hidden="true"></i>
+            </a>
+            <a href="https://codepen.io/ehavener/" target="_blank" rel="noopener noreferrer">
+              <i className="fa fa-codepen" title="Codepen" aria-hidden="true"></i>
+            </a>
+          </div>
           </div>
         </div>
       </div>
