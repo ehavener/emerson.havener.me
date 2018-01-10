@@ -27,7 +27,7 @@
   border: none;
   margin-bottom: 10px;
   background: #FFFFFF;
-  color: #000000;
+  color: #2F2F2F;
   transition: .5s ease all;
 }
 
@@ -39,7 +39,7 @@
   border-radius: 0px;
   border: none;
   background: #FFFFFF;
-  color: #000000;
+  color: #2F2F2F;
   transition: .5s ease all;
 }
 
@@ -70,7 +70,7 @@
   outline: none;
   cursor: pointer;
   transition: all .15s;
-  color: #000000;
+  color: #2F2F2F;
   width: 100%;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .contact button:hover {
-  background: #000000;
+  background: #2F2F2F;
   color: #FFFFFF;
 }
 

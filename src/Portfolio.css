@@ -70,7 +70,7 @@
 @media (min-width: 900px) {
   .portfolio {
     background-color: #fdfdfd;
-    padding: 100px;
+    /*padding: 100px;*/
   }
   .portfolio .deck {
     height: 1000px;

@@ -23,6 +23,7 @@
   background-size: 100%, 100%, 100%, 100%, 100%, 100%;
 
   transition-duration: .5s;
+  opacity: .85;
   filter: grayscale(100%) brightness(0%);
 }
 
@@ -37,7 +38,8 @@
 }
 
 .multi-bg-example:hover {
-  transition-duration: .5s;
+  transition: .5s opacity linear, .5s filter linear;
+  opacity: 1;
   filter: grayscale(0);
 }
 
