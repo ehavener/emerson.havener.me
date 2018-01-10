@@ -7,23 +7,23 @@
 .app h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
+  color: #2f2f2f;
 }
 
 .app h2 {
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
+  color: #2f2f2f;
 }
 
 .app p {
   font-family: 'Proxima Nova', sans-serif;
   font-size: 18px;
-  //line-height: 1em;
-  //font-weight: 700;
+  color: #2f2f2f;
 }
 
 .app li a {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
-  //line-height: 1em;
   font-weight: 500;
 }

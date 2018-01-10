@@ -10,8 +10,8 @@
 }
 
 .header {
-  background-color: #fff;
-  border-bottom: 1px solid #f4f4f4;
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #fdfdfd;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   position: fixed;
   top: 0;
@@ -29,7 +29,7 @@
 }
 
 .header li a {
-  border-right: 1px solid #f4f4f4;
+  border-right: 1px solid #fdfdfd;
   color: #333;
   display: block;
   padding: 20px 20px;
@@ -40,7 +40,7 @@
 
 .header li a:hover,
 .header .menu-btn:hover {
-  background-color: #f4f4f4;
+  background-color: #fdfdfd;
   color: #333;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: #2F2F2F;
   display: block;
   height: 2px;
   position: relative;
@@ -103,7 +103,7 @@
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: #2F2F2F;
   content: '';
   display: block;
   height: 100%;
@@ -178,7 +178,7 @@
   }
 
   .header.dark li a {
-    color: #fff;
+    color: #fdfdfd;
     border-right: 1px solid rgba(255,255,255,.0);
     transition: all .0s linear;
   }
@@ -189,20 +189,20 @@
   }
 
   .header.dark .menu-icon .navicon {
-    background: #EEE;
+    background: #fdfdfd;
   }
 
   .header.dark .menu-icon .navicon:before,
   .header.dark .menu-icon .navicon:after {
-    background: #EEE;
+    background: #fdfdfd;
   }
   .header.dark .logo {
     background-image: url(./eh_imperfect_EEEEEE.png);
   }
   .header.dark li > a:hover {
-    color: #fff;
+    color: #fdfdfd;
   }
   .header.dark li > a:before {
-    background-color: #fff;
+    background-color: #fdfdfd;
   }
 }

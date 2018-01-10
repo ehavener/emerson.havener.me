@@ -16,25 +16,25 @@
   background-color: #fff;
 }
 
-.skills .card .deck-icons object {
-  transition-duration: .5s;
+.skills .card object {
+  opacity: 0.825;
   filter: saturate(0%) brightness(0%);
-
+  transition: .25s filter linear, .25s opacity linear;
 }
 
 .skills .card:hover object {
-  transition-duration: .5s;
-  filter: saturate(80%) brightness(100%) contrast(100%);
+  opacity: 1;
+  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
 }
 
 .skills .card .deck-icons p {
-  transition-duration: .5s;
+  opacity: 0.825;
   filter: saturate(0%) brightness(0%);
-
+  transition: .5s filter linear, .5s opacity linear;
 }
 
 .skills .card:hover p {
-  transition-duration: .5s;
+  opacity: 1;
   filter: saturate(80%) brightness(100%) contrast(100%);
 }
 

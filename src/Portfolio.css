@@ -1,5 +1,5 @@
 .portfolio {
-  background-color: #fff;
+  background-color: #FDFDFD;
   padding: 40px 20px 60px 20px;
 }
 
@@ -19,12 +19,9 @@
   text-align: center;
   position: relative;
   margin: 20px 0px 20px 0px;
-  background-color: #ffffff;
+  background-color: #FDFDFD;
 }
 
-.portfolio .card:hover {
-
-}
 
 .portfolio .card img {
   border: 1px solid #ccc;
@@ -33,54 +30,12 @@
 
 /* https://github.com/rachelandrew/cssgrid-ama/issues/19 */
 
-.portfolio .card i {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 50%;
-  font-size: 30px;
-  color: #000000;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  background: #ffffff;
-}
-
-.portfolio .card.blue {
-  background-color: #34495e;
-}
-
-.portfolio .card.blue i {
-  color: #34495e;
-}
-
-.portfolio .card * {
-  transition: all .35s ease-in-out;
-}
-
-.portfolio .card:hover img {
-  opacity: 0.3;
-  filter: grayscale(90%); /* this is awesome */
-}
-
-.portfolio .card i {
-  transform:
-    translate(-50%, -50%)
-    scale(0);
-  transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
 
 
-/* when hover over item, change icon properties */
 
-.portfolio .card:hover i {
-  transform:
-    translate(-50%, -50%)
-    scale(1);
-  transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
 
 /* colors */
+
 .portfolio .card.red {
   background-color: #e74c3c;
 }
@@ -95,6 +50,16 @@
   color: #16a085;
 }
 
+.portfolio .card.blue {
+  background-color: #34495e;
+}
+
+.portfolio .card.blue i {
+  color: #34495e;
+}
+
+
+
 /* for-tablet-portrait-up */
 @media (min-width: 600px) {
 
@@ -103,10 +68,10 @@
 /* for-tablet-landscape-up */
 
 @media (min-width: 900px) {
-/*  .portfolio {
-    background-color: #fff;
+  .portfolio {
+    background-color: #fdfdfd;
     padding: 100px;
-  }*/
+  }
   .portfolio .deck {
     height: 1000px;
     flex-wrap: wrap;
@@ -120,3 +85,115 @@
     max-width: 25vw;
   }
 }
+
+
+/* overlay */
+
+
+.portfolio .card * {
+  transition: all .35s ease-in-out;
+}
+
+.portfolio .deck .card:hover img {
+  opacity: 0.3;
+  filter: grayscale(90%) blur(1px);
+}
+
+.portfolio .deck .card .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  position: absolute;
+  width: 100%;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #FDFDFD;
+  opacity: 0;
+  transition: opacity .3s, visibility .3s;
+}
+
+.portfolio .deck .card .overlay ul {
+  padding: 0;
+  text-align: center;
+}
+
+.portfolio .deck .card .overlay:hover {
+  opacity: 1;
+}
+
+.portfolio .card:hover object {
+  display: inline;
+  transition: display 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.portfolio .card:hover h2 {
+  display: inline;
+  transition: display 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.portfolio .card object {
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.portfolio .card .stack {
+
+}
+
+#chauffeur {
+
+}
+
+.portfolio .card h2 {
+  color: #FDFDFD;
+}
+
+.portfolio .card p {
+  color: #FDFDFD;
+}
+
+
+
+
+
+
+
+
+/*
+.portfolio .card i {
+  transform:
+    translate(-50%, -50%)
+    scale(0);
+  transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+*/
+
+/* when hover over item, change icon properties */
+/*
+.portfolio .card:hover i {
+  transform:
+    translate(-50%, -50%)
+    scale(1);
+  transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+*/
+/*
+.portfolio .card i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #000000;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #ffffff;
+}
+*/
+
