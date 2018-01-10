@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css';
 import Navbar from './Navbar';
 import Home from './Home';
 import About from './About';
@@ -7,7 +8,7 @@ import Portfolio from './Portfolio';
 import Carousel from './Carousel';
 import Contact from './Contact';
 
-import './App.css';
+
 
 class App extends Component {
   render() {

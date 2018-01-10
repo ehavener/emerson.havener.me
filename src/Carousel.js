@@ -14,6 +14,7 @@ import logo9_300 from './images/carousel/Packelodeon-300.png';
 export default class Carousel extends Component {
   render() {
     const settings = {
+      arrows: true,
       className: 'center',
       centerMode: true,
       infinite: true,

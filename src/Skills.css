@@ -5,8 +5,8 @@
 
 .skills .deck {
   display: grid;
-  grid-template-columns: calc(100vw-40px);
-  grid-template-rows: 350px 250px 250px;
+  grid-template-columns: 1fr;
+  /*grid-template-rows: 400px 250px 250px;*/
   grid-gap: 10px;
   justify-content: center;
 }
@@ -16,31 +16,29 @@
   background-color: #fff;
 }
 
-.skills .card:hover {
-
-}
-
-/* for-tablet-landscape-up */
-@media (min-width: 900px) {
-  .skills .deck {
-    grid-template-columns: 250px 250px 250px;
-    grid-template-rows: 350px 350px 350px;
-  }
-}
-
-.skills object {
+.skills .card .deck-icons object {
   transition-duration: .5s;
-  width: 25vw;
   filter: saturate(0%) brightness(0%);
 
 }
 
-.skills .card:hover > div object {
+.skills .card:hover object {
   transition-duration: .5s;
-  width: 25vw;
   filter: saturate(80%) brightness(100%) contrast(100%);
 }
 
+.skills .card .deck-icons p {
+  transition-duration: .5s;
+  filter: saturate(0%) brightness(0%);
+
+}
+
+.skills .card:hover p {
+  transition-duration: .5s;
+  filter: saturate(80%) brightness(100%) contrast(100%);
+}
+
+/*
 h1:after {
   background: none repeat scroll 0 0 #2D4269;
   bottom: -5px;
@@ -50,3 +48,61 @@ h1:after {
   position: relative;
   width: 100px;
 }
+*/
+
+.deck-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*grid-template-rows: 400px 250px 250px;*/
+  grid-gap: 0px;
+  justify-items: center;
+}
+
+.card-icons {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.card-icons p {
+  margin: 0;
+  font-size: 12px;
+}
+
+
+
+/* for-tablet-landscape-up */
+@media (min-width: 900px) {
+  .skills .deck {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .deck-icons {
+
+  }
+}
+
+/* icon colors */
+#html5-caption {  color: #E34F26;}
+#css3-caption {  color: #0A71B9;}
+#javascript-caption {  color: #F7DF1E;}
+#bootstrap-caption {  color: #563D7C;}
+#sass-caption {  color: #CF649A;}
+#jquery-caption {  color: #0868AC;}
+#react-caption {  color: #61DAFB;}
+#redux-caption {  color: #764ABC;}
+
+#photoshop-caption {  color: #87BCF6;}
+#illustrator-caption {  color: #FF7C00;}
+#xd-caption {  color: #FF2BC2;}
+
+
+#nodejs-caption {  color: #539E43;}
+#expressjs-caption {  color: #777777;}
+#mongodb-caption {  color: #58AA50;}
+
+#gulp-caption {  color: #DA4648;}
+#git-caption {  color: #DE4C36;}
+#jasmine-caption {  color: #8A4182;}
+
+#arduino-caption {  color: #03599C;}
+#c-caption {  color: #5C8DBC;}
+#cpp-caption {  color: #06979C;}

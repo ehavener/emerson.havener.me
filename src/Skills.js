@@ -1,70 +1,152 @@
 import React, { Component } from 'react';
 import './Skills.css';
 
-import arduino from './images/skill-icons/arduino.svg';
+import html5 from './images/skill-icons/html5.svg';
+import css3 from './images/skill-icons/css3.svg';
+import javascript from './images/skill-icons/javascript.svg';
 import bootstrap from './images/skill-icons/bootstrap.svg';
+import sass from './images/skill-icons/sass.svg';
+import jquery from './images/skill-icons/jquery.svg';
+import react from './images/skill-icons/react.svg';
+import redux from './images/skill-icons/redux.svg';
+
+import photoshop from './images/skill-icons/photoshop.svg';
+import illustrator from './images/skill-icons/illustrator.svg';
+import xd from './images/skill-icons/xd.svg';
+
+import nodejs from './images/skill-icons/nodejs.svg';
+import expressjs from './images/skill-icons/expressjs.svg';
+import mongodb from './images/skill-icons/mongodb.svg';
+
+import gulp from './images/skill-icons/gulp.svg';
+import git from './images/skill-icons/git.svg';
+import jasmine from './images/skill-icons/jasmine.svg';
+
+import arduino from './images/skill-icons/arduino.svg';
 import c from './images/skill-icons/c.svg';
 import cpp from './images/skill-icons/cpp.svg';
-import CSS3 from './images/skill-icons/CSS3.svg';
-import HTML5 from './images/skill-icons/HTML5.svg';
-import illustrator from './images/skill-icons/illustrator.svg';
-import jQuery from './images/skill-icons/jQuery.svg';
-import JS from './images/skill-icons/JS.svg';
-import mongodb from './images/skill-icons/mongodb.svg';
-import nodejs from './images/skill-icons/nodejs.svg';
-import photoshop from './images/skill-icons/photoshop.svg';
-import react from './images/skill-icons/react.svg';
-import SASS from './images/skill-icons/SASS.svg';
-import xd from './images/skill-icons/xd.svg';
+
+
+
+
 
 class Skills extends Component {
   render() {
     return (
       <div className="skills" id="Skills">
 
-
-        <h1>Skills</h1>
+        <h1>Skills & Stack</h1>
         <p>While I'm a full stack developer, my emphasis is in elegant front end design.</p>
         <div className="deck">
           <div className="card">
             <h2>Front-end</h2>
-            <p>HTML5, CSS3, SASS, Javascript ES7, JS Frameworks (React, Redux, jQuery), CSS Grid & Flexbox, BEM</p>
-            <div>
-              <object type="image/svg+xml" height="50" width="50" data={HTML5} aria-label="HTML5"></object>
-              <object type="image/svg+xml" height="50" width="50" data={CSS3} aria-label="CSS3"></object>
-              <object type="image/svg+xml" height="50" width="50" data={JS} aria-label="JS"></object>
+            <p>My experience is primarily with the MEAN stack.</p>
+            <div className="deck-icons">
+              <div className="card-icons">
+                <object type="image/svg+xml" height="50" width="50" data={html5} aria-label="HTML5"></object>
+                <p id="html5-caption">HTML5</p>
+              </div>
+              <div className="card-icons">
+                <object type="image/svg+xml" height="50" width="50" data={css3} aria-label="CSS3"></object>
+                <p id="css3-caption">CSS3</p>
+              </div>
+              <div className="card-icons">
+                <object type="image/svg+xml" height="50" width="50" data={javascript} aria-label="Javascript ES7"></object>
+                <p id="javascript-caption">Javascript ES7</p>
+              </div>
+              <div className="card-icons">
+                <object type="image/svg+xml" height="50" width="50" data={bootstrap} aria-label="bootstrap"></object>
+                <p id="bootstrap-caption">Bootstrap</p>
+              </div>
+              <div className="card-icons">
+                <object type="image/svg+xml" height="50" width="50" data={sass} aria-label="SASS"></object>
+                <p id="sass-caption">SASS</p>
+              </div>
+              <div className="card-icons">
+                <object type="image/svg+xml" height="50" width="50" data={jquery} aria-label="jQuery"></object>
+                <p id="jquery-caption">jQuery</p>
+              </div>
+              <div className="card-icons">
+                <object type="image/svg+xml" height="50" width="50" data={react} aria-label="react"></object>
+                <p id="react-caption">React</p>
+              </div>
+              <div className="card-icons">
+                <object type="image/svg+xml" height="50" width="50" data={redux} aria-label="redux"></object>
+                <p id="redux-caption">Redux</p>
+              </div>
             </div>
-            <div>
-              <object type="image/svg+xml" height="50" width="50" data={bootstrap} aria-label="bootstrap"></object>
-              <object type="image/svg+xml" height="50" width="50" data={jQuery} aria-label="jQuery"></object>
-              <object type="image/svg+xml" height="50" width="50" data={SASS} aria-label="SASS"></object>
-            </div>
-            <div>
-              <object type="image/svg+xml" height="50" width="50" data={mongodb} aria-label="mongodb"></object>
-              <object type="image/svg+xml" height="50" width="50" data={nodejs} aria-label="nodejs"></object>
-              <object type="image/svg+xml" height="50" width="50" data={react} aria-label="react"></object>
+          </div>
+          <div className="card">
+            <h2>Design & Prototyping</h2>
+            <p>Adobe Illustrator, Photoshop, & XD</p>
+            <div className="deck-icons">
+              <div className="card-icons">
+                <object type="image/svg+xml" height="50" width="50" data={illustrator} aria-label="redux"></object>
+                <p id="illustrator-caption">Illustrator</p>
+              </div>
+              <div className="card-icons">
+                <object type="image/svg+xml" height="50" width="50" data={photoshop} aria-label="photoshop"></object>
+                <p id="photoshop-caption">Photoshop</p>
+              </div>
+              <div className="card-icons">
+                <object type="image/svg+xml" height="50" width="50" data={xd} aria-label="xd"></object>
+                <p id="xd-caption">XD</p>
+              </div>
             </div>
           </div>
           <div className="card">
             <h2>Back-end</h2>
-            <p>Node.js, Express, MongoDB, SQL</p>
-            <div>
-              <object type="image/svg+xml" height="50" width="50" data={photoshop} aria-label="photoshop"></object>
-              <object type="image/svg+xml" height="50" width="50" data={illustrator} aria-label="illustrator"></object>
-              <object type="image/svg+xml" height="50" width="50" data={xd} aria-label="xd"></object>
+            <p>Node.js, Express & MongoDB</p>
+            <div className="deck-icons">
+              <div className="card-icons">
+                <object type="image/svg+xml" height="50" width="50" data={nodejs} aria-label="NodeJS"></object>
+                <p id="nodejs-caption">NodeJS</p>
+              </div>
+              <div className="card-icons">
+              <object type="image/svg+xml" height="50" width="50" data={expressjs} aria-label="ExpressJS"></object>
+                <p id="expressjs-caption">ExpressJS</p>
+              </div>
+              <div className="card-icons">
+              <object type="image/svg+xml" height="50" width="50" data={mongodb} aria-label="mongodb"></object>
+                <p id="mongodb-caption">MongoDB</p>
+              </div>
             </div>
           </div>
           <div className="card">
-            <h2>Testing, Tooling & DevOps</h2>
-            <p>Mocha, Chrome DevTools, React/Redux DevTools, JS Tools (npm, Webpack, Babel, Gulp)</p>
+            <h2>Tooling & Testing</h2>
+            <p>Gulp, Git, & Jasmine</p>
+            <div className="deck-icons">
+              <div className="card-icons">
+                <object type="image/svg+xml" height="50" width="50" data={gulp} aria-label="gulp"></object>
+                <p id="gulp-caption">Gulp</p>
+              </div>
+              <div className="card-icons">
+                <object type="image/svg+xml" height="50" width="50" data={git} aria-label="git"></object>
+                <p id="git-caption">git</p>
+              </div>
+              <div className="card-icons">
+                <object type="image/svg+xml" height="50" width="50" data={jasmine} aria-label="jasmine"></object>
+                <p id="jasmine-caption">Jasmine</p>
+              </div>
+            </div>
           </div>
           <div className="card">
-            <h2>Other Languages</h2>
-            <p>C, C++, Bash/Command Line, Git</p>
-            <div>
+            <h2>Embedded Systems</h2>
+            <p>C, C++, & Arduino</p>
+            <div className="deck-icons">
+              <div className="card-icons">
               <object type="image/svg+xml" height="50" width="50" data={c} aria-label="c"></object>
+                <p id="c-caption">C</p>
+              </div>
+              <div className="card-icons">
               <object type="image/svg+xml" height="50" width="50" data={cpp} aria-label="cpp"></object>
+                <p id="cpp-caption">C++</p>
+              </div>
+              <div className="card-icons">
               <object type="image/svg+xml" height="50" width="50" data={arduino} aria-label="arduino"></object>
+                <p id="arduino-caption">Arduino</p>
+              </div>
+
             </div>
           </div>
         </div>
