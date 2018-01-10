@@ -8,7 +8,7 @@
 
 .carousel {
   background-color: white;
-  padding: 40px 0px 60px 0px;
+  padding: 20px 0px 60px 0px;
 }
 
 .carousel h1 {
@@ -18,5 +18,31 @@
 .carousel p {
   padding-left: 20px;
 }
+
+button.slick-arrow.slick-next:before {
+  display: none;
+  color: black;
+}
+
+.slick-next:before {
+  color: black !important;
+  right: 20px !important;
+}
+
+.slick-next {
+  color: black !important;
+  right: 20px !important;
+}
+
+.slick-prev:before {
+  color: black !important;
+  left: 20px !important;
+}
+
+.slick-prev {
+  color: black !important;
+  left: 20px !important;
+}
+
 
 /* make clipped designs greyscale, add drop shadow */

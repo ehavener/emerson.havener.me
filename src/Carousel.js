@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Slider from '../node_modules/react-slick/lib/slider'
 import './Carousel.css';
+import Slider from '../node_modules/react-slick/lib/slider'
 import logo1_300 from './images/carousel/SnakeySeason-300.png';
 import logo2_300 from './images/carousel/Jersey-300.png';
 import logo3_300 from './images/carousel/Packelodeon-300.png';
@@ -10,6 +10,8 @@ import logo6_300 from './images/carousel/Packelodeon-300.png';
 import logo7_300 from './images/carousel/DiceOrDie-300.png';
 import logo8_300 from './images/carousel/Jersey-300.png';
 import logo9_300 from './images/carousel/Packelodeon-300.png';
+
+
 
 export default class Carousel extends Component {
   render() {

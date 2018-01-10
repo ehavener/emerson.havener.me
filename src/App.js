@@ -20,7 +20,7 @@ class App extends Component {
         <About />
         <Skills />
         <Portfolio />
-        <Carousel />
+        <Carousel /> 
         <Contact />
         <Footer />
       </div>
