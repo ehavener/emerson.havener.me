@@ -34,7 +34,6 @@ class Skills extends Component {
   render() {
     return (
       <div className="skills" id="Skills">
-
         <h1>Skills & Stack</h1>
         <p>While I'm a full stack developer, my emphasis is in elegant front end design.</p>
         <div className="deck">
@@ -43,35 +42,35 @@ class Skills extends Component {
             <p>My experience is primarily with the MEAN stack.</p>
             <div className="deck-icons">
               <div className="card-icons">
-                <object type="image/svg+xml" height="50" width="50" data={html5} aria-label="HTML5"></object>
+                <object type="image/svg+xml" data={html5} aria-label="HTML5"></object>
                 <p id="html5-caption">HTML5</p>
               </div>
               <div className="card-icons">
-                <object type="image/svg+xml" height="50" width="50" data={css3} aria-label="CSS3"></object>
+                <object type="image/svg+xml" data={css3} aria-label="CSS3"></object>
                 <p id="css3-caption">CSS3</p>
               </div>
               <div className="card-icons">
-                <object type="image/svg+xml" height="50" width="50" data={javascript} aria-label="Javascript ES7"></object>
+                <object type="image/svg+xml" data={javascript} aria-label="Javascript ES7"></object>
                 <p id="javascript-caption">Javascript ES7</p>
               </div>
               <div className="card-icons">
-                <object type="image/svg+xml" height="50" width="50" data={bootstrap} aria-label="bootstrap"></object>
+                <object type="image/svg+xml" data={bootstrap} aria-label="bootstrap"></object>
                 <p id="bootstrap-caption">Bootstrap</p>
               </div>
               <div className="card-icons">
-                <object type="image/svg+xml" height="50" width="50" data={sass} aria-label="SASS"></object>
+                <object type="image/svg+xml" data={sass} aria-label="SASS"></object>
                 <p id="sass-caption">SASS</p>
               </div>
               <div className="card-icons">
-                <object type="image/svg+xml" height="50" width="50" data={jquery} aria-label="jQuery"></object>
+                <object type="image/svg+xml" data={jquery} aria-label="jQuery"></object>
                 <p id="jquery-caption">jQuery</p>
               </div>
               <div className="card-icons">
-                <object type="image/svg+xml" height="50" width="50" data={react} aria-label="react"></object>
+                <object type="image/svg+xml" data={react} aria-label="react"></object>
                 <p id="react-caption">React</p>
               </div>
               <div className="card-icons">
-                <object type="image/svg+xml" height="50" width="50" data={redux} aria-label="redux"></object>
+                <object type="image/svg+xml" data={redux} aria-label="redux"></object>
                 <p id="redux-caption">Redux</p>
               </div>
             </div>
@@ -81,15 +80,15 @@ class Skills extends Component {
             <p>Adobe Illustrator, Photoshop, & XD</p>
             <div className="deck-icons">
               <div className="card-icons">
-                <object type="image/svg+xml" height="50" width="50" data={illustrator} aria-label="redux"></object>
+                <object type="image/svg+xml" data={illustrator} aria-label="redux"></object>
                 <p id="illustrator-caption">Illustrator</p>
               </div>
               <div className="card-icons">
-                <object type="image/svg+xml" height="50" width="50" data={photoshop} aria-label="photoshop"></object>
+                <object type="image/svg+xml" data={photoshop} aria-label="photoshop"></object>
                 <p id="photoshop-caption">Photoshop</p>
               </div>
               <div className="card-icons">
-                <object type="image/svg+xml" height="50" width="50" data={xd} aria-label="xd"></object>
+                <object type="image/svg+xml" data={xd} aria-label="xd"></object>
                 <p id="xd-caption">XD</p>
               </div>
             </div>
@@ -99,15 +98,15 @@ class Skills extends Component {
             <p>Node.js, Express & MongoDB</p>
             <div className="deck-icons">
               <div className="card-icons">
-                <object type="image/svg+xml" height="50" width="50" data={nodejs} aria-label="NodeJS"></object>
+                <object type="image/svg+xml" data={nodejs} aria-label="NodeJS"></object>
                 <p id="nodejs-caption">NodeJS</p>
               </div>
               <div className="card-icons">
-              <object type="image/svg+xml" height="50" width="50" data={expressjs} aria-label="ExpressJS"></object>
+              <object type="image/svg+xml" data={expressjs} aria-label="ExpressJS"></object>
                 <p id="expressjs-caption">ExpressJS</p>
               </div>
               <div className="card-icons">
-              <object type="image/svg+xml" height="50" width="50" data={mongodb} aria-label="mongodb"></object>
+              <object type="image/svg+xml" data={mongodb} aria-label="mongodb"></object>
                 <p id="mongodb-caption">MongoDB</p>
               </div>
             </div>
@@ -117,15 +116,15 @@ class Skills extends Component {
             <p>Gulp, Git, & Jasmine</p>
             <div className="deck-icons">
               <div className="card-icons">
-                <object type="image/svg+xml" height="50" width="50" data={gulp} aria-label="gulp"></object>
+                <object type="image/svg+xml" data={gulp} aria-label="gulp"></object>
                 <p id="gulp-caption">Gulp</p>
               </div>
               <div className="card-icons">
-                <object type="image/svg+xml" height="50" width="50" data={git} aria-label="git"></object>
+                <object type="image/svg+xml" data={git} aria-label="git"></object>
                 <p id="git-caption">git</p>
               </div>
               <div className="card-icons">
-                <object type="image/svg+xml" height="50" width="50" data={jasmine} aria-label="jasmine"></object>
+                <object type="image/svg+xml" data={jasmine} aria-label="jasmine"></object>
                 <p id="jasmine-caption">Jasmine</p>
               </div>
             </div>
@@ -135,15 +134,15 @@ class Skills extends Component {
             <p>C, C++, & Arduino</p>
             <div className="deck-icons">
               <div className="card-icons">
-              <object type="image/svg+xml" height="50" width="50" data={c} aria-label="c"></object>
+              <object type="image/svg+xml" data={c} aria-label="c"></object>
                 <p id="c-caption">C</p>
               </div>
               <div className="card-icons">
-              <object type="image/svg+xml" height="50" width="50" data={cpp} aria-label="cpp"></object>
+              <object type="image/svg+xml" data={cpp} aria-label="cpp"></object>
                 <p id="cpp-caption">C++</p>
               </div>
               <div className="card-icons">
-              <object type="image/svg+xml" height="50" width="50" data={arduino} aria-label="arduino"></object>
+              <object type="image/svg+xml" data={arduino} aria-label="arduino"></object>
                 <p id="arduino-caption">Arduino</p>
               </div>
 
