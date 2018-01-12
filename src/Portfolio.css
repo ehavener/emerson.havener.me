@@ -22,42 +22,120 @@
   background-color: #FDFDFD;
 }
 
-
-.portfolio .card img {
+.portfolio .card .bg {
   border: 1px solid #ccc;
   max-width: 100%;
 }
 
-/* https://github.com/rachelandrew/cssgrid-ama/issues/19 */
+/* card themes */
+.portfolio .card.red {  background-color: #e74c3c;}
+.portfolio .card.red i {  color: #e74c3c;}
+.portfolio .card.green {  background-color: #16a085;}
+.portfolio .card.green i {  color: #16a085;}
+.portfolio .card.blue {  background-color: #34495e;}
+.portfolio .card.blue i {  color: #34495e;}
 
-
-
-
-
-/* colors */
-
-.portfolio .card.red {
-  background-color: #e74c3c;
-}
-.portfolio .card.red i {
-  color: #e74c3c;
+/* overlay */
+.portfolio .card * {
+  transition: all .35s ease-in-out;
 }
 
-.portfolio .card.green {
-  background-color: #16a085;
-}
-.portfolio .card.green i {
-  color: #16a085;
+.portfolio .deck .card:hover .bg {
+  opacity: 0.3;
+  filter: grayscale(90%) blur(1px);
 }
 
-.portfolio .card.blue {
-  background-color: #34495e;
+.portfolio .deck .card .overlay {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #FDFDFD;
+  opacity: 0;
+  transition: opacity .3s, visibility .3s;
+  padding: 0% 5%;
 }
 
-.portfolio .card.blue i {
-  color: #34495e;
+
+
+.portfolio .deck .card .overlay h2 {
+  margin: 0;
+  position: relative;
+  color: #FDFDFD;
 }
 
+.portfolio .deck .card .overlay p {
+  margin: 0;
+  color: #FDFDFD;
+}
+
+.portfolio .deck .card .overlay .techList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio .deck .card .overlay .techList .object-wrap {
+  padding: 10px;
+  border-width: 10px;
+  border-radius: 50%;
+  background: #FDFDFD;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.portfolio .card .overlay .techList .object-wrap object {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.825;
+  filter: saturate(0%) brightness(0%);
+  transition: .25s filter linear, .25s opacity linear;
+}
+
+
+.portfolio .deck .card .overlay:hover {
+  opacity: 1;
+}
+
+.portfolio .deck .card .overlay:hover .techList .object-wrap object {
+  opacity: 1;
+  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*                                               */
 
 
 /* for-tablet-portrait-up */
@@ -85,80 +163,6 @@
     max-width: 25vw;
   }
 }
-
-
-/* overlay */
-
-
-.portfolio .card * {
-  transition: all .35s ease-in-out;
-}
-
-.portfolio .deck .card:hover img {
-  opacity: 0.3;
-  filter: grayscale(90%) blur(1px);
-}
-
-.portfolio .deck .card .overlay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 0;
-  position: absolute;
-  width: 100%;
-  flex-direction: column;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  color: #FDFDFD;
-  opacity: 0;
-  transition: opacity .3s, visibility .3s;
-}
-
-.portfolio .deck .card .overlay ul {
-  padding: 0;
-  text-align: center;
-}
-
-.portfolio .deck .card .overlay:hover {
-  opacity: 1;
-}
-
-.portfolio .card:hover object {
-  display: inline;
-  transition: display 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.portfolio .card:hover h2 {
-  display: inline;
-  transition: display 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.portfolio .card object {
-  position: relative;
-  width: 50px;
-  height: 50px;
-}
-
-.portfolio .card .stack {
-
-}
-
-#chauffeur {
-
-}
-
-.portfolio .card h2 {
-  color: #FDFDFD;
-}
-
-.portfolio .card p {
-  color: #FDFDFD;
-}
-
-
-
 
 
 
