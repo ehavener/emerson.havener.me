@@ -8,8 +8,7 @@ import Portfolio from './Portfolio';
 import Carousel from './Carousel';
 import Contact from './Contact';
 import Footer from './Footer';
-
-
+import Certs from './Certs';
 
 class App extends Component {
   render() {
@@ -17,10 +16,11 @@ class App extends Component {
       <div className="app">
         <Home />
         <Navbar />
-        <About />
-        <Skills />
         <Portfolio />
-        <Carousel /> 
+        <Carousel />
+        <Skills />
+        <Certs />
+        <About />
         <Contact />
         <Footer />
       </div>
