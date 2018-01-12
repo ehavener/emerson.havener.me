@@ -1,21 +1,27 @@
 import React, { Component } from 'react';
 import Slider from '../node_modules/react-slick/lib/slider';
 import './Carousel.css';
-import logo1_300 from './images/carousel/SnakeySeason-300.png';
-import logo2_300 from './images/carousel/Jersey-300.png';
-import logo3_300 from './images/carousel/Packelodeon-300.png';
-import logo4_300 from './images/carousel/DiceOrDie-300.png';
-import logo5_300 from './images/carousel/Jersey-300.png';
-import logo6_300 from './images/carousel/Packelodeon-300.png';
-import logo7_300 from './images/carousel/DiceOrDie-300.png';
-import logo8_300 from './images/carousel/Jersey-300.png';
-import logo9_300 from './images/carousel/Packelodeon-300.png';
+import logo1_300 from './images/design/design01.png';
+import logo2_300 from './images/design/design02.png';
+import logo3_300 from './images/design/design03.png';
+import logo4_300 from './images/design/design04.png';
+import logo5_300 from './images/design/design05.png';
+import logo6_300 from './images/design/design06.png';
+import logo7_300 from './images/design/design07.png';
+import logo8_300 from './images/design/design08.png';
+import logo9_300 from './images/design/design09.png';
+import logo10_300 from './images/design/design10.png';
+
 
 export default class Carousel extends Component {
+
+
+
   render() {
+
     const images = [
       logo1_300, logo2_300, logo3_300, logo4_300, logo5_300, logo6_300, logo7_300,
-      logo8_300, logo9_300
+      logo8_300, logo9_300, logo10_300
     ];
     const baseUrl = './images/carousel';
     const settings = {
@@ -26,10 +32,10 @@ export default class Carousel extends Component {
       dots: true,
       className: 'center',
       centerMode: true,
-      centerPadding: '40px',
+      centerPadding: '20px',
       dotsClass: 'slick-dots slick-thumb',
       infinite: true,
-      speed: 600,
+      speed: 400,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true
@@ -48,6 +54,7 @@ export default class Carousel extends Component {
           <div><img src={logo7_300} alt="logo7"/></div>
           <div><img src={logo8_300} alt="logo8"/></div>
           <div><img src={logo9_300} alt="logo9"/></div>
+          <div><img src={logo10_300} alt="logo9"/></div>
         </Slider>
       </div>
     )

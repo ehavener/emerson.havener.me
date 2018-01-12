@@ -57,7 +57,7 @@ class Portfolio extends Component {
                   <object type="image/svg+xml" height="50" width="50" data={javascript} aria-label="javascript"></object>
                 </div>
               </ul>
-              </div>
+            </div>
           </div>
           </a>
 
