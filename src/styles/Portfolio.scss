@@ -17,28 +17,6 @@
 
 }
 
-/* for-tablet-landscape-up */
-/*
-@media (min-width: 900px) {
-  .portfolio {
-    background-color: #fdfdfd;
-    // padding: 100px;
-  }
-  .portfolio .deck {
-    height: 1000px;
-    flex-wrap: wrap;
-  }
-  .portfolio .card {
-    width: 25vw;
-    height: auto;
-  }
-  .portfolio .card img {
-    border: 1px solid #ccc;
-    max-width: 25vw;
-  }
-}
-*/
-
 .portfolio {
   background-color: #FDFDFD;
   padding: 40px 20px 60px 20px;
@@ -56,7 +34,6 @@
   @include for-tablet-portrait-up {
     flex-wrap: wrap;
     max-height: calc(900px + 25vw)
-    //align-content: space-between;
   }
   @include for-tablet-landscape-up {
     max-height: 1200px;
@@ -70,27 +47,20 @@
 }
 
 .portfolio .card {
-  //width: calc( 100vw - 40px);
-
   height: auto;
   text-align: center;
   position: relative;
-  margin: 0px 10px 10px 0px;
+  margin: 0em .44em .44em 0em;
   background-color: #FDFDFD;
-  //max-width: 400px;
   @include for-tablet-portrait-up {
-    width: calc(50vw - 53px);
-    //width: 50%;
+    width: calc(50vw - 3.88em);
   }
   @include for-tablet-landscape-up {
-    width: calc(50vw - 122px);
-    //width: 50%;
+    width: calc(50vw - 7.88em);
   }
   @include for-desktop-up {
-    width: calc(33vw - 126.66px);
-    //width: 50%;
+    width: calc(33vw - 7.98em);
   }
-
 }
 
 

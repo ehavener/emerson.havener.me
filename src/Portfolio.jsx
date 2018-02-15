@@ -50,7 +50,7 @@ const Portfolio = () => (
   <section className="portfolio" id="Portfolio">
     <h1>Projects</h1>
     <div className="deck">
-      <OnVisible id="chauffeur" className="card red">
+      <OnVisible id="chauffeur" className="card red chauffeur">
         <img className="bg" src={chauffeurPreview} alt="a web dev project" />
         <div className="overlay">
           <h2>Chauffeur Reno</h2>
@@ -82,7 +82,7 @@ const Portfolio = () => (
           </ul>
         </div>
       </OnVisible>
-      <OnVisible id="happy-hour" className="card green">
+      <OnVisible id="happy-hour" className="card green happyHour">
         <img className="bg" src={happyhourPreview} alt="a web dev project" />
         <div className="overlay">
           <h2>Happy Hour</h2>
@@ -111,7 +111,7 @@ const Portfolio = () => (
           </ul>
         </div>
       </OnVisible>
-      <OnVisible id="handel" className="card purple" >
+      <OnVisible id="handel" className="card purple handel" >
         <img className="bg" src={handelPreview} style={{ backgroundColor: '#535c68' }} alt="a web dev project" />
         <div className="overlay">
           <h2>Handel</h2>
@@ -135,7 +135,7 @@ const Portfolio = () => (
           </ul>
         </div>
       </OnVisible>
-      <OnVisible id="arduino-i2c-drivers" className="card turquoise">
+      <OnVisible id="arduino-i2c-drivers" className="card turquoise i2c">
         <img className="bg" src={wi2cPreview} alt="a web dev project" />
         <div className="overlay">
           <h2>​Arduino I2C Drivers</h2>
@@ -160,7 +160,7 @@ const Portfolio = () => (
           </ul>
         </div>
       </OnVisible>
-      <OnVisible id="fadeaway-hardcount" className="card black" >
+      <OnVisible id="fadeaway-hardcount" className="card black fadeaway" >
         <img className="bg" src={fadeawayPreview} alt="a web dev project" style={{ backgroundColor: 'white' }} />
         <div className="overlay">
           <h2>Fadeaway</h2>
