@@ -1,22 +1,46 @@
+.front-end {
+  grid-area: one; }
+
+.design {
+  grid-area: two; }
+
+.back-end {
+  grid-area: three; }
+
+.tooling {
+  grid-area: four; }
+
+.systems {
+  grid-area: five; }
+
 .skills {
   background-color: #fafafa;
   padding: 40px 20px 60px 20px; }
 
 .skills .deck {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   /*grid-template-rows: 400px 250px 250px;*/
   grid-gap: 10px;
-  justify-content: center; }
+  grid-template-areas: "one one" "two three" "four five"; }
   @media (min-width: 600px) {
     .skills .deck {
-      grid-template-columns: 1fr 1fr; } }
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "one one" "two three" "four five"; } }
+  @media (min-width: 900px) {
+    .skills .deck {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "one one" "two three" "four five"; } }
   @media (min-width: 1200px) {
     .skills .deck {
-      grid-template-columns: 1fr 1fr 1fr; } }
-  @media (min-width: 1800px) {
-    .skills .deck {
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: "one one one one" "two three four five"; } }
+
+.skills h2 {
+  white-space: nowrap; }
 
 .skills .card {
   padding: 20px;
@@ -64,11 +88,10 @@ h1:after {
 }
 */
 .deck-icons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /*grid-template-rows: 400px 250px 250px;*/
-  grid-gap: 0px;
-  justify-items: center; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
 
 .card-icons {
   margin-bottom: 12px;

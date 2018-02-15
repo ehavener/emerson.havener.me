@@ -37,7 +37,7 @@ const Skills = () => (
   <section className="skills" id="Skills">
     <h1>Skills & Tools</h1>
     <div className="deck">
-      <OnVisible className="card">
+      <OnVisible className="card front-end">
         <h2>Front-end</h2>
         <div className="deck-icons">
           <div className="card-icons">
@@ -74,7 +74,7 @@ const Skills = () => (
           </div>
         </div>
       </OnVisible>
-      <OnVisible className="card">
+      <OnVisible className="card design">
         <h2>Design & UX</h2>
         <div className="deck-icons">
           <div className="card-icons">
@@ -91,7 +91,7 @@ const Skills = () => (
           </div>
         </div>
       </OnVisible>
-      <OnVisible className="card">
+      <OnVisible className="card back-end">
         <h2>Back-end</h2>
         <div className="deck-icons">
           <div className="card-icons">
@@ -108,7 +108,7 @@ const Skills = () => (
           </div>
         </div>
       </OnVisible>
-      <OnVisible className="card">
+      <OnVisible className="card tooling">
         <h2>Tooling</h2>
         <div className="deck-icons">
           <div className="card-icons">
@@ -125,8 +125,8 @@ const Skills = () => (
           </div>
         </div>
       </OnVisible>
-      <OnVisible className="card">
-        <h2>Embedded Systems</h2>
+      <OnVisible className="card systems">
+        <h2>Systems</h2>
         <div className="deck-icons">
           <div className="card-icons">
             <object type="image/svg+xml" data={c} aria-label="c" />
