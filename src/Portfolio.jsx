@@ -48,120 +48,110 @@ setDefaultProps({
 const Portfolio = () => (
 
   <section className="portfolio" id="Portfolio">
-    <h1>Web Portfolio</h1>
+    <h1>Portfolio</h1>
     <p>Some of my recent projects.</p>
     <div className="deck">
-      <a href="https://drivesafe.emerson.havener.me/" target="_blank" rel="noopener noreferrer">
-        <OnVisible id="chauffeur" className="card red">
-          <img className="bg" src={chauffeurPreview} alt="a web dev project" />
-          <div className="overlay">
-            <h2>Chauffeur Reno</h2>
-            <p>​A promotional webpage for a ride sharing startup.</p>
-            <ul className="techList">
-              <div className="object-wrap">
-                <object type="image/svg+xml" height="50" width="50" data={wordpress} aria-label="wordpress" />
-              </div>
-              <div className="object-wrap">
-                <object type="image/svg+xml" height="50" width="50" data={jquery} aria-label="javascript" />
-              </div>
-              <div className="object-wrap">
-                <object type="image/svg+xml" height="50" width="50" data={lumen} aria-label="lumen" />
-              </div>
-              <div className="object-wrap">
-                <object type="image/svg+xml" height="50" width="50" data={mysql} aria-label="mysql" />
-              </div>
-              <div className="object-wrap">
-                <object type="image/svg+xml" height="50" width="50" data={docker} aria-label="docker" />
-              </div>
-            </ul>
-          </div>
-        </OnVisible>
-      </a>
-      <a href="https://github.com/ehavener/" target="_blank" rel="noopener noreferrer">
-        <OnVisible id="happy-hour" className="card green">
-          <img className="bg" src={happyhourPreview} alt="a web dev project" />
-          <div className="overlay">
-            <h2>Happy Hour</h2>
-            <p>​A single page web application that displays nearby happy hour specials.</p>
-            <ul className="techList">
-              <div className="object-wrap">
-                <object type="image/svg+xml" height="50" width="50" data={react} aria-label="react" />
-              </div>
-              <div className="object-wrap">
-                <object type="image/svg+xml" height="50" width="50" data={sass} aria-label="sass" />
-              </div>
-              <div className="object-wrap">
-                <object type="image/svg+xml" height="50" width="50" data={mysql} aria-label="mysql" />
-              </div>
-              <div className="object-wrap">
-                <object type="image/svg+xml" height="50" width="50" data={webpack} aria-label="webpack" />
-              </div>
-            </ul>
-          </div>
-        </OnVisible>
-      </a>
-      <a href="https://github.com/ehavener/" target="_blank" rel="noopener noreferrer">
-        <OnVisible id="handel" className="card purple" >
-          <img className="bg" src={handelPreview} style={{ backgroundColor: '#535c68' }} alt="a web dev project" />
-          <div className="overlay">
-            <h2>Handel</h2>
-            <p>​A prototype of a leap motion application for piano tutoring.
-            </p>
-            <ul className="techList">
-              <div className="object-wrap">
-                <object type="image/svg+xml" height="50" width="50" data={unity} aria-label="html" />
-              </div>
-              <div className="object-wrap">
-                <object type="image/svg+xml" height="50" width="50" data={csharp} aria-label="git" />
-              </div>
-            </ul>
-          </div>
-        </OnVisible>
-      </a>
-      <a href="https://github.com/ehavener/" target="_blank" rel="noopener noreferrer">
-        <OnVisible id="arduino-i2c-drivers" className="card turquoise">
-          <img className="bg" src={wi2cPreview} alt="a web dev project" />
-          <div className="overlay">
-            <h2>​Arduino I2C Drivers</h2>
-            <p>​A minimal re-implementation of the Arduino I2C Wire library
+      <OnVisible id="chauffeur" className="card red">
+        <img className="bg" src={chauffeurPreview} alt="a web dev project" />
+        <div className="overlay">
+          <h2>Chauffeur Reno</h2>
+          <p>​A promotional webpage for a ride sharing startup.</p>
+          <ul className="techList">
+            <div className="object-wrap">
+              <object type="image/svg+xml" height="50" width="50" data={wordpress} aria-label="wordpress" />
+            </div>
+            <div className="object-wrap">
+              <object type="image/svg+xml" height="50" width="50" data={jquery} aria-label="javascript" />
+            </div>
+            <div className="object-wrap">
+              <object type="image/svg+xml" height="50" width="50" data={lumen} aria-label="lumen" />
+            </div>
+            <div className="object-wrap">
+              <object type="image/svg+xml" height="50" width="50" data={mysql} aria-label="mysql" />
+            </div>
+            <div className="object-wrap">
+              <object type="image/svg+xml" height="50" width="50" data={docker} aria-label="docker" />
+            </div>
+          </ul>
+        </div>
+      </OnVisible>
+      <OnVisible id="happy-hour" className="card green">
+        <img className="bg" src={happyhourPreview} alt="a web dev project" />
+        <div className="overlay">
+          <h2>Happy Hour</h2>
+          <p>​A single page web application that displays nearby happy hour specials.</p>
+          <ul className="techList">
+            <div className="object-wrap">
+              <object type="image/svg+xml" height="50" width="50" data={react} aria-label="react" />
+            </div>
+            <div className="object-wrap">
+              <object type="image/svg+xml" height="50" width="50" data={sass} aria-label="sass" />
+            </div>
+            <div className="object-wrap">
+              <object type="image/svg+xml" height="50" width="50" data={mysql} aria-label="mysql" />
+            </div>
+            <div className="object-wrap">
+              <object type="image/svg+xml" height="50" width="50" data={webpack} aria-label="webpack" />
+            </div>
+          </ul>
+        </div>
+      </OnVisible>
+      <OnVisible id="handel" className="card purple" >
+        <img className="bg" src={handelPreview} style={{ backgroundColor: '#535c68' }} alt="a web dev project" />
+        <div className="overlay">
+          <h2>Handel</h2>
+          <p>​A prototype of a leap motion application for piano tutoring.
+          </p>
+          <ul className="techList">
+            <div className="object-wrap">
+              <object type="image/svg+xml" height="50" width="50" data={unity} aria-label="html" />
+            </div>
+            <div className="object-wrap">
+              <object type="image/svg+xml" height="50" width="50" data={csharp} aria-label="git" />
+            </div>
+          </ul>
+        </div>
+      </OnVisible>
+      <OnVisible id="arduino-i2c-drivers" className="card turquoise">
+        <img className="bg" src={wi2cPreview} alt="a web dev project" />
+        <div className="overlay">
+          <h2>​Arduino I2C Drivers</h2>
+          <p>​A minimal re-implementation of the Arduino I2C Wire library
               for learning purposes.
-            </p>
-            <ul className="techList">
-              <div className="object-wrap">
-                <object type="image/svg+xml" height="50" width="50" data={c} aria-label="c" />
-              </div>
-              <div className="object-wrap">
-                <object type="image/svg+xml" height="50" width="50" data={git} aria-label="git" />
-              </div>
-            </ul>
-          </div>
-        </OnVisible>
-      </a>
-      <a href="https://github.com/ehavener/" target="_blank" rel="noopener noreferrer">
-        <OnVisible id="fadeaway-hardcount" className="card black" >
-          <img className="bg" src={fadeawayPreview} alt="a web dev project" style={{ backgroundColor: 'white' }} />
-          <div className="overlay">
-            <h2>Fadeaway</h2>
-            <p>​A python/selenium web scraper that pushes live NBA scores
+          </p>
+          <ul className="techList">
+            <div className="object-wrap">
+              <object type="image/svg+xml" height="50" width="50" data={c} aria-label="c" />
+            </div>
+            <div className="object-wrap">
+              <object type="image/svg+xml" height="50" width="50" data={git} aria-label="git" />
+            </div>
+          </ul>
+        </div>
+      </OnVisible>
+      <OnVisible id="fadeaway-hardcount" className="card black" >
+        <img className="bg" src={fadeawayPreview} alt="a web dev project" style={{ backgroundColor: 'white' }} />
+        <div className="overlay">
+          <h2>Fadeaway</h2>
+          <p>​A python/selenium web scraper that pushes live NBA scores
               to a browser extension.
-            </p>
-            <ul className="techList">
-              <div className="object-wrap">
-                <object type="image/svg+xml" height="50" width="50" data={python} aria-label="python" />
-              </div>
-              <div className="object-wrap">
-                <object type="image/svg+xml" height="50" width="50" data={html} aria-label="html" />
-              </div>
-              <div className="object-wrap">
-                <object type="image/svg+xml" height="50" width="50" data={css} aria-label="css" />
-              </div>
-              <div className="object-wrap">
-                <object type="image/svg+xml" height="50" width="50" data={javascript} aria-label="javascript" />
-              </div>
-            </ul>
-          </div>
-        </OnVisible>
-      </a>
+          </p>
+          <ul className="techList">
+            <div className="object-wrap">
+              <object type="image/svg+xml" height="50" width="50" data={python} aria-label="python" />
+            </div>
+            <div className="object-wrap">
+              <object type="image/svg+xml" height="50" width="50" data={html} aria-label="html" />
+            </div>
+            <div className="object-wrap">
+              <object type="image/svg+xml" height="50" width="50" data={css} aria-label="css" />
+            </div>
+            <div className="object-wrap">
+              <object type="image/svg+xml" height="50" width="50" data={javascript} aria-label="javascript" />
+            </div>
+          </ul>
+        </div>
+      </OnVisible>
     </div>
   </section>
 );

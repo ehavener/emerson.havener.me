@@ -3,6 +3,10 @@
 .carousel .slick-track img {
   max-height: 300px;
   max-width: 300px; }
+  @media (min-width: 1200px) {
+    .carousel .slick-track img {
+      max-height: 500px;
+      max-width: 500px; } }
 
 .carousel .slick-slide.slick-center img {
   margin-left: auto;
@@ -67,6 +71,9 @@
   width: 65px !important;
   height: auto !important;
   margin: 5px !important; }
+  @media (min-width: 1200px) {
+    .slick-dots li {
+      width: 80px !important; } }
 
 li.slick-active {
   transition: .5s filter ease-in; }

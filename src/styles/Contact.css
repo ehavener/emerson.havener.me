@@ -1,6 +1,17 @@
 .contact {
   background-color: #fafafa;
   padding: 40px 20px 20px 20px; }
+  @media (min-width: 900px) {
+    .contact {
+      background: none;
+      float: left;
+      z-index: 1;
+      position: relative;
+      opacity: .9; } }
+
+@media (min-width: 900px) {
+  .contact h1 {
+    opacity: 1; } }
 
 .contact .deck {
   display: flex;
@@ -63,6 +74,9 @@
   transition: all .15s;
   color: #2F2F2F;
   width: 100%; }
+  @media (min-width: 900px) {
+    .contact button {
+      opacity: 1; } }
 
 .contact button {
   background: #FFFFFF;

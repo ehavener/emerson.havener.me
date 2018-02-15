@@ -10,7 +10,7 @@ setDefaultProps({
 
 const Footer = () => (
   <div className="footer">
-    <OnVisible percent={30} className="nImage"><p>© 2018 Emerson Havener</p></OnVisible>
+    <OnVisible percent={70} className="nImage"><p>© 2018 Emerson Havener</p></OnVisible>
   </div>
 );
 

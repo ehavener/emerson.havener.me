@@ -1,18 +1,33 @@
 .footer {
-  padding-top: 100px;
   background-color: #FAFAFA; }
+  @media (min-width: 900px) {
+    .footer {
+      position: relative; } }
 
 .nImage {
   text-align: center;
   width: 100%;
   height: 50vw;
-  background-image: url(../images/parallax/6.png), url(../images/parallax/5.png), url(../images/parallax/4.png), url(../images/parallax/3.png), url(../images/parallax/2.png), url(../images/parallax/1.png);
+  max-height: 500px;
+  background-image: url(../images/parallax/5.png), url(../images/parallax/6.png), url(../images/parallax/4.png), url(../images/parallax/3.png), url(../images/parallax/2.png), url(../images/parallax/1.png);
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
   background-position: top, top, top, top, top, top;
-  background-size: 100%, 100%, 100%, 100%, 100%, 100%;
+  background-size: 100%;
   transition-duration: .5s;
   opacity: .85;
   filter: grayscale(100%) brightness(0%); }
+  @media (min-width: 900px) {
+    .nImage {
+      padding-top: 100px;
+      background-position: center 0vw, center 0vw, center 0vw, center 0vw, center 0vw, center 0vw; } }
+  @media (min-width: 1200px) {
+    .nImage {
+      padding-top: 100px;
+      background-position: center -4vw, center -5vw, center -7vw, center -6vw, center -4vw, center -2.2vw; } }
+  @media (min-width: 1800px) {
+    .nImage {
+      padding-top: 100px;
+      background-position: center -15vw, center -14vw, center -11vw, center -8vw, center -6vw, center -2.2vw; } }
 
 .footer p {
   color: #FAFAFA;

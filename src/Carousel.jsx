@@ -19,7 +19,7 @@ const images = [
 
 const settings = {
   customPaging(i) {
-    return <img src={images[i]} width="50px" alt="a design" />;
+    return <img src={images[i]} width="100%" alt="a design" />;
   },
   arrows: false,
   dots: true,
@@ -32,10 +32,11 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
+  pauseOnHover: false,
 };
 // export default class Carousel extends Component {
 const Carousel = () => (
-  <div className="carousel">
+  <section className="carousel">
     <h1>Graphic Design Portfolio</h1>
     <p>A collection of my favorite projects.</p>
     <Slider {...settings}>
@@ -50,44 +51,8 @@ const Carousel = () => (
       <div><img src={logo9300} alt="logo9" /></div>
       <div><img src={logo10300} alt="logo9" /></div>
     </Slider>
-  </div>
+  </section>
 
 );
 
 export default Carousel;
-
-/*
-export default class Carousel extends Component {
-  render() {
-    const settings = {
-      arrows: true,
-      autoplay: true,
-      dotsClass: 'slick-dots slick-thumb',
-      className: 'center',
-      centerMode: true,
-      infinite: true,
-      centerPadding: '40px',
-      slidesToShow: 1,
-      speed: 500,
-      dots: true
-    };
-    return (
-      <div className="carousel">
-        <h1>Graphic Design Portfolio</h1>
-        <p>A collection of my favorite projects.</p>
-        <Slider {...settings}>
-          <div><img src={logo1300} alt="logo1"/></div>
-          <div><img src={logo2300} alt="logo2"/></div>
-          <div><img src={logo3300} alt="logo3"/></div>
-          <div><img src={logo4300} alt="logo4"/></div>
-          <div><img src={logo5300} alt="logo5"/></div>
-          <div><img src={logo6300} alt="logo6"/></div>
-          <div><img src={logo7300} alt="logo7"/></div>
-          <div><img src={logo8300} alt="logo8"/></div>
-          <div><img src={logo9300} alt="logo9"/></div>
-        </Slider>
-      </div>
-    );
-  }
-}
-*/

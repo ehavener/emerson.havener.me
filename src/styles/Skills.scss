@@ -1,3 +1,18 @@
+@mixin for-mobile-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
 .skills {
   background-color: #fafafa;
   padding: 40px 20px 60px 20px;
@@ -9,6 +24,18 @@
   /*grid-template-rows: 400px 250px 250px;*/
   grid-gap: 10px;
   justify-content: center;
+  @include for-tablet-portrait-up {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include for-tablet-landscape-up {
+
+  }
+  @include for-desktop-up {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  @include for-big-desktop-up {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 }
 
 .skills .card {
@@ -83,16 +110,6 @@ h1:after {
 }
 
 
-
-/* for-tablet-landscape-up */
-@media (min-width: 900px) {
-  .skills .deck {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .deck-icons {
-
-  }
-}
 
 /* icon colors */
 #html-caption {  color: #E34F26;}

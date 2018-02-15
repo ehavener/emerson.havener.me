@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/Services.css';
 
 const Services = () => (
-  <div className="services" id="Services">
+  <section className="services" id="Services">
     <h1>Services</h1>
     <p>I currently offer the following web services to local businesses and organizations at competitive rates.</p>
     <div className="deck">
@@ -31,7 +31,7 @@ const Services = () => (
         </div>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default Services;

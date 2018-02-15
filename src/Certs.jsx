@@ -13,7 +13,7 @@ setDefaultProps({
 });
 
 const Certs = () => (
-  <div className="certs" id="Certs">
+  <section className="certs" id="Certs">
     <h1>Certificates</h1>
     <div className="deck">
       <OnVisible className="card">
@@ -27,7 +27,7 @@ const Certs = () => (
         <img src={fcc} alt="Certificate" />
       </OnVisible>
     </div>
-  </div>
+  </section>
 );
 
 export default Certs;

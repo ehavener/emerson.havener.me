@@ -8,6 +8,15 @@
   /*grid-template-rows: 400px 250px 250px;*/
   grid-gap: 10px;
   justify-content: center; }
+  @media (min-width: 600px) {
+    .skills .deck {
+      grid-template-columns: 1fr 1fr; } }
+  @media (min-width: 1200px) {
+    .skills .deck {
+      grid-template-columns: 1fr 1fr 1fr; } }
+  @media (min-width: 1800px) {
+    .skills .deck {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
 
 .skills .card {
   padding: 20px;
@@ -67,11 +76,6 @@ h1:after {
 .card-icons p {
   margin: 0;
   font-size: 12px; }
-
-/* for-tablet-landscape-up */
-@media (min-width: 900px) {
-  .skills .deck {
-    grid-template-columns: 1fr 1fr 1fr; } }
 
 /* icon colors */
 #html-caption {

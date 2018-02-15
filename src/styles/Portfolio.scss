@@ -1,4 +1,4 @@
-@mixin for-phone-only {
+@mixin for-mobile-only {
   @media (max-width: 599px) { @content; }
 }
 @mixin for-tablet-portrait-up {
@@ -11,8 +11,33 @@
   @media (min-width: 1200px) { @content; }
 }
 @mixin for-big-desktop-up {
-  @media (min-width: 1800px) { @content; }
+  @media (min-width: 1500px) { @content; }
 }
+@media (min-width: 600px) {
+
+}
+
+/* for-tablet-landscape-up */
+/*
+@media (min-width: 900px) {
+  .portfolio {
+    background-color: #fdfdfd;
+    // padding: 100px;
+  }
+  .portfolio .deck {
+    height: 1000px;
+    flex-wrap: wrap;
+  }
+  .portfolio .card {
+    width: 25vw;
+    height: auto;
+  }
+  .portfolio .card img {
+    border: 1px solid #ccc;
+    max-width: 25vw;
+  }
+}
+*/
 
 .portfolio {
   background-color: #FDFDFD;
@@ -24,20 +49,50 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: flex-start;
-  align-content: space-between;
+  align-content: stretch;
+
+  @include for-tablet-portrait-up {
+    flex-wrap: wrap;
+    max-height: calc(900px + 25vw)
+    //align-content: space-between;
+  }
+  @include for-tablet-landscape-up {
+    max-height: 1200px;
+  }
+  @include for-desktop-up {
+    max-height: calc(350px + 25vw);
+  }
+  @include for-big-desktop-up {
+    max-height: calc(340px + 30vw);
+  }
 }
 
 .portfolio .card {
-  width: 100%;
+  //width: calc( 100vw - 40px);
   height: auto;
-
   text-align: center;
   position: relative;
-  margin: 20px 0px 20px 0px;
+  margin: 0px 10px 10px 0px;
   background-color: #FDFDFD;
+  //max-width: 400px;
+  @include for-tablet-portrait-up {
+    width: calc(50vw - 53px);
+    //width: 50%;
+  }
+  @include for-tablet-landscape-up {
+    width: calc(50vw - 122px);
+    //width: 50%;
+  }
+  @include for-desktop-up {
+    width: calc(33vw - 126.66px);
+    //width: 50%;
+  }
+
 }
+
+
 
 .portfolio .card .bg {
   border: 1px solid #ccc;
@@ -151,18 +206,25 @@
 }
 
 .portfolio .deck .card.visible .bg {
-  opacity: 0.3;
-  filter: grayscale(90%) blur(1.5px);
+  @include for-mobile-only {
+    opacity: 0.3;
+    filter: grayscale(90%) blur(1.5px);
+  }
 }
 
 .portfolio .deck .card.visible .overlay {
-  opacity: 1;
+  @include for-mobile-only {
+    opacity: 1;
+  }
 }
 
 .portfolio .deck .card.visible .overlay .techList .object-wrap object {
-  opacity: 1;
-  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
+  @include for-mobile-only {
+    opacity: 1;
+    filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
+  }
 }
+
 
 
 
@@ -185,30 +247,7 @@
 
 
 /* for-tablet-portrait-up */
-@media (min-width: 600px) {
 
-}
-
-/* for-tablet-landscape-up */
-
-@media (min-width: 900px) {
-  .portfolio {
-    background-color: #fdfdfd;
-    /*padding: 100px;*/
-  }
-  .portfolio .deck {
-    height: 1000px;
-    flex-wrap: wrap;
-  }
-  .portfolio .card {
-    width: 25vw;
-    height: auto;
-  }
-  .portfolio .card img {
-    border: 1px solid #ccc;
-    max-width: 25vw;
-  }
-}
 
 
 

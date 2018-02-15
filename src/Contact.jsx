@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/Contact.css';
 
 const Contact = () => (
-  <div className="contact" id="Contact">
+  <section className="contact" id="Contact">
     <h1>Contact Me</h1>
     <div className="deck">
       <div className="card">
@@ -30,7 +30,7 @@ const Contact = () => (
              </div>
           </div> */}
     </div>
-  </div>
+  </section>
 );
 
 export default Contact;

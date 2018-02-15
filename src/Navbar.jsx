@@ -50,8 +50,8 @@ class Navbar extends Component {
         <div className="logo" />
         <ul className="menu">
           <li><Link id="home-link" activeClass="active" to="home" spy duration={250} onClick={this.handleClick} href=" ">Home</Link></li>
-          <li><Link activeClass="active" to="portfolio" spy smooth duration={250} onClick={this.handleClick} href=" ">Portfolio</Link></li>
           <li><Link activeClass="active" to="skills" spy smooth duration={250} onClick={this.handleClick} href=" ">Skills</Link></li>
+          <li><Link activeClass="active" to="portfolio" spy smooth duration={250} onClick={this.handleClick} href=" ">Portfolio</Link></li>
           <li><Link activeClass="active" to="about" spy smooth duration={250} onClick={this.handleClick} href=" ">About Me</Link></li>
           <li><Link activeClass="active" to="contact" spy smooth duration={250} onClick={this.handleClick} href=" ">Contact</Link></li>
         </ul>

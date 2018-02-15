@@ -2,7 +2,21 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');
 @import url('https://s3-us-west-1.amazonaws.com/public-webfonts/fonts/fonts-akrobat.css');
 
-
+@mixin for-mobile-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
 
 .app h1 {
   font-family: 'Raleway', sans-serif;
@@ -26,4 +40,31 @@
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 500;
+}
+
+@include for-tablet-portrait-up {
+  section {
+    padding-right: 3em !important;
+    padding-left: 3em !important;
+  }
+}
+
+@include for-tablet-landscape-up {
+  section {
+    padding-right: 7em !important;
+    padding-left: 7em !important;
+  }
+}
+
+@include for-desktop-up {
+  section {
+    padding-right: 10em !important;
+    padding-left: 10em !important;
+  }
+}
+@include for-big-desktop-up {
+  section {
+    padding-right: 15em !important;
+    padding-left: 15em !important;
+  }
 }

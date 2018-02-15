@@ -2,7 +2,7 @@ import React from 'react';
 import './styles/About.css';
 
 const About = () => (
-  <div className="about" id="About">
+  <section className="about" id="About">
     <h1>About Me</h1>
     <p> I first took interest to graphic design back in 2013. Since then,
       I&apos;ve ventured into website design & development. I&apos;m currently
@@ -14,7 +14,7 @@ const About = () => (
         my skills with freelance work in the meantime.
         Contact or hire me!
     </p>
-  </div>
+  </section>
 );
 
 

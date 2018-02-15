@@ -34,7 +34,7 @@ setDefaultProps({
 });
 
 const Skills = () => (
-  <div className="skills" id="Skills">
+  <section className="skills" id="Skills">
     <h1>Skills & Stack</h1>
     <p>While I'm a full stack developer, my emphasis is in elegant front end design.</p>
     <div className="deck">
@@ -150,7 +150,7 @@ const Skills = () => (
         </div>
       </OnVisible>
     </div>
-  </div>
+  </section>
 );
 
 

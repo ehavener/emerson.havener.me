@@ -1,6 +1,36 @@
+@mixin for-mobile-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
 .contact {
   background-color: #fafafa;
   padding: 40px 20px 20px 20px;
+
+  @include for-tablet-landscape-up {
+    background: none;
+    float: left;
+    z-index: 1;
+    position: relative;
+    opacity: .9;
+  }
+}
+
+.contact h1 {
+  @include for-tablet-landscape-up {
+    opacity: 1;
+  }
 }
 
 .contact .deck {
@@ -72,6 +102,9 @@
   transition: all .15s;
   color: #2F2F2F;
   width: 100%;
+  @include for-tablet-landscape-up {
+    opacity: 1;
+  }
 }
 
 .contact button {

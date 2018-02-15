@@ -1,9 +1,28 @@
 @import '~slick-carousel/slick/slick.css';
 @import '~slick-carousel/slick/slick-theme.css';
+@mixin for-mobile-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
 
 .carousel .slick-track img {
   max-height: 300px;
   max-width: 300px;
+  @include for-desktop-up { //1200+
+    max-height: 500px;
+    max-width: 500px;
+  }
 }
 
 .carousel .slick-slide.slick-center img {
@@ -79,6 +98,9 @@
   width: 65px !important;
   height: auto !important;
   margin: 5px !important;
+  @include for-desktop-up { //1200+
+    width: 80px !important;
+  }
 }
 
 li.slick-active {
