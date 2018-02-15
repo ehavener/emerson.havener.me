@@ -55,6 +55,14 @@ const Portfolio = () => (
         <div className="overlay">
           <h2>Chauffeur Reno</h2>
           <p>​A promotional webpage for a ride sharing startup.</p>
+          <div className="links">
+            <a href="https://drivesafe.emerson.havener.me" target="_blank" rel="noopener noreferrer">
+              <p>View Live</p>
+            </a>
+            <a href="https://github.com/ehavener/chauffeur-ride-request" target="_blank" rel="noopener noreferrer">
+              <p>View Repository</p>
+            </a>
+          </div>
           <ul className="techList">
             <div className="object-wrap">
               <object type="image/svg+xml" height="50" width="50" data={wordpress} aria-label="wordpress" />
@@ -79,6 +87,14 @@ const Portfolio = () => (
         <div className="overlay">
           <h2>Happy Hour</h2>
           <p>​A single page web application that displays nearby happy hour specials.</p>
+          <div className="links">
+            <a href="https://drivesafe.emerson.havener.me" target="_blank" rel="noopener noreferrer">
+              <p>View Live</p>
+            </a>
+            <a href="https://github.com/ehavener/chauffeur-ride-request" target="_blank" rel="noopener noreferrer">
+              <p>View Repository</p>
+            </a>
+          </div>
           <ul className="techList">
             <div className="object-wrap">
               <object type="image/svg+xml" height="50" width="50" data={react} aria-label="react" />
@@ -101,6 +117,14 @@ const Portfolio = () => (
           <h2>Handel</h2>
           <p>​A prototype of a leap motion application for piano tutoring.
           </p>
+          <div className="links">
+            <a href="https://drivesafe.emerson.havener.me" target="_blank" rel="noopener noreferrer">
+              <p>View Live</p>
+            </a>
+            <a href="https://github.com/ehavener/chauffeur-ride-request" target="_blank" rel="noopener noreferrer">
+              <p>View Repository</p>
+            </a>
+          </div>
           <ul className="techList">
             <div className="object-wrap">
               <object type="image/svg+xml" height="50" width="50" data={unity} aria-label="html" />
@@ -118,6 +142,14 @@ const Portfolio = () => (
           <p>​A minimal re-implementation of the Arduino I2C Wire library
               for learning purposes.
           </p>
+          <div className="links">
+            <a href="https://drivesafe.emerson.havener.me" target="_blank" rel="noopener noreferrer">
+              <p>View Live</p>
+            </a>
+            <a href="https://github.com/ehavener/chauffeur-ride-request" target="_blank" rel="noopener noreferrer">
+              <p>View Repository</p>
+            </a>
+          </div>
           <ul className="techList">
             <div className="object-wrap">
               <object type="image/svg+xml" height="50" width="50" data={c} aria-label="c" />
@@ -135,6 +167,14 @@ const Portfolio = () => (
           <p>​A python/selenium web scraper that pushes live NBA scores
               to a browser extension.
           </p>
+          <div className="links">
+            <a href="https://drivesafe.emerson.havener.me" target="_blank" rel="noopener noreferrer">
+              <p>View Live</p>
+            </a>
+            <a href="https://github.com/ehavener/chauffeur-ride-request" target="_blank" rel="noopener noreferrer">
+              <p>View Repository</p>
+            </a>
+          </div>
           <ul className="techList">
             <div className="object-wrap">
               <object type="image/svg+xml" height="50" width="50" data={python} aria-label="python" />

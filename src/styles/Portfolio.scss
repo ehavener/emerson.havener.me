@@ -227,13 +227,39 @@
 }
 
 
+.portfolio .deck .overlay .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
 
 
 
 
 
+.portfolio .deck .overlay .links p {
+  display: inline-block;
+  text-align: center;
+  text-shadow: none;
+  color: white;
+  margin: 0;
+  font-size: .7rem;
+  transition: .25s opacity linear;
+  font-family: 'Raleway', sans-serif;
+  opacity: 1;
+  background: none;
+  border-radius: 10px;
+  padding: .2rem;
+  border: 2px solid white;
+  transition: .25s background-color linear;
 
+}
+
+.portfolio .deck .overlay .links p:hover {
+  color: black;
+  background-color: #fdfdfd;
+}
 
 
 

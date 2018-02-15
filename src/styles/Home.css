@@ -46,24 +46,31 @@
   color: #fdfdfd; }
 
 .home .content p {
-  opacity: 0;
-  text-shadow: none;
   text-align: center;
-  color: black;
+  text-shadow: none;
+  opacity: 0;
+  color: white;
   margin: 0;
   font-size: .7rem;
-  background-color: #fdfdfd;
-  border-radius: 10px;
   transition: .25s opacity linear;
   font-family: 'Raleway', sans-serif; }
 
-.home .content .social-icons a:hover p {
+.home .content a.resumeLayers p {
   opacity: 1; }
+
+.home .content a.resumeLayers {
+  text-align: center; }
+
+.home .content .social-icons a:hover p {
+  color: black;
+  opacity: 1;
+  background-color: #fdfdfd;
+  border-radius: 10px; }
 
 .home .content .social-icons {
   display: flex;
-  flex-wrap: wrap;
-  align: center;
+  flex-wrap: nowrap;
+  align-items: baseline;
   margin: 110px 0px 0px 0px; }
 
 .home .content .social-icons a {
@@ -79,13 +86,13 @@ a:visited {
   color: inherit; }
 
 div.vertical-line {
-  height: 45px;
+  align-self: center;
   width: 1px;
   background-color: white;
-  height: 100%;
-  display: inline-block;
-  margin-right: .5rem;
-  margin-left: .5rem; }
+  height: 150%;
+  display: block;
+  margin-right: 1rem;
+  margin-left: 1rem; }
 
 a.emailLayers span .emaillayersOutline {
   opacity: 1;
