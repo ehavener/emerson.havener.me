@@ -42,3 +42,10 @@
   opacity: 1;
   filter: saturate(80%) brightness(100%) contrast(100%);
 }
+
+/* for-tablet-landscape-up */
+@media (min-width: 900px) {
+  .certs .deck {
+    grid-template-columns: 1fr 1fr;
+  }
+}

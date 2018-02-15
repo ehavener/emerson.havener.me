@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './Skills.css';
 
-import html5 from './images/skill-icons/html5.svg';
-import css3 from './images/skill-icons/css3.svg';
+import html from './images/skill-icons/html.svg';
+import css from './images/skill-icons/css.svg';
 import javascript from './images/skill-icons/javascript.svg';
 import bootstrap from './images/skill-icons/bootstrap.svg';
 import sass from './images/skill-icons/sass.svg';
@@ -14,20 +14,17 @@ import photoshop from './images/skill-icons/photoshop.svg';
 import illustrator from './images/skill-icons/illustrator.svg';
 import xd from './images/skill-icons/xd.svg';
 
-import nodejs from './images/skill-icons/nodejs.svg';
-import expressjs from './images/skill-icons/expressjs.svg';
-import mongodb from './images/skill-icons/mongodb.svg';
+import laravel from './images/skill-icons/laravel.svg';
+import wordpress from './images/skill-icons/wordpress.svg';
+import mysql from './images/skill-icons/mysql.svg';
 
-import gulp from './images/skill-icons/gulp.svg';
+import webpack from './images/skill-icons/webpack.svg';
 import git from './images/skill-icons/git.svg';
-import jasmine from './images/skill-icons/jasmine.svg';
+import docker from './images/skill-icons/docker.svg';
 
 import arduino from './images/skill-icons/arduino.svg';
 import c from './images/skill-icons/c.svg';
 import cpp from './images/skill-icons/cpp.svg';
-
-
-
 
 
 class Skills extends Component {
@@ -42,12 +39,12 @@ class Skills extends Component {
             <p>My experience is primarily with the MEAN stack.</p>
             <div className="deck-icons">
               <div className="card-icons">
-                <object type="image/svg+xml" data={html5} aria-label="HTML5"></object>
-                <p id="html5-caption">HTML5</p>
+                <object type="image/svg+xml" data={html} aria-label="html"></object>
+                <p id="html-caption">html</p>
               </div>
               <div className="card-icons">
-                <object type="image/svg+xml" data={css3} aria-label="CSS3"></object>
-                <p id="css3-caption">CSS3</p>
+                <object type="image/svg+xml" data={css} aria-label="css"></object>
+                <p id="css-caption">css</p>
               </div>
               <div className="card-icons">
                 <object type="image/svg+xml" data={javascript} aria-label="Javascript ES7"></object>
@@ -95,37 +92,37 @@ class Skills extends Component {
           </div>
           <div className="card">
             <h2>Back-end</h2>
-            <p>Node.js, Express & MongoDB</p>
+            <p>Node.js, Express & MySQL</p>
             <div className="deck-icons">
               <div className="card-icons">
-                <object type="image/svg+xml" data={nodejs} aria-label="NodeJS"></object>
-                <p id="nodejs-caption">NodeJS</p>
+                <object type="image/svg+xml" data={laravel} aria-label="Laravel"></object>
+                <p id="laravel-caption">Laravel</p>
               </div>
               <div className="card-icons">
-              <object type="image/svg+xml" data={expressjs} aria-label="ExpressJS"></object>
-                <p id="expressjs-caption">ExpressJS</p>
+              <object type="image/svg+xml" data={wordpress} aria-label="wordpress"></object>
+                <p id="wordpress-caption">Wordpress</p>
               </div>
               <div className="card-icons">
-              <object type="image/svg+xml" data={mongodb} aria-label="mongodb"></object>
-                <p id="mongodb-caption">MongoDB</p>
+              <object type="image/svg+xml" data={mysql} aria-label="MySQL"></object>
+                <p id="mysql-caption">MySQL</p>
               </div>
             </div>
           </div>
           <div className="card">
             <h2>Tooling & Testing</h2>
-            <p>Gulp, Git, & Jasmine</p>
+            <p>Webpack, Git, & Docker</p>
             <div className="deck-icons">
               <div className="card-icons">
-                <object type="image/svg+xml" data={gulp} aria-label="gulp"></object>
-                <p id="gulp-caption">Gulp</p>
+                <object type="image/svg+xml" data={webpack} aria-label="webpack"></object>
+                <p id="webpack-caption">Webpack</p>
               </div>
               <div className="card-icons">
                 <object type="image/svg+xml" data={git} aria-label="git"></object>
                 <p id="git-caption">git</p>
               </div>
               <div className="card-icons">
-                <object type="image/svg+xml" data={jasmine} aria-label="jasmine"></object>
-                <p id="jasmine-caption">Jasmine</p>
+                <object type="image/svg+xml" data={docker} aria-label="docker"></object>
+                <p id="docker-caption">docker</p>
               </div>
             </div>
           </div>

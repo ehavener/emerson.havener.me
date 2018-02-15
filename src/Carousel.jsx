@@ -32,7 +32,7 @@ export default class Carousel extends Component {
       dots: true,
       className: 'center',
       centerMode: true,
-      centerPadding: '20px',
+      centerPadding: '0px',
       dotsClass: 'slick-dots slick-thumb',
       infinite: true,
       speed: 400,

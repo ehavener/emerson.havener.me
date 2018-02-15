@@ -129,6 +129,10 @@
   max-height: 500px;
 }
 
+.header .menu-btn:checked ~ .menu li {
+  background: #fdfdfd;
+}
+
 .header .menu-btn:checked ~ .menu-icon .navicon {
   background: transparent;
 }
@@ -159,7 +163,7 @@
   .header .menu {
     clear: none;
     float: right;
-    max-height: none;
+    max-height: 60px;
   }
   .header .menu-icon {
     display: none;

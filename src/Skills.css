@@ -83,8 +83,8 @@ h1:after {
 }
 
 /* icon colors */
-#html5-caption {  color: #E34F26;}
-#css3-caption {  color: #0A71B9;}
+#html-caption {  color: #E34F26;}
+#css-caption {  color: #0A71B9;}
 #javascript-caption {  color: #F7DF1E;}
 #bootstrap-caption {  color: #563D7C;}
 #sass-caption {  color: #CF649A;}
@@ -97,14 +97,17 @@ h1:after {
 #xd-caption {  color: #FF2BC2;}
 
 
-#nodejs-caption {  color: #539E43;}
-#expressjs-caption {  color: #777777;}
-#mongodb-caption {  color: #58AA50;}
+#laravel-caption {  color: #1C78C0;}
+#wordpress-caption {  color: #1C78C0;}
+#mysql-caption {  color: #1C78C0;}
 
-#gulp-caption {  color: #DA4648;}
+#webpack-caption { color: #1C78C0; }
 #git-caption {  color: #DE4C36;}
-#jasmine-caption {  color: #8A4182;}
+#docker-caption { color: #24B8EB; }
 
 #arduino-caption {  color: #03599C;}
 #c-caption {  color: #5C8DBC;}
 #cpp-caption {  color: #06979C;}
+
+#gulp-caption {  color: #DA4648;}
+#jasmine-caption {  color: #8A4182;}
