@@ -1,5 +1,6 @@
 import React from 'react';
-import './Portfolio.css';
+import OnVisible, { setDefaultProps } from 'react-on-visible';
+import './styles/Portfolio.css';
 
 import html from './images/skill-icons/html.svg';
 import css from './images/skill-icons/css.svg';
@@ -38,6 +39,12 @@ import handelPreview from './images/portfolio/handel-preview.png';
 import chauffeurPreview from './images/portfolio/chauffeur-preview.png';
 import happyhourPreview from './images/portfolio/happyhour-preview.jpg';
 
+setDefaultProps({
+  bounce: true,
+  visibleClassName: 'visible',
+  percent: 100,
+});
+
 const Portfolio = () => (
 
   <section className="portfolio" id="Portfolio">
@@ -45,7 +52,7 @@ const Portfolio = () => (
     <p>Some of my recent projects.</p>
     <div className="deck">
       <a href="https://drivesafe.emerson.havener.me/" target="_blank" rel="noopener noreferrer">
-        <div id="chauffeur" className="card red">
+        <OnVisible id="chauffeur" className="card red">
           <img className="bg" src={chauffeurPreview} alt="a web dev project" />
           <div className="overlay">
             <h2>Chauffeur Reno</h2>
@@ -68,10 +75,10 @@ const Portfolio = () => (
               </div>
             </ul>
           </div>
-        </div>
+        </OnVisible>
       </a>
       <a href="https://github.com/ehavener/" target="_blank" rel="noopener noreferrer">
-        <div id="happy-hour" className="card green">
+        <OnVisible id="happy-hour" className="card green">
           <img className="bg" src={happyhourPreview} alt="a web dev project" />
           <div className="overlay">
             <h2>Happy Hour</h2>
@@ -91,15 +98,14 @@ const Portfolio = () => (
               </div>
             </ul>
           </div>
-        </div>
+        </OnVisible>
       </a>
       <a href="https://github.com/ehavener/" target="_blank" rel="noopener noreferrer">
-        <div id="handel" className="card purple" >
+        <OnVisible id="handel" className="card purple" >
           <img className="bg" src={handelPreview} style={{ backgroundColor: '#535c68' }} alt="a web dev project" />
           <div className="overlay">
             <h2>Handel</h2>
             <p>​A prototype of a leap motion application for piano tutoring.
-
             </p>
             <ul className="techList">
               <div className="object-wrap">
@@ -110,10 +116,10 @@ const Portfolio = () => (
               </div>
             </ul>
           </div>
-        </div>
+        </OnVisible>
       </a>
       <a href="https://github.com/ehavener/" target="_blank" rel="noopener noreferrer">
-        <div id="arduino-i2c-drivers" className="card turquoise">
+        <OnVisible id="arduino-i2c-drivers" className="card turquoise">
           <img className="bg" src={wi2cPreview} alt="a web dev project" />
           <div className="overlay">
             <h2>​Arduino I2C Drivers</h2>
@@ -129,10 +135,10 @@ const Portfolio = () => (
               </div>
             </ul>
           </div>
-        </div>
+        </OnVisible>
       </a>
       <a href="https://github.com/ehavener/" target="_blank" rel="noopener noreferrer">
-        <div id="fadeaway-hardcount" className="card black" >
+        <OnVisible id="fadeaway-hardcount" className="card black" >
           <img className="bg" src={fadeawayPreview} alt="a web dev project" style={{ backgroundColor: 'white' }} />
           <div className="overlay">
             <h2>Fadeaway</h2>
@@ -154,7 +160,7 @@ const Portfolio = () => (
               </div>
             </ul>
           </div>
-        </div>
+        </OnVisible>
       </a>
     </div>
   </section>

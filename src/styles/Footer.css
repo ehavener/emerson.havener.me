@@ -1,0 +1,34 @@
+.footer {
+  padding-top: 100px;
+  background-color: #FAFAFA; }
+
+.nImage {
+  text-align: center;
+  width: 100%;
+  height: 50vw;
+  background-image: url(../images/parallax/6.png), url(../images/parallax/5.png), url(../images/parallax/4.png), url(../images/parallax/3.png), url(../images/parallax/2.png), url(../images/parallax/1.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top, top, top, top, top, top;
+  background-size: 100%, 100%, 100%, 100%, 100%, 100%;
+  transition-duration: .5s;
+  opacity: .85;
+  filter: grayscale(100%) brightness(0%); }
+
+.footer p {
+  color: #FAFAFA;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.nImage:hover {
+  transition: .5s opacity linear, .5s filter linear;
+  opacity: 1;
+  filter: grayscale(0); }
+
+.nImage.visible {
+  transition: .5s opacity linear, .5s filter linear;
+  opacity: 1;
+  filter: grayscale(0); }

@@ -1,0 +1,22 @@
+@import url("https://s3-us-west-1.amazonaws.com/public-webfonts/fonts/fonts-proxima-nova.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900");
+@import url("https://s3-us-west-1.amazonaws.com/public-webfonts/fonts/fonts-akrobat.css");
+.app h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+  color: #2f2f2f; }
+
+.app h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #2f2f2f; }
+
+.app p {
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 18px;
+  color: #2f2f2f; }
+
+.app li a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 500; }

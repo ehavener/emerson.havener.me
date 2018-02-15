@@ -1,3 +1,19 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+
 .portfolio {
   background-color: #FDFDFD;
   padding: 40px 20px 60px 20px;
@@ -49,15 +65,7 @@
 .portfolio .card.blue {  background-color: #34495e;}
 .portfolio .card.blue i {  color: #34495e;}
 
-/* overlay */
-.portfolio .card * {
-  transition: all .35s ease-in-out;
-}
 
-.portfolio .deck .card:hover .bg {
-  opacity: 0.3;
-  filter: grayscale(90%) blur(1.5px);
-}
 
 .portfolio .deck .card .overlay {
   display: flex;
@@ -117,6 +125,15 @@
   transition: .25s filter linear, .25s opacity linear;
 }
 
+/* overlay */
+.portfolio .card * {
+  transition: all .35s ease-in-out;
+}
+
+.portfolio .deck .card:hover .bg {
+  opacity: 0.3;
+  filter: grayscale(90%) blur(1.5px);
+}
 
 .portfolio .deck .card .overlay:hover {
   opacity: 1;
@@ -128,8 +145,24 @@
 }
 
 
+/* mobile hover via scroll */
+.portfolio .card * {
+  transition: all .35s ease-in-out;
+}
 
+.portfolio .deck .card.visible .bg {
+  opacity: 0.3;
+  filter: grayscale(90%) blur(1.5px);
+}
 
+.portfolio .deck .card.visible .overlay {
+  opacity: 1;
+}
+
+.portfolio .deck .card.visible .overlay .techList .object-wrap object {
+  opacity: 1;
+  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
+}
 
 
 

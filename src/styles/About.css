@@ -1,0 +1,13 @@
+.about {
+  height: auto;
+  background-color: #fdfdfd;
+  padding: 40px 20px 60px 20px; }
+
+.about h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px; }
+
+.about p {
+  text-indent: .3em;
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 18px; }

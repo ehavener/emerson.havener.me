@@ -75,7 +75,7 @@
   padding: 0;
   margin: 6px 0px 0px 6px;
   text-decoration: none;
-  background-image: url(./eh_imperfect_333333.png);
+  background-image: url(../images/eh_imperfect_333333.png);
   background-size: 48px 48px;
 }
 
@@ -202,7 +202,7 @@
     background: #fdfdfd;
   }
   .header.dark .logo {
-    background-image: url(./eh_imperfect_EEEEEE.png);
+    background-image: url(../images/eh_imperfect_EEEEEE.png);
   }
   .header.dark li > a:hover {
     color: #fdfdfd;
@@ -210,4 +210,11 @@
   .header.dark li > a:before {
     background-color: #fdfdfd;
   }
+}
+
+.header li > a.active::before {
+  visibility: visible;
+	-webkit-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	transform: scaleX(1);
 }

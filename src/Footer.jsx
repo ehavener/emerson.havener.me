@@ -1,14 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import './Footer.css';
+import OnVisible, { setDefaultProps } from 'react-on-visible';
+import './styles/Footer.css';
 
-const Footer = ({ visible }) => (
+setDefaultProps({
+  bounce: true,
+  visibleClassName: 'visible',
+  percent: 5,
+});
+
+const Footer = () => (
   <div className="footer">
-    <div className={visible ? 'nImage reached' : 'nImage'}><p>© 2018 Emerson Havener</p></div>
+    <OnVisible percent={30} className="nImage"><p>© 2018 Emerson Havener</p></OnVisible>
   </div>
 );
-Footer.propTypes = {
-  visible: PropTypes.bool.isRequired,
-};
+
 /**/
 export default Footer;

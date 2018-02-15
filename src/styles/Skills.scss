@@ -24,11 +24,6 @@
   transition: .25s filter linear, .25s opacity linear;
 }
 
-.skills .card:hover object {
-  opacity: 1;
-  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
-}
-
 .skills .card .deck-icons p {
   opacity: 0.825;
   filter: saturate(0%) brightness(0%);
@@ -39,6 +34,23 @@
   opacity: 1;
   filter: saturate(80%) brightness(100%) contrast(100%);
 }
+
+.skills .card:hover object {
+  opacity: 1;
+  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
+}
+
+/* scroll hover */
+.skills .card.visible p {
+  opacity: 1;
+  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
+}
+
+.skills .card.visible object {
+  opacity: 1;
+  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
+}
+
 
 /*
 h1:after {

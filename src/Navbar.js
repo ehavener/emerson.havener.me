@@ -1,62 +1,61 @@
 import React, { Component } from 'react';
-import './Navbar.css';
+import Scroll from 'react-scroll';
+import './styles/Navbar.css';
 
+const { Link } = Scroll;
 class Navbar extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      theme: "dark"
-    }
+      theme: 'dark',
+    };
     this.handleScroll = this.handleScroll.bind(this);
     this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
-      window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount() {
-      window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
-  handleClick(){
-    //console.log("handling");
-    document.getElementById("menu-btn").checked = false;
+  handleClick() {
+    // console.log("handling");
+    document.getElementById('menu-btn').checked = false;
   }
 
   handleScroll(e) {
-    //console.log(window.scrollY);
+    // console.log(window.scrollY);
     if (window.scrollY > 0) {
-      if(this.state.theme === "dark"){
+      if (this.state.theme === 'dark') {
         this.setState({
-          theme: "light"
+          theme: 'light',
         });
       }
-    } else {
-      if(this.state.theme === "light"){
-        this.setState({
-          theme: "dark"
-        });
-      }
+    } else if (this.state.theme === 'light') {
+      this.setState({
+        theme: 'dark',
+      });
     }
-    //console.log(this.state.theme);
+    // console.log(this.state.theme);
   }
 
   render() {
     return (
-        <header className={`header ${this.state.theme}`} onScroll={this.handleScroll}>
-          <input className="menu-btn" type="checkbox" id="menu-btn" />
-          <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
-          <div className="logo"></div>
-          <ul className="menu">
-            <li><a id="home-link" href="#Home" onClick={this.handleClick}>Home</a></li>
-            <li><a href="#About" onClick={this.handleClick}>About Me</a></li>
-            <li><a href="#Skills" onClick={this.handleClick}>Skills</a></li>
-            <li><a href="#Portfolio" onClick={this.handleClick}>Portfolio</a></li>
-            <li><a href="#Contact" onClick={this.handleClick}>Contact</a></li>
-          </ul>
-        </header>
+      <header className={`header ${this.state.theme}`} onScroll={this.handleScroll}>
+        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <label className="menu-icon" htmlFor="menu-btn"><span className="navicon" /></label>
+        <div className="logo" />
+        <ul className="menu">
+          <li><Link id="home-link" activeClass="active" to="home" spy duration={250} onClick={this.handleClick} href=" ">Home</Link></li>
+          <li><Link activeClass="active" to="portfolio" spy smooth duration={250} onClick={this.handleClick} href=" ">Portfolio</Link></li>
+          <li><Link activeClass="active" to="skills" spy smooth duration={250} onClick={this.handleClick} href=" ">Skills</Link></li>
+          <li><Link activeClass="active" to="about" spy smooth duration={250} onClick={this.handleClick} href=" ">About Me</Link></li>
+          <li><Link activeClass="active" to="contact" spy smooth duration={250} onClick={this.handleClick} href=" ">Contact</Link></li>
+        </ul>
+      </header>
     );
   }
 }

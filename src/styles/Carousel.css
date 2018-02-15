@@ -1,0 +1,78 @@
+@import url(~slick-carousel/slick/slick.css);
+@import url(~slick-carousel/slick/slick-theme.css);
+.carousel .slick-track img {
+  max-height: 300px;
+  max-width: 300px; }
+
+.carousel .slick-slide.slick-center img {
+  margin-left: auto;
+  margin-right: auto; }
+
+.carousel {
+  background-color: white;
+  padding: 20px 0px 60px 0px; }
+
+.carousel h1 {
+  padding-left: 20px; }
+
+.carousel p {
+  padding-left: 20px; }
+
+/* gallery slider */
+.carousel .slick-track {
+  display: flex;
+  align-items: center; }
+
+.carousel .slick-active {
+  transition: 1s filter ease-out; }
+
+.carousel .slick-slide:not(.slick-active) {
+  transition: 1s filter ease-out;
+  filter: grayscale(100%); }
+
+/* navigation */
+.slick-arrow {
+  height: 100px !important;
+  width: 50px !important;
+  z-index: 5; }
+
+.slick-next:before {
+  color: black !important;
+  right: 20px !important; }
+
+.slick-next {
+  color: black !important;
+  right: 20px !important; }
+
+.slick-prev:before {
+  color: black !important;
+  left: 20px !important; }
+
+.slick-prev {
+  color: black !important;
+  left: 20px !important; }
+
+/* pagination */
+.slick-dots {
+  top: 0 !important;
+  position: relative !important;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
+.slick-dots li {
+  width: 65px !important;
+  height: auto !important;
+  margin: 5px !important; }
+
+li.slick-active {
+  transition: .5s filter ease-in; }
+
+.slick-dots li:not(.slick-active) {
+  transition: .5s filter ease-in;
+  filter: grayscale(100%); }
+
+/* make clipped designs greyscale, add drop shadow */

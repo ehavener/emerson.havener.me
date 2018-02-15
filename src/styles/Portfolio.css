@@ -1,0 +1,196 @@
+.portfolio {
+  background-color: #FDFDFD;
+  padding: 40px 20px 60px 20px; }
+
+.portfolio .deck {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: space-between; }
+
+.portfolio .card {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  position: relative;
+  margin: 20px 0px 20px 0px;
+  background-color: #FDFDFD; }
+
+.portfolio .card .bg {
+  border: 1px solid #ccc;
+  max-width: 100%; }
+
+/* card themes */
+.portfolio .card.black {
+  background-color: #000000; }
+
+.portfolio .card.black i {
+  color: #000000; }
+
+.portfolio .card.grey {
+  background-color: #535c68; }
+
+.portfolio .card.grey i {
+  color: #535c68; }
+
+.portfolio .card.turquoise {
+  background-color: #177390; }
+
+.portfolio .card.turquoise i {
+  color: #177390; }
+
+.portfolio .card.purple {
+  background-color: #945E99; }
+
+.portfolio .card.purple i {
+  color: #945E99; }
+
+.portfolio .card.red {
+  background-color: #6F0000; }
+
+.portfolio .card.red i {
+  color: #6F0000; }
+
+.portfolio .card.green {
+  background-color: #16a085; }
+
+.portfolio .card.green i {
+  color: #16a085; }
+
+.portfolio .card.blue {
+  background-color: #34495e; }
+
+.portfolio .card.blue i {
+  color: #34495e; }
+
+.portfolio .deck .card .overlay {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  position: absolute;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #FDFDFD;
+  opacity: 0;
+  transition: opacity .3s, visibility .3s;
+  padding: 0% 5%; }
+
+.portfolio .deck .card .overlay h2 {
+  margin: 0;
+  position: relative;
+  color: #FDFDFD; }
+
+.portfolio .deck .card .overlay p {
+  margin: 0;
+  color: #FDFDFD; }
+
+.portfolio .deck .card .overlay .techList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0; }
+
+.portfolio .deck .card .overlay .techList .object-wrap {
+  padding: 10px;
+  border-width: 10px;
+  border-radius: 50%;
+  background: #FDFDFD;
+  position: relative;
+  width: 30px;
+  height: 30px; }
+
+.portfolio .card .overlay .techList .object-wrap object {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0.825;
+  filter: saturate(0%) brightness(0%);
+  transition: .25s filter linear, .25s opacity linear; }
+
+/* overlay */
+.portfolio .card * {
+  transition: all .35s ease-in-out; }
+
+.portfolio .deck .card:hover .bg {
+  opacity: 0.3;
+  filter: grayscale(90%) blur(1.5px); }
+
+.portfolio .deck .card .overlay:hover {
+  opacity: 1; }
+
+.portfolio .deck .card .overlay:hover .techList .object-wrap object {
+  opacity: 1;
+  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%); }
+
+/* mobile hover via scroll */
+.portfolio .card * {
+  transition: all .35s ease-in-out; }
+
+.portfolio .deck .card.visible .bg {
+  opacity: 0.3;
+  filter: grayscale(90%) blur(1.5px); }
+
+.portfolio .deck .card.visible .overlay {
+  opacity: 1; }
+
+.portfolio .deck .card.visible .overlay .techList .object-wrap object {
+  opacity: 1;
+  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%); }
+
+/*                                               */
+/* for-tablet-portrait-up */
+/* for-tablet-landscape-up */
+@media (min-width: 900px) {
+  .portfolio {
+    background-color: #fdfdfd;
+    /*padding: 100px;*/ }
+  .portfolio .deck {
+    height: 1000px;
+    flex-wrap: wrap; }
+  .portfolio .card {
+    width: 25vw;
+    height: auto; }
+  .portfolio .card img {
+    border: 1px solid #ccc;
+    max-width: 25vw; } }
+
+/*
+.portfolio .card i {
+  transform:
+    translate(-50%, -50%)
+    scale(0);
+  transition: transform 300ms 0ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+*/
+/* when hover over item, change icon properties */
+/*
+.portfolio .card:hover i {
+  transform:
+    translate(-50%, -50%)
+    scale(1);
+  transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+*/
+/*
+.portfolio .card i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #000000;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #ffffff;
+}
+*/

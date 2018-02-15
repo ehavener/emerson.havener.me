@@ -6,10 +6,9 @@ import faGithub from '@fortawesome/fontawesome-free-brands/faGithub';
 import faLinkedIn from '@fortawesome/fontawesome-free-brands/faLinkedinIn';
 import faCodepen from '@fortawesome/fontawesome-free-brands/faCodepen';
 import faFilePdf from '@fortawesome/fontawesome-free-regular/faFilePdf';
-import './Home.css';
+import './styles/Home.css';
 
 const Home = () => (
-
   <div className="home" id="Home">
     <div className="content">
       <div className="name">

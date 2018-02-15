@@ -27,10 +27,7 @@
   margin: auto;
 }
 
-.certs .card:hover img {
-  opacity: 1;
-  filter: saturate(80%) contrast(100%) opacity(100%);
-}
+
 
 .certs .card .deck-icons p {
   opacity: 0.825;
@@ -43,9 +40,25 @@
   filter: saturate(80%) brightness(100%) contrast(100%);
 }
 
+.certs .card:hover img {
+  opacity: 1;
+  filter: saturate(80%) contrast(100%) opacity(100%);
+}
+
 /* for-tablet-landscape-up */
 @media (min-width: 900px) {
   .certs .deck {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+/* scroll hover */
+.certs .card.visible p {
+  opacity: 1;
+  filter: saturate(80%) brightness(100%) contrast(100%);
+}
+
+.certs .card.visible img {
+  opacity: 1;
+  filter: saturate(80%) contrast(100%) opacity(100%);
 }

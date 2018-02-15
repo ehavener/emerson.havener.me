@@ -1,13 +1,19 @@
 {
   "extends": "airbnb",
   "rules":{
-    "linebreak-style": 0
+    "linebreak-style": 0,
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
   },
   "env": {
-    "es6": true
+    "es6": true,
+    "browser": true,
+    "node": true
   },
   "plugins": [
         "react"
   ],
-  "parser": "babel-eslint"
+  "parser": "babel-eslint",
+  "globals": {
+    "document": false
+  }
 }

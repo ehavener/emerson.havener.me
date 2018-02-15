@@ -1,0 +1,141 @@
+.skills {
+  background-color: #fafafa;
+  padding: 40px 20px 60px 20px; }
+
+.skills .deck {
+  display: grid;
+  grid-template-columns: 1fr;
+  /*grid-template-rows: 400px 250px 250px;*/
+  grid-gap: 10px;
+  justify-content: center; }
+
+.skills .card {
+  padding: 20px;
+  background-color: #fff; }
+
+.skills .card object {
+  width: 50px;
+  height: 50px;
+  opacity: 0.825;
+  filter: saturate(0%) brightness(0%);
+  transition: .25s filter linear, .25s opacity linear; }
+
+.skills .card .deck-icons p {
+  opacity: 0.825;
+  filter: saturate(0%) brightness(0%);
+  transition: .5s filter linear, .5s opacity linear; }
+
+.skills .card:hover p {
+  opacity: 1;
+  filter: saturate(80%) brightness(100%) contrast(100%); }
+
+.skills .card:hover object {
+  opacity: 1;
+  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%); }
+
+/* scroll hover */
+.skills .card.visible p {
+  opacity: 1;
+  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%); }
+
+.skills .card.visible object {
+  opacity: 1;
+  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%); }
+
+/*
+h1:after {
+  background: none repeat scroll 0 0 #2D4269;
+  bottom: -5px;
+  content: "";
+  display: block;
+  height: 0px;
+  position: relative;
+  width: 100px;
+}
+*/
+.deck-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*grid-template-rows: 400px 250px 250px;*/
+  grid-gap: 0px;
+  justify-items: center; }
+
+.card-icons {
+  margin-bottom: 12px;
+  text-align: center; }
+
+.card-icons p {
+  margin: 0;
+  font-size: 12px; }
+
+/* for-tablet-landscape-up */
+@media (min-width: 900px) {
+  .skills .deck {
+    grid-template-columns: 1fr 1fr 1fr; } }
+
+/* icon colors */
+#html-caption {
+  color: #E34F26; }
+
+#css-caption {
+  color: #0A71B9; }
+
+#javascript-caption {
+  color: #F7DF1E; }
+
+#bootstrap-caption {
+  color: #563D7C; }
+
+#sass-caption {
+  color: #CF649A; }
+
+#jquery-caption {
+  color: #0868AC; }
+
+#react-caption {
+  color: #61DAFB; }
+
+#redux-caption {
+  color: #764ABC; }
+
+#photoshop-caption {
+  color: #87BCF6; }
+
+#illustrator-caption {
+  color: #FF7C00; }
+
+#xd-caption {
+  color: #FF2BC2; }
+
+#laravel-caption {
+  color: #1C78C0; }
+
+#wordpress-caption {
+  color: #1C78C0; }
+
+#mysql-caption {
+  color: #1C78C0; }
+
+#webpack-caption {
+  color: #1C78C0; }
+
+#git-caption {
+  color: #DE4C36; }
+
+#docker-caption {
+  color: #24B8EB; }
+
+#arduino-caption {
+  color: #03599C; }
+
+#c-caption {
+  color: #5C8DBC; }
+
+#cpp-caption {
+  color: #06979C; }
+
+#gulp-caption {
+  color: #DA4648; }
+
+#jasmine-caption {
+  color: #8A4182; }
