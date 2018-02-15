@@ -48,8 +48,7 @@ setDefaultProps({
 const Portfolio = () => (
 
   <section className="portfolio" id="Portfolio">
-    <h1>Portfolio</h1>
-    <p>Some of my recent projects.</p>
+    <h1>Projects</h1>
     <div className="deck">
       <OnVisible id="chauffeur" className="card red">
         <img className="bg" src={chauffeurPreview} alt="a web dev project" />

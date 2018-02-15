@@ -2,7 +2,8 @@
   background-color: #FAFAFA; }
   @media (min-width: 900px) {
     .footer {
-      position: relative; } }
+      position: relative;
+      padding-top: 200px; } }
 
 .nImage {
   text-align: center;

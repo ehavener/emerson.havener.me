@@ -28,7 +28,7 @@
 
 .home .content .name h1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 62px;
+  font-size: 4rem;
   line-height: 1em;
   font-weight: 700;
   margin: 0;
@@ -38,12 +38,27 @@
 
 .home .content h2 {
   font-family: 'Akrobat-Regular', sans-serif;
-  font-size: 24px;
+  font-size: 2rem;
   line-height: 1em;
   margin: 20px 0px 20px 0px;
   letter-spacing: 1.5px;
   text-shadow: 0px 0px 2px #2f2f2f;
   color: #fdfdfd; }
+
+.home .content p {
+  opacity: 0;
+  text-shadow: none;
+  text-align: center;
+  color: black;
+  margin: 0;
+  font-size: .7rem;
+  background-color: #fdfdfd;
+  border-radius: 10px;
+  transition: .25s opacity linear;
+  font-family: 'Raleway', sans-serif; }
+
+.home .content .social-icons a:hover p {
+  opacity: 1; }
 
 .home .content .social-icons {
   display: flex;
@@ -52,8 +67,7 @@
   margin: 110px 0px 0px 0px; }
 
 .home .content .social-icons a {
-  font-size: 56px;
-  margin-right: 15px;
+  font-size: 2.5rem;
   text-shadow: 0px 0px 2px #2f2f2f;
   text-decoration: none;
   color: inherit; }
@@ -70,5 +84,53 @@ div.vertical-line {
   background-color: white;
   height: 100%;
   display: inline-block;
-  margin-right: 25px;
-  margin-left: 10px; }
+  margin-right: .5rem;
+  margin-left: .5rem; }
+
+a.emailLayers span .emaillayersOutline {
+  opacity: 1;
+  transition: .25s opacity linear; }
+
+a.emailLayers span .emailLayersSolid {
+  opacity: 0;
+  transition: .25s opacity linear; }
+
+a.emailLayers:hover span .emailLayersOutline {
+  opacity: 0;
+  transition: .25s opacity linear; }
+
+a.emailLayers:hover span .emailLayersSolid {
+  opacity: 1;
+  transition: .25s opacity linear; }
+
+a.resumeLayers span .resumeLayersOutline {
+  opacity: 1;
+  transition: .25s opacity linear; }
+
+a.resumeLayers span .resumeLayersSolid {
+  opacity: 0;
+  transition: .25s opacity linear; }
+
+a.resumeLayers:hover span .resumeLayersOutline {
+  opacity: 0; }
+
+a.resumeLayers:hover span .resumeLayersSolid {
+  opacity: 1; }
+
+a .fa-layers .outline {
+  opacity: 1;
+  transition: .25s opacity linear; }
+
+a .fa-layers .solid {
+  opacity: 0;
+  transition: .25s opacity linear; }
+
+a .fa-layers:hover .outline {
+  opacity: 0; }
+
+a .fa-layers:hover .solid {
+  opacity: 1; }
+
+.fa-layers .fa {
+  width: 100px;
+  height: 100px; }

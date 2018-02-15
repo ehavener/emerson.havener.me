@@ -37,8 +37,7 @@ const settings = {
 // export default class Carousel extends Component {
 const Carousel = () => (
   <section className="carousel">
-    <h1>Graphic Design Portfolio</h1>
-    <p>A collection of my favorite projects.</p>
+    <h1>Design</h1>
     <Slider {...settings}>
       <div><img src={logo1300} alt="logo1" /></div>
       <div><img src={logo2300} alt="logo2" /></div>

@@ -35,24 +35,22 @@ setDefaultProps({
 
 const Skills = () => (
   <section className="skills" id="Skills">
-    <h1>Skills & Stack</h1>
-    <p>While I'm a full stack developer, my emphasis is in elegant front end design.</p>
+    <h1>Skills & Tools</h1>
     <div className="deck">
       <OnVisible className="card">
         <h2>Front-end</h2>
-        <p>My experience is primarily with the MEAN stack.</p>
         <div className="deck-icons">
           <div className="card-icons">
             <object type="image/svg+xml" data={html} aria-label="html" />
-            <p id="html-caption">html</p>
+            <p id="html-caption">HTML</p>
           </div>
           <div className="card-icons">
             <object type="image/svg+xml" data={css} aria-label="css" />
-            <p id="css-caption">css</p>
+            <p id="css-caption">CSS</p>
           </div>
           <div className="card-icons">
             <object type="image/svg+xml" data={javascript} aria-label="Javascript ES7" />
-            <p id="javascript-caption">Javascript ES7</p>
+            <p id="javascript-caption">Javascript ES6</p>
           </div>
           <div className="card-icons">
             <object type="image/svg+xml" data={bootstrap} aria-label="bootstrap" />
@@ -77,8 +75,7 @@ const Skills = () => (
         </div>
       </OnVisible>
       <OnVisible className="card">
-        <h2>Design & Prototyping</h2>
-        <p>Adobe Illustrator, Photoshop, & XD</p>
+        <h2>Design & UX</h2>
         <div className="deck-icons">
           <div className="card-icons">
             <object type="image/svg+xml" data={illustrator} aria-label="redux" />
@@ -96,7 +93,6 @@ const Skills = () => (
       </OnVisible>
       <OnVisible className="card">
         <h2>Back-end</h2>
-        <p>Node.js, Express & MySQL</p>
         <div className="deck-icons">
           <div className="card-icons">
             <object type="image/svg+xml" data={laravel} aria-label="Laravel" />
@@ -113,8 +109,7 @@ const Skills = () => (
         </div>
       </OnVisible>
       <OnVisible className="card">
-        <h2>Tooling & Testing</h2>
-        <p>Webpack, Git, & Docker</p>
+        <h2>Tooling</h2>
         <div className="deck-icons">
           <div className="card-icons">
             <object type="image/svg+xml" data={webpack} aria-label="webpack" />
@@ -132,7 +127,6 @@ const Skills = () => (
       </OnVisible>
       <OnVisible className="card">
         <h2>Embedded Systems</h2>
-        <p>C, C++, & Arduino</p>
         <div className="deck-icons">
           <div className="card-icons">
             <object type="image/svg+xml" data={c} aria-label="c" />
@@ -146,7 +140,6 @@ const Skills = () => (
             <object type="image/svg+xml" data={arduino} aria-label="arduino" />
             <p id="arduino-caption">Arduino</p>
           </div>
-
         </div>
       </OnVisible>
     </div>

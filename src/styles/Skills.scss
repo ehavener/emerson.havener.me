@@ -52,6 +52,7 @@
 }
 
 .skills .card .deck-icons p {
+  font-family: 'Raleway', sans-serif;
   opacity: 0.825;
   filter: saturate(0%) brightness(0%);
   transition: .5s filter linear, .5s opacity linear;
@@ -106,7 +107,7 @@ h1:after {
 
 .card-icons p {
   margin: 0;
-  font-size: 12px;
+  font-size: .7rem;
 }
 
 
@@ -140,3 +141,9 @@ h1:after {
 
 #gulp-caption {  color: #DA4648;}
 #jasmine-caption {  color: #8A4182;}
+
+#laravel-caption {  color: #D9574E;}
+#wordpress-caption {  color: #2F7290;}
+#webpack-caption {  color: #2C75AF;}
+#docker-caption {  color: #3CB2DB;}
+#mysql-caption {  color: #116381;}

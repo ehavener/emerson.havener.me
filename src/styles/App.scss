@@ -18,21 +18,35 @@
   @media (min-width: 1800px) { @content; }
 }
 
+html {
+  font-size: 16px;
+}
+@include for-tablet-portrait-up {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@include for-desktop-up {
+  html {
+    font-size: 20px;
+  }
+}
+
 .app h1 {
   font-family: 'Raleway', sans-serif;
-  font-size: 26px;
+  //font-size: 26px;
   color: #2f2f2f;
 }
 
 .app h2 {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  //font-size: 20px;
   color: #2f2f2f;
 }
 
 .app p {
   font-family: 'Proxima Nova', sans-serif;
-  font-size: 18px;
+  //font-size: 18px;
   color: #2f2f2f;
 }
 
@@ -43,27 +57,42 @@
 }
 
 @include for-tablet-portrait-up {
-  section {
+  .app section {
     padding-right: 3em !important;
     padding-left: 3em !important;
+  }
+  .home .content .name h1 {
+    //font-size: 62px;
+  }
+  .home .content h2 {
+    //font-size: 24px;
+  }
+  .app h1 {
+    //font-size: 26px;
+  }
+  .app h2 {
+    //font-size: 20px;
+  }
+  .app p {
+    //font-size: 18px;
   }
 }
 
 @include for-tablet-landscape-up {
-  section {
+  .app section {
     padding-right: 7em !important;
     padding-left: 7em !important;
   }
 }
 
 @include for-desktop-up {
-  section {
+  .app section {
     padding-right: 10em !important;
     padding-left: 10em !important;
   }
 }
 @include for-big-desktop-up {
-  section {
+  .app section {
     padding-right: 15em !important;
     padding-left: 15em !important;
   }

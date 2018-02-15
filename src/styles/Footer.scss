@@ -18,6 +18,7 @@
   background-color: #FAFAFA;
   @include for-tablet-landscape-up {
     position: relative;
+    padding-top: 200px;
   }
 }
 
