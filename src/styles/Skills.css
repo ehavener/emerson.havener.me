@@ -22,22 +22,22 @@
   grid-template-columns: 1fr 1fr;
   /*grid-template-rows: 400px 250px 250px;*/
   grid-gap: 10px;
-  grid-template-areas: "one one" "two three" "four five"; }
+  grid-template-areas: "one one" "two three" "four five"; }
   @media (min-width: 600px) {
     .skills .deck {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
-      grid-template-areas: "one one" "two three" "four five"; } }
+      grid-template-areas: "one one" "two three" "four five"; } }
   @media (min-width: 900px) {
     .skills .deck {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
-      grid-template-areas: "one one" "two three" "four five"; } }
+      grid-template-areas: "one one" "two three" "four five"; } }
   @media (min-width: 1200px) {
     .skills .deck {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: auto;
-      grid-template-areas: "one one one one" "two three four five"; } }
+      grid-template-areas: "one one one one" "two three four five"; } }
 
 .skills h2 {
   white-space: nowrap; }
