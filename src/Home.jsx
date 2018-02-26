@@ -20,9 +20,9 @@ const Home = () => (
     <div className="content">
       <div className="name">
         <h1>
-              Emerson
+          Emerson
           <br />
-              Havener
+          Havener
         </h1>
       </div>
       <h2>Prospective Web Developer</h2>
@@ -41,6 +41,7 @@ const Home = () => (
           </span>
           <p>LinkedIn</p>
         </a>
+        {/*
         <a title="Codepen" href="https://codepen.io/ehavener/" target="_blank" rel="noopener noreferrer">
           <span className="fa-layers fa-fw">
             <FontAwesomeIcon className="outline" transform="shrink-3" icon={faCodepen} aria-hidden="true" />
@@ -48,10 +49,11 @@ const Home = () => (
           </span>
           <p>Codepen</p>
         </a>
+        */}
         <a title="email" className="emailLayers" href="#Contact" rel="noopener noreferrer">
           <span className="fa-layers fa-fw">
             <FontAwesomeIcon className="outline" icon={faEnvelope} aria-hidden="true" />
-            <FontAwesomeIcon className="solid" icon={fasEnvelope} aria-hidden="true" />
+            <FontAwesomeIcon className="solid" transform="grow-1" icon={fasEnvelope} aria-hidden="true" />
           </span>
           <p>Email</p>
         </a>

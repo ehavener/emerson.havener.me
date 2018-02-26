@@ -35,7 +35,7 @@ setDefaultProps({
 
 const Skills = () => (
   <section className="skills" id="Skills">
-    <h1>Skills & Tools</h1>
+    <h1>Skills & Toolset</h1>
     <div className="deck">
       <OnVisible className="card front-end">
         <h2>Front-end</h2>
@@ -99,12 +99,12 @@ const Skills = () => (
             <p id="laravel-caption">Laravel</p>
           </div>
           <div className="card-icons">
-            <object type="image/svg+xml" data={wordpress} aria-label="wordpress" />
-            <p id="wordpress-caption">Wordpress</p>
-          </div>
-          <div className="card-icons">
             <object type="image/svg+xml" data={mysql} aria-label="MySQL" />
             <p id="mysql-caption">MySQL</p>
+          </div>
+          <div className="card-icons">
+            <object type="image/svg+xml" data={wordpress} aria-label="wordpress" />
+            <p id="wordpress-caption">Wordpress</p>
           </div>
         </div>
       </OnVisible>
@@ -113,7 +113,7 @@ const Skills = () => (
         <div className="deck-icons">
           <div className="card-icons">
             <object type="image/svg+xml" data={webpack} aria-label="webpack" />
-            <p id="webpack-caption">Webpack</p>
+            <p id="webpack-caption">webpack</p>
           </div>
           <div className="card-icons">
             <object type="image/svg+xml" data={git} aria-label="git" />

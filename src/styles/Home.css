@@ -3,57 +3,57 @@
   padding: 60px 0px; }
 
 .home .content {
-  margin-top: 110px;
-  margin-right: 20px;
-  margin-left: 20px;
+  color: #fdfdfd;
   display: flex;
   flex-direction: column;
   height: 300px;
-  color: #fdfdfd; }
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 110px; }
 
 .home .content:before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  display: block;
   background-image: url(../images/photovoltaic-panels-texture.jpg);
-  width: 100vw;
-  height: 670px;
+  box-shadow: inset 0px 0px 60px #2f2f2f;
+  content: "";
+  display: block;
   -webkit-filter: grayscale(0.1) brightness(0.45) contrast(1.05);
   filter: grayscale(0.1) brightness(0.45) contrast(1.05);
-  box-shadow: inset 0px 0px 60px #2f2f2f; }
+  height: 670px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: -1; }
 
 .home .content .name h1 {
+  color: #fdfdfd;
   font-family: 'Raleway', sans-serif;
   font-size: 4rem;
-  line-height: 1em;
   font-weight: 700;
+  line-height: 1em;
   margin: 0;
-  text-shadow: 0px 0px 2px #2f2f2f;
   margin-left: -3px;
-  color: #fdfdfd; }
+  text-shadow: 0px 0px 2px #2f2f2f; }
 
 .home .content h2 {
+  color: #fdfdfd;
   font-family: 'Akrobat-Regular', sans-serif;
   font-size: 2rem;
+  letter-spacing: 1.5px;
   line-height: 1em;
   margin: 20px 0px 20px 0px;
-  letter-spacing: 1.5px;
-  text-shadow: 0px 0px 2px #2f2f2f;
-  color: #fdfdfd; }
+  text-shadow: 0px 0px 2px #2f2f2f; }
 
 .home .content p {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: .7rem;
+  margin: 0;
+  opacity: 0;
   text-align: center;
   text-shadow: none;
-  opacity: 0;
-  color: white;
-  margin: 0;
-  font-size: .7rem;
-  transition: .25s opacity linear;
-  font-family: 'Raleway', sans-serif; }
+  transition: .25s opacity linear; }
 
 .home .content a.resumeLayers p {
   opacity: 1; }
@@ -62,22 +62,20 @@
   text-align: center; }
 
 .home .content .social-icons a:hover p {
-  color: black;
-  opacity: 1;
-  background-color: #fdfdfd;
-  border-radius: 10px; }
+  border-radius: 10px;
+  opacity: 1; }
 
 .home .content .social-icons {
+  align-items: baseline;
   display: flex;
   flex-wrap: nowrap;
-  align-items: baseline;
   margin: 110px 0px 0px 0px; }
 
 .home .content .social-icons a {
+  color: inherit;
   font-size: 2.5rem;
-  text-shadow: 0px 0px 2px #2f2f2f;
   text-decoration: none;
-  color: inherit; }
+  text-shadow: 0px 0px 2px #2f2f2f; }
 
 a:hover {
   text-decoration: none; }
@@ -87,57 +85,27 @@ a:visited {
 
 div.vertical-line {
   align-self: center;
-  width: 1px;
   background-color: white;
-  height: 150%;
   display: block;
+  height: 150%;
+  margin-left: 1rem;
   margin-right: 1rem;
-  margin-left: 1rem; }
-
-a.emailLayers span .emaillayersOutline {
-  opacity: 1;
-  transition: .25s opacity linear; }
-
-a.emailLayers span .emailLayersSolid {
-  opacity: 0;
-  transition: .25s opacity linear; }
-
-a.emailLayers:hover span .emailLayersOutline {
-  opacity: 0;
-  transition: .25s opacity linear; }
-
-a.emailLayers:hover span .emailLayersSolid {
-  opacity: 1;
-  transition: .25s opacity linear; }
-
-a.resumeLayers span .resumeLayersOutline {
-  opacity: 1;
-  transition: .25s opacity linear; }
-
-a.resumeLayers span .resumeLayersSolid {
-  opacity: 0;
-  transition: .25s opacity linear; }
-
-a.resumeLayers:hover span .resumeLayersOutline {
-  opacity: 0; }
-
-a.resumeLayers:hover span .resumeLayersSolid {
-  opacity: 1; }
+  width: 1px; }
 
 a .fa-layers .outline {
-  opacity: 1;
+  opacity: 0;
   transition: .25s opacity linear; }
 
 a .fa-layers .solid {
-  opacity: 0;
+  opacity: 1;
   transition: .25s opacity linear; }
 
 a .fa-layers:hover .outline {
-  opacity: 0; }
-
-a .fa-layers:hover .solid {
   opacity: 1; }
 
+a .fa-layers:hover .solid {
+  opacity: 0; }
+
 .fa-layers .fa {
-  width: 100px;
-  height: 100px; }
+  height: 100px;
+  width: 100px; }
