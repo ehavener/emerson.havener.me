@@ -109,3 +109,6 @@ a .fa-layers:hover .solid {
 .fa-layers .fa {
   height: 100px;
   width: 100px; }
+
+.emailLayers {
+  padding: 0px 5px; }

@@ -26,11 +26,12 @@ const Home = () => (
         </h1>
       </div>
       <h2>Prospective Web Developer</h2>
+
       <div className="social-icons">
         <a title="GitHub" href="https://github.com/ehavener" target="_blank" rel="noopener noreferrer">
           <span className="fa-layers fa-fw">
-            <FontAwesomeIcon className="solid" icon={faGithub} aria-hidden="true" />
-            <FontAwesomeIcon className="outline" icon={faGithub} transform="grow-2" mask={faCircle} aria-hidden="true" />
+            <FontAwesomeIcon className="solid" icon={faGithub} transform="shrink-1" aria-hidden="true" />
+            <FontAwesomeIcon className="outline" icon={faGithub} transform="grow-1" mask={faCircle} aria-hidden="true" />
           </span>
           <p>GitHub</p>
         </a>
@@ -41,6 +42,13 @@ const Home = () => (
           </span>
           <p>LinkedIn</p>
         </a>
+        <a title="email" className="emailLayers" href="#Contact" rel="noopener noreferrer">
+          <span className="fa-layers fa-fw">
+            <FontAwesomeIcon className="outline" transform="grow-2" icon={fasEnvelope} aria-hidden="true" />
+            <FontAwesomeIcon className="solid" transform="grow-2" icon={faEnvelope} aria-hidden="true" />
+          </span>
+          <p>Email</p>
+        </a>
         {/*
         <a title="Codepen" href="https://codepen.io/ehavener/" target="_blank" rel="noopener noreferrer">
           <span className="fa-layers fa-fw">
@@ -50,13 +58,7 @@ const Home = () => (
           <p>Codepen</p>
         </a>
         */}
-        <a title="email" className="emailLayers" href="#Contact" rel="noopener noreferrer">
-          <span className="fa-layers fa-fw">
-            <FontAwesomeIcon className="outline" icon={faEnvelope} aria-hidden="true" />
-            <FontAwesomeIcon className="solid" transform="grow-1" icon={fasEnvelope} aria-hidden="true" />
-          </span>
-          <p>Email</p>
-        </a>
+
         <div className="vertical-line" />
         <a title="Resume" className="resumeLayers" href="https://www.emerson.havener.me" target="_blank" rel="noopener noreferrer">
           <span className="fa-layers fa-fw">
