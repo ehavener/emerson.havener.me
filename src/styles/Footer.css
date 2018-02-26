@@ -11,8 +11,8 @@
   height: 50vw;
   max-height: 500px;
   background-image: url(../images/parallax/5.png), url(../images/parallax/6.png), url(../images/parallax/4.png), url(../images/parallax/3.png), url(../images/parallax/2.png), url(../images/parallax/1.png);
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top, top, top, top, top, top;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top, top, top, top, top, top;
   background-size: 100%;
   transition-duration: .5s;
   opacity: .85;
