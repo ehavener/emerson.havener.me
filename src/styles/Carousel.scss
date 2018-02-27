@@ -16,47 +16,59 @@
   @media (min-width: 1800px) { @content; }
 }
 
-.carousel .slick-track img {
+.carousel {
+  background-color: white;
+  padding: 20px 0px 90px 0px;
+  @include for-tablet-portrait-up {
+    padding-bottom: 100px;
+  }
+  @include for-desktop-up { //1200+
+    padding-bottom: 130px;
+  }
+}
+
+.carousel .innerSliderDiv {
+  margin-left: auto;
+  margin-right: auto;
   max-height: 300px;
   max-width: 300px;
-  @include for-desktop-up { //1200+
+  @include for-tablet-landscape-up {
     max-height: 500px;
     max-width: 500px;
   }
 }
+
+.carousel .innerSliderDiv img {
+  max-height: 300px;
+  max-width: 300px;
+  @include for-tablet-landscape-up {
+    max-height: 500px;
+    max-width: 500px;
+  }
+}
+
 
 .carousel .slick-slide.slick-center img {
   margin-left: auto;
   margin-right: auto;
 }
 
-.carousel {
-  background-color: white;
-  padding: 20px 0px 60px 0px;
-}
 
-.carousel h1 {
-  padding-left: 20px;
-}
-
-.carousel p {
-  padding-left: 20px;
-}
-
-/* gallery slider */
+// slides
 .carousel .slick-track {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 .carousel .slick-active {
-  transition: 1s filter ease-out;
+  transition: .25s opacity ease-in,  .5s filter ease-out !important;
 }
 .carousel .slick-slide:not(.slick-active) {
-  transition: 1s filter ease-out;
   filter: grayscale(100%);
+  transition: .25s opacity ease-in,  .5s filter ease-out !important;
 }
 
-/* navigation */
+// navigation
+
 .slick-arrow {
   height: 100px !important;
   width: 50px !important;
@@ -82,33 +94,98 @@
   left: 20px !important;
 }
 
-/* pagination */
-.slick-dots {
-  top: 0 !important;
-  position: relative !important;
+
+.slick-dots.slick-thumb {
+  align-items: stretch;
+  bottom: inherit;
   display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: wrap !important;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
+  flex-direction: row;
+  width: 100%;
 }
 
 .slick-dots li {
-  width: 65px !important;
+  align-items: center;
+  background-color: #FAFAFA;
+  box-shadow: .5px 1px 4px 0 rgba(0,0,0,.1);
+  display: flex;
   height: auto !important;
-  margin: 5px !important;
-  @include for-desktop-up { //1200+
-    width: 80px !important;
+  margin: 0 0 !important;
+  margin-right: 10px !important;
+  padding: 5px 5px;
+  width: 100% !important;
+  img {
+    align-self: center;
+    height: auto;
+    vertical-align: middle;
+    width:100%;
   }
 }
 
-li.slick-active {
-  transition: .5s filter ease-in;
-}
-.slick-dots li:not(.slick-active){
-  transition: .5s filter ease-in;
-  filter: grayscale(100%);
+.slick-dots li::before {
+  background-color: #2D4269;
+  bottom: 0;
+  content: "";
+  height: 3px;
+  left: 0;
+  position: absolute;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  transform-origin: right;
+  -webkit-transition: all .25s linear 0s;
+  transition: all .25s linear 0s;
+  visibility: hidden;
+  width: 100%;
 }
 
-/* make clipped designs greyscale, add drop shadow */
+.slick-dots li.slick-active::before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  transform-origin: left;
+  -webkit-transition: all .25s linear 0s;
+  transition: all .25s linear 0s;
+  visibility: visible;
+}
+
+li.slick-active {
+  transition: .5s filter ease-out;
+}
+.slick-dots li:not(.slick-active){
+  filter: grayscale(50%);
+  transition: .5s filter ease-out;
+}
+
+// March Underline
+.slick-dots li:nth-of-type(1)::before {
+  background-color: #00458A;
+}
+
+// Ute Youth Underline
+.slick-dots li:nth-of-type(2)::before {
+  background-color: #E0E0E2;
+}
+
+// Sigma Nu Underline
+.slick-dots li:nth-of-type(3)::before {
+  background-color: #6EC5AC;
+}
+
+// Young Dems Underline
+.slick-dots li:nth-of-type(4)::before {
+  background-color: #171F44;
+}
+
+// Ducks Underline
+.slick-dots li:nth-of-type(5)::before {
+  background-color: #000000;
+}
+
+// MTV Underline
+.slick-dots li:nth-of-type(6)::before {
+  background-color: #FCB018;
+}
+
+// Kehoe/Upton Underline
+.slick-dots li:nth-of-type(7)::before {
+  background-color: #6DCEEA;
+}
+
