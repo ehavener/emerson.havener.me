@@ -50,7 +50,7 @@ const Skills = () => (
           </div>
           <div className="card-icons">
             <object type="image/svg+xml" data={javascript} aria-label="Javascript ES7" />
-            <p id="javascript-caption">Javascript ES6</p>
+            <p id="javascript-caption">ES6</p>
           </div>
           <div className="card-icons">
             <object type="image/svg+xml" data={bootstrap} aria-label="bootstrap" />

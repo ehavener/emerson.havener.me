@@ -23,13 +23,13 @@
 }
 
 .portfolio .deck {
-  height: auto;
+  align-content: stretch;
+  align-items: stretch;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  align-items: stretch;
+  height: auto;
   justify-content: flex-start;
-  align-content: stretch;
 
   @include for-tablet-portrait-up {
     flex-wrap: wrap;
@@ -47,11 +47,12 @@
 }
 
 .portfolio .card {
-  height: auto;
-  text-align: center;
-  position: relative;
-  margin: 0em .44em .44em 0em;
   background-color: #FDFDFD;
+  box-shadow: 1px 3px 4px 0 rgba(0, 0, 0, .1);
+  height: auto;
+  margin: 0em .44em .44em 0em;
+  position: relative;
+  text-align: center;
   @include for-tablet-portrait-up {
     width: calc(50vw - 3.88em);
   }
@@ -72,83 +73,93 @@
 
 /* card themes */
 .portfolio .card.black {  background-color: #000000;}
-.portfolio .card.black i {  color: #000000;}
+.portfolio .card.black i,
+.portfolio .card.black .overlay .links p:hover {  color: #000000;}
+
 .portfolio .card.grey {  background-color: #535c68;}
-.portfolio .card.grey i {  color: #535c68;}
+.portfolio .card.grey i,
+.portfolio .card.grey .overlay .links p:hover {  color: #535c68;}
 
 
 .portfolio .card.turquoise {  background-color: #177390;}
-.portfolio .card.turquoise i {  color: #177390;}
+.portfolio .card.turquoise i,
+.portfolio .card.turquoise .overlay .links p:hover {  color: #177390;}
 
 .portfolio .card.purple {  background-color: #945E99;}
-.portfolio .card.purple i {  color: #945E99;}
+.portfolio .card.purple i,
+.portfolio .card.purple .overlay .links p:hover {  color: #945E99;}
 
 .portfolio .card.red {  background-color: #6F0000;}
-.portfolio .card.red i {  color: #6F0000;}
+.portfolio .card.red i,
+.portfolio .card.red .overlay .links p:hover {  color: #6F0000;}
 
 .portfolio .card.green {  background-color: #16a085;}
-.portfolio .card.green i {  color: #16a085;}
+.portfolio .card.green i,
+.portfolio .card.green .overlay .links p:hover {  color: #16a085;}
+
+
 .portfolio .card.blue {  background-color: #34495e;}
-.portfolio .card.blue i {  color: #34495e;}
+.portfolio .card.blue i,
+.portfolio .card.blue .overlay .links p:hover {  color: #34495e;}
 
 
 
 .portfolio .deck .card .overlay {
-  display: flex;
-  justify-content: space-evenly;
   align-items: stretch;
-  position: absolute;
-  flex-direction: column;
-  top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
   color: #FDFDFD;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  left: 0;
   opacity: 0;
-  transition: opacity .3s, visibility .3s;
   padding: 0% 5%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity .3s, visibility .3s;
 }
 
 
 
 .portfolio .deck .card .overlay h2 {
+  color: #FDFDFD;
   margin: 0;
   position: relative;
-  color: #FDFDFD;
 }
 
 .portfolio .deck .card .overlay p {
-  margin: 0;
   color: #FDFDFD;
+  margin: 0;
 }
 
 .portfolio .deck .card .overlay .techList {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 0;
+  justify-content: space-evenly;
   margin: 0;
+  padding: 0;
 }
 
 .portfolio .deck .card .overlay .techList .object-wrap {
-  padding: 10px;
-  border-width: 10px;
-  border-radius: 50%;
   background: #FDFDFD;
+  border-radius: 50%;
+  border-width: 10px;
+  height: 30px;
+  padding: 10px;
   position: relative;
   width: 30px;
-  height: 30px;
 }
 
 .portfolio .card .overlay .techList .object-wrap object {
-  margin: 0;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  opacity: 0.825;
   filter: saturate(0%) brightness(0%);
+  height: 100%;
+  margin: 0;
+  opacity: 0.825;
+  position: relative;
   transition: .25s filter linear, .25s opacity linear;
+  width: 100%;
 }
 
 /* overlay */
@@ -157,8 +168,8 @@
 }
 
 .portfolio .deck .card:hover .bg {
-  opacity: 0.3;
   filter: grayscale(90%) blur(1.5px);
+  opacity: 0.3;
 }
 
 .portfolio .deck .card .overlay:hover {
@@ -166,8 +177,8 @@
 }
 
 .portfolio .deck .card .overlay:hover .techList .object-wrap object {
-  opacity: 1;
   filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
+  opacity: 1;
 }
 
 
@@ -178,8 +189,8 @@
 
 .portfolio .deck .card.visible .bg {
   @include for-mobile-only {
-    opacity: 0.3;
     filter: grayscale(90%) blur(1.5px);
+    opacity: 0.1;
   }
 }
 
@@ -191,8 +202,8 @@
 
 .portfolio .deck .card.visible .overlay .techList .object-wrap object {
   @include for-mobile-only {
-    opacity: 1;
     filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
+    opacity: 1;
   }
 }
 
@@ -203,37 +214,27 @@
   justify-content: space-evenly;
 }
 
-
-
-
-
-
 .portfolio .deck .overlay .links p {
+  background: none;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
   display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: .9rem;
+  margin: 0;
+  opacity: 1;
+  padding: .2rem;
   text-align: center;
   text-shadow: none;
-  color: white;
-  margin: 0;
-  font-size: .7rem;
   transition: .25s opacity linear;
-  font-family: 'Raleway', sans-serif;
-  opacity: 1;
-  background: none;
-  border-radius: 10px;
-  padding: .2rem;
-  border: 2px solid white;
   transition: .25s background-color linear;
 
 }
 
 .portfolio .deck .overlay .links p:hover {
-  color: black;
   background-color: #fdfdfd;
 }
-
-
-
-
 
 
 

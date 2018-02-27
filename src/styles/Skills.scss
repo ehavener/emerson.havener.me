@@ -37,7 +37,6 @@
 
 .skills .deck {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   /*grid-template-rows: 400px 250px 250px;*/
   grid-gap: 10px;
   //justify-content: center;
@@ -45,28 +44,29 @@
       "one one"
       "two three"
       "four five";
+  grid-template-columns: 1fr 1fr;
   @include for-tablet-portrait-up {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
     grid-template-areas:
       "one one"
       "two three"
       "four five";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
   }
   @include for-tablet-landscape-up {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
     grid-template-areas:
       "one one"
       "two three"
       "four five";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
   }
   @include for-desktop-up {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
     grid-template-areas:
       "one one one one"
       "two three four five";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
   }
 }
 
@@ -75,45 +75,61 @@
 }
 
 .skills .card {
-  padding: 20px;
   background-color: #fff;
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, .1);
+  padding: 20px;
 }
 
 .skills .card object {
-  width: 50px;
+  cursor: default;
+  filter: saturate(0%) brightness(0%);
   height: 50px;
   opacity: 0.825;
-  filter: saturate(0%) brightness(0%);
   transition: .25s filter linear, .25s opacity linear;
+  width: 50px;
 }
 
 .skills .card .deck-icons p {
-  font-family: 'Raleway', sans-serif;
-  opacity: 0.825;
+  cursor: default;
   filter: saturate(0%) brightness(0%);
-  transition: .5s filter linear, .5s opacity linear;
+  float: left;
+  font-family: 'Raleway', sans-serif;
+  font-size: .7rem;
+  font-weight: bold;
+  height: 50px;
+  //margin-left: 0;
+  margin-top: -80%;
+  opacity: 0;
+  position: absolute;
+  transition: .5s all ease-out .0s;
+  width: 50px;
+  z-index: 0;
 }
 
-.skills .card:hover p {
-  opacity: 1;
+.skills .card-icons:hover p {
   filter: saturate(80%) brightness(100%) contrast(100%);
+  opacity: 1;
 }
 
-.skills .card:hover object {
-  opacity: 1;
+.skills .card-icons:hover object {
   filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
+  opacity: .1;
+  transition: filter .4s ease-out, opacity .4s ease-out .0s;
 }
 
 /* scroll hover */
-.skills .card.visible p {
-  opacity: 1;
-  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
+@include for-mobile-only {
+  .skills .card.visible p {
+    filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
+    opacity: 1;
+  }
+
+  .skills .card.visible object {
+    filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
+    opacity: 1;
+  }
 }
 
-.skills .card.visible object {
-  opacity: 1;
-  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
-}
 
 
 /*
@@ -131,18 +147,14 @@ h1:after {
 .deck-icons {
  display: flex;
  flex-direction: row;
- justify-content: space-evenly;
  flex-wrap: wrap;
+ justify-content: space-evenly;
 }
 
 .card-icons {
   margin-bottom: 12px;
+  position: relative;
   text-align: center;
-}
-
-.card-icons p {
-  margin: 0;
-  font-size: .7rem;
 }
 
 
@@ -151,26 +163,26 @@ h1:after {
 #html-caption {  color: #E34F26;}
 #css-caption {  color: #0A71B9;}
 #javascript-caption {  color: #F7DF1E;}
-#bootstrap-caption {  color: #563D7C;}
+#bootstrap-caption {  color: #563D7C; margin-left: -10px;}
 #sass-caption {  color: #CF649A;}
 #jquery-caption {  color: #0868AC;}
 #react-caption {  color: #61DAFB;}
 #redux-caption {  color: #764ABC;}
 
-#photoshop-caption {  color: #87BCF6;}
-#illustrator-caption {  color: #FF7C00;}
+#photoshop-caption {  color: #87BCF6;  margin-left: -12px;}
+#illustrator-caption {  color: #FF7C00;  margin-left: -12px;}
 #xd-caption {  color: #FF2BC2;}
 
 
 #laravel-caption {  color: #1C78C0;}
-#wordpress-caption {  color: #1C78C0;}
+#wordpress-caption {  color: #1C78C0; margin-left: -14px;}
 #mysql-caption {  color: #1C78C0;}
 
 #webpack-caption { color: #1C78C0; }
 #git-caption {  color: #DE4C36;}
 #docker-caption { color: #24B8EB; }
 
-#arduino-caption {  color: #03599C;}
+#arduino-caption {  color: #03599C;  margin-left: -3px;}
 #c-caption {  color: #5C8DBC;}
 #cpp-caption {  color: #06979C;}
 
@@ -179,6 +191,6 @@ h1:after {
 
 #laravel-caption {  color: #D9574E;}
 #wordpress-caption {  color: #2F7290;}
-#webpack-caption {  color: #2C75AF;}
+#webpack-caption {  color: #2C75AF; margin-left: -10px;}
 #docker-caption {  color: #3CB2DB;}
 #mysql-caption {  color: #116381;}

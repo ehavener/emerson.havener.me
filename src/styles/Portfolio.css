@@ -3,13 +3,13 @@
   padding: 40px 20px 60px 20px; }
 
 .portfolio .deck {
-  height: auto;
+  align-content: stretch;
+  align-items: stretch;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  align-items: stretch;
-  justify-content: flex-start;
-  align-content: stretch; }
+  height: auto;
+  justify-content: flex-start; }
   @media (min-width: 600px) {
     .portfolio .deck {
       flex-wrap: wrap;
@@ -25,11 +25,12 @@
       max-height: calc(340px + 30vw); } }
 
 .portfolio .card {
+  background-color: #FDFDFD;
+  box-shadow: 1px 3px 4px 0 rgba(0, 0, 0, 0.1);
   height: auto;
-  text-align: center;
-  position: relative;
   margin: 0em .44em .44em 0em;
-  background-color: #FDFDFD; }
+  position: relative;
+  text-align: center; }
   @media (min-width: 600px) {
     .portfolio .card {
       width: calc(50vw - 3.88em); } }
@@ -48,109 +49,116 @@
 .portfolio .card.black {
   background-color: #000000; }
 
-.portfolio .card.black i {
+.portfolio .card.black i,
+.portfolio .card.black .overlay .links p:hover {
   color: #000000; }
 
 .portfolio .card.grey {
   background-color: #535c68; }
 
-.portfolio .card.grey i {
+.portfolio .card.grey i,
+.portfolio .card.grey .overlay .links p:hover {
   color: #535c68; }
 
 .portfolio .card.turquoise {
   background-color: #177390; }
 
-.portfolio .card.turquoise i {
+.portfolio .card.turquoise i,
+.portfolio .card.turquoise .overlay .links p:hover {
   color: #177390; }
 
 .portfolio .card.purple {
   background-color: #945E99; }
 
-.portfolio .card.purple i {
+.portfolio .card.purple i,
+.portfolio .card.purple .overlay .links p:hover {
   color: #945E99; }
 
 .portfolio .card.red {
   background-color: #6F0000; }
 
-.portfolio .card.red i {
+.portfolio .card.red i,
+.portfolio .card.red .overlay .links p:hover {
   color: #6F0000; }
 
 .portfolio .card.green {
   background-color: #16a085; }
 
-.portfolio .card.green i {
+.portfolio .card.green i,
+.portfolio .card.green .overlay .links p:hover {
   color: #16a085; }
 
 .portfolio .card.blue {
   background-color: #34495e; }
 
-.portfolio .card.blue i {
+.portfolio .card.blue i,
+.portfolio .card.blue .overlay .links p:hover {
   color: #34495e; }
 
 .portfolio .deck .card .overlay {
-  display: flex;
-  justify-content: space-evenly;
   align-items: stretch;
-  position: absolute;
-  flex-direction: column;
-  top: 0;
   bottom: 0;
-  left: 0;
-  right: 0;
   color: #FDFDFD;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  left: 0;
   opacity: 0;
-  transition: opacity .3s, visibility .3s;
-  padding: 0% 5%; }
+  padding: 0% 5%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: opacity .3s, visibility .3s; }
 
 .portfolio .deck .card .overlay h2 {
+  color: #FDFDFD;
   margin: 0;
-  position: relative;
-  color: #FDFDFD; }
+  position: relative; }
 
 .portfolio .deck .card .overlay p {
-  margin: 0;
-  color: #FDFDFD; }
+  color: #FDFDFD;
+  margin: 0; }
 
 .portfolio .deck .card .overlay .techList {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   flex-wrap: wrap;
-  padding: 0;
-  margin: 0; }
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0; }
 
 .portfolio .deck .card .overlay .techList .object-wrap {
-  padding: 10px;
-  border-width: 10px;
-  border-radius: 50%;
   background: #FDFDFD;
+  border-radius: 50%;
+  border-width: 10px;
+  height: 30px;
+  padding: 10px;
   position: relative;
-  width: 30px;
-  height: 30px; }
+  width: 30px; }
 
 .portfolio .card .overlay .techList .object-wrap object {
-  margin: 0;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  opacity: 0.825;
   filter: saturate(0%) brightness(0%);
-  transition: .25s filter linear, .25s opacity linear; }
+  height: 100%;
+  margin: 0;
+  opacity: 0.825;
+  position: relative;
+  transition: .25s filter linear, .25s opacity linear;
+  width: 100%; }
 
 /* overlay */
 .portfolio .card * {
   transition: all .35s ease-in-out; }
 
 .portfolio .deck .card:hover .bg {
-  opacity: 0.3;
-  filter: grayscale(90%) blur(1.5px); }
+  filter: grayscale(90%) blur(1.5px);
+  opacity: 0.3; }
 
 .portfolio .deck .card .overlay:hover {
   opacity: 1; }
 
 .portfolio .deck .card .overlay:hover .techList .object-wrap object {
-  opacity: 1;
-  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%); }
+  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
+  opacity: 1; }
 
 /* mobile hover via scroll */
 .portfolio .card * {
@@ -158,8 +166,8 @@
 
 @media (max-width: 599px) {
   .portfolio .deck .card.visible .bg {
-    opacity: 0.3;
-    filter: grayscale(90%) blur(1.5px); } }
+    filter: grayscale(90%) blur(1.5px);
+    opacity: 0.1; } }
 
 @media (max-width: 599px) {
   .portfolio .deck .card.visible .overlay {
@@ -167,8 +175,8 @@
 
 @media (max-width: 599px) {
   .portfolio .deck .card.visible .overlay .techList .object-wrap object {
-    opacity: 1;
-    filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%); } }
+    filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
+    opacity: 1; } }
 
 .portfolio .deck .overlay .links {
   display: flex;
@@ -176,21 +184,20 @@
   justify-content: space-evenly; }
 
 .portfolio .deck .overlay .links p {
+  background: none;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
   display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: .9rem;
+  margin: 0;
+  opacity: 1;
+  padding: .2rem;
   text-align: center;
   text-shadow: none;
-  color: white;
-  margin: 0;
-  font-size: .7rem;
   transition: .25s opacity linear;
-  font-family: 'Raleway', sans-serif;
-  opacity: 1;
-  background: none;
-  border-radius: 10px;
-  padding: .2rem;
-  border: 2px solid white;
   transition: .25s background-color linear; }
 
 .portfolio .deck .overlay .links p:hover {
-  color: black;
   background-color: #fdfdfd; }

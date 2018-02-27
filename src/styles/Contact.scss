@@ -21,9 +21,9 @@
   @include for-tablet-landscape-up {
     background: none;
     float: left;
-    z-index: 1;
-    position: relative;
     opacity: .9;
+    position: relative;
+    z-index: 1;
   }
 }
 
@@ -49,35 +49,35 @@
 }
 
 .contact input {
-  width: 100%;
-  margin: 5px 0px;
-  width: calc(100% - 20px);
-  padding: 10px;
-  border-radius: 0px;
-  border: none;
-  margin-bottom: 10px;
   background: #FFFFFF;
+  border: none;
+  border-radius: 0px;
   color: #2F2F2F;
+  margin: 5px 0px;
+  margin-bottom: 10px;
+  padding: 10px;
   transition: .5s ease all;
+  width: 100%;
+  width: calc(100% - 20px);
 }
 
 .contact textarea {
-  margin: 5px 0px;
-  height: 150px;
-  width: calc(100% - 20px);
-  padding: 10px;
-  border-radius: 0px;
-  border: none;
   background: #FFFFFF;
+  border: none;
+  border-radius: 0px;
   color: #2F2F2F;
+  height: 150px;
+  margin: 5px 0px;
+  padding: 10px;
   transition: .5s ease all;
+  width: calc(100% - 20px);
 }
 
 .contact .social-icons {
-  margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  margin-top: 50px;
 }
 
 .contact .social-icons i {
@@ -91,16 +91,16 @@
 
 .contact button {
   border: none;
-  text-align: center;
-  margin: 5px 0px;
-  padding: 10px;
-  width: calc(100% - 20px);
   border-radius: 0px;
-  font-weight: bold;
-  outline: none;
-  cursor: pointer;
-  transition: all .15s;
   color: #2F2F2F;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px 0px;
+  outline: none;
+  padding: 10px;
+  text-align: center;
+  transition: all .15s;
+  width: calc(100% - 20px);
   width: 100%;
   @include for-tablet-landscape-up {
     opacity: 1;
@@ -113,14 +113,14 @@
 }
 
 .contact button:hover {
-  background: #2F2F2F;
-  color: #FFFFFF;
+  opacity: 1;
 }
 
 .contact button:active {
   background: #2D4269;
-  transform: translateY(3px);
+  box-shadow: 0 3px 0 #2D4269;
   -webkit-transform: translateY(3px);
+  transform: translateY(3px);
 }
 
 .contact button:focus {

@@ -33,21 +33,21 @@ html {
 }
 
 .app h1 {
-  font-family: 'Raleway', sans-serif;
   //font-size: 26px;
   color: #2f2f2f;
+  font-family: 'Raleway', sans-serif;
 }
 
 .app h2 {
-  font-family: 'Raleway', sans-serif;
   //font-size: 20px;
   color: #2f2f2f;
+  font-family: 'Raleway', sans-serif;
 }
 
 .app p {
-  font-family: 'Proxima Nova', sans-serif;
   //font-size: 18px;
   color: #2f2f2f;
+  font-family: 'Proxima Nova', sans-serif;
 }
 
 .app li a {
@@ -58,8 +58,8 @@ html {
 
 @include for-tablet-portrait-up {
   .app section {
-    padding-right: 3em !important;
     padding-left: 3em !important;
+    padding-right: 3em !important;
   }
   .home .content .name h1 {
     //font-size: 62px;
@@ -68,32 +68,52 @@ html {
     //font-size: 24px;
   }
   .app h1 {
+    margin-top: 0;
     //font-size: 26px;
   }
   .app h2 {
+    margin-top: 0;
     //font-size: 20px;
   }
   .app p {
+    margin-top: 0;
     //font-size: 18px;
   }
 }
 
 @include for-tablet-landscape-up {
   .app section {
-    padding-right: 7em !important;
     padding-left: 7em !important;
+    padding-right: 7em !important;
   }
 }
 
 @include for-desktop-up {
   .app section {
-    padding-right: 10em !important;
     padding-left: 10em !important;
+    padding-right: 10em !important;
   }
 }
 @include for-big-desktop-up {
   .app section {
-    padding-right: 15em !important;
     padding-left: 15em !important;
+    padding-right: 15em !important;
   }
+}
+
+// section intersection styling
+.app .skills {
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 1);
+}
+
+.app .portfolio {
+  box-shadow: inset 1px 2px 4px 0 rgba(0, 0, 0, .1);
+}
+
+.app .about {
+  box-shadow: inset 1px 2px 4px 0 rgba(0, 0, 0, .1);
+}
+
+.app .carousel {
+  box-shadow: inset 1px 2px 4px 0 rgba(0, 0, 0, .1);
 }

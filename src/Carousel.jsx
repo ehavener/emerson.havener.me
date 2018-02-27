@@ -15,7 +15,7 @@ const images = [
 
 const settings = {
   customPaging(i) {
-    return <img src={images[i]} alt="Image Page" />;
+    return <img src={images[i]} alt="Gallery Page" />;
   },
   arrows: false,
   dots: true,
