@@ -3,7 +3,7 @@ import './styles/Contact.css';
 
 const Contact = () => (
   <section className="contact" id="Contact">
-    <h1>Contact Me</h1>
+    <h2>Contact Me</h2>
     <div className="deck">
       <div className="card">
         <form action="https://formspree.io/emersonhavener@gmail.com" method="POST">

@@ -3,7 +3,7 @@ import './styles/About.css';
 
 const About = () => (
   <section className="about" id="About">
-    <h1>About Me</h1>
+    <h2>About Me</h2>
     <p> I first took interest to graphic design back in 2013. Since then,
       I&apos;ve ventured into website design & development. I&apos;m currently
       pursuing a B.S. in Computer Science & Engineering with a minor

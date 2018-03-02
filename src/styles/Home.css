@@ -1,24 +1,20 @@
-.home {
-  height: 550px;
-  padding: 60px 0px; }
-
-.home .content {
-  color: #fdfdfd;
+@import url("https://s3-us-west-1.amazonaws.com/public-webfonts/fonts/fonts-akrobat.css");
+@import url("https://s3-us-west-1.amazonaws.com/public-webfonts/fonts/fonts-proxima-nova.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900");
+.app section.home .heading {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  height: 300px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 110px; }
+  justify-content: center;
+  align-content: space-around; }
 
-.home .content:before {
-  background-image: url(../images/photovoltaic-panels-texture.jpg);
-  box-shadow: inset 0px 0px 60px #2f2f2f;
-  content: "";
+.home .content::before {
+  background-image: url("../images/photovoltaic-panels-texture.jpg");
+  content: '';
   display: block;
-  -webkit-filter: grayscale(0.1) brightness(0.45) contrast(1.05);
-  filter: grayscale(0.1) brightness(0.45) contrast(1.05);
-  height: 670px;
+  -webkit-filter: grayscale(0.3) brightness(0.45) contrast(1.05);
+  filter: grayscale(0.3) brightness(0.45) contrast(1.05);
+  height: 100vh;
   left: 0;
   position: fixed;
   right: 0;
@@ -26,89 +22,64 @@
   width: 100vw;
   z-index: -1; }
 
-.home .content .name h1 {
-  color: #fdfdfd;
-  font-family: 'Raleway', sans-serif;
-  font-size: 4rem;
+.content {
+  height: 100%; }
+
+.home .content h1 {
   font-weight: 700;
-  line-height: 1em;
-  margin: 0;
-  margin-left: -3px;
-  text-shadow: 0px 0px 2px #2f2f2f; }
+  text-shadow: 0.01em 0.01em 0.05em black;
+  line-height: 0.9em; }
 
 .home .content h2 {
-  color: #fdfdfd;
-  font-family: 'Akrobat-Regular', sans-serif;
-  font-size: 2rem;
-  letter-spacing: 1.5px;
-  line-height: 1em;
-  margin: 20px 0px 20px 0px;
-  text-shadow: 0px 0px 2px #2f2f2f; }
-
-.home .content p {
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: .7rem;
-  margin: 0;
-  opacity: 0;
-  text-align: center;
-  text-shadow: none;
-  transition: .25s opacity linear; }
-
-.home .content a.resumeLayers p {
-  opacity: 1; }
-
-.home .content a.resumeLayers {
-  text-align: center; }
-
-.home .content .social-icons a:hover p {
-  border-radius: 10px;
-  opacity: 1; }
+  font-family: 'Proxima Nova', sans-serif;
+  font-size: 2em;
+  text-shadow: 0.01em 0.01em 0.05em black; }
 
 .home .content .social-icons {
-  align-items: baseline;
-  display: flex;
-  flex-wrap: nowrap;
-  margin: 110px 0px 0px 0px; }
-
-.home .content .social-icons a {
-  color: inherit;
-  font-size: 2.5rem;
-  text-decoration: none;
-  text-shadow: 0px 0px 2px #2f2f2f; }
-
-a:hover {
-  text-decoration: none; }
-
-a:visited {
-  color: inherit; }
-
-div.vertical-line {
-  align-self: center;
-  background-color: white;
-  display: block;
-  height: 150%;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  width: 1px; }
-
-a .fa-layers .outline {
-  opacity: 0;
-  transition: .25s opacity linear; }
-
-a .fa-layers .solid {
-  opacity: 1;
-  transition: .25s opacity linear; }
-
-a .fa-layers:hover .outline {
-  opacity: 1; }
-
-a .fa-layers:hover .solid {
-  opacity: 0; }
-
-.fa-layers .fa {
-  height: 100px;
-  width: 100px; }
-
-.emailLayers {
-  padding: 0px 5px; }
+  justify-content: flex-end;
+  max-height: 59px;
+  margin-top: auto;
+  display: flex; }
+  .home .content .social-icons:before {
+    position: absolute;
+    content: '';
+    height: 1px;
+    left: 0;
+    top: -100;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4); }
+  .home .content .social-icons p {
+    opacity: 0;
+    text-align: center;
+    transition: 0.25s all linear; }
+  .home .content .social-icons a {
+    line-height: 48px;
+    text-align: center;
+    transition: 0.25s all linear;
+    color: inherit;
+    font-size: 48px;
+    text-decoration: none;
+    margin: 6px 0 0 6px; }
+  .home .content .social-icons a:hover p {
+    opacity: 1; }
+  .home .content .social-icons div.vertical-line {
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: block;
+    height: 100%;
+    margin-left: 0.7em;
+    width: 1px; }
+  .home .content .social-icons a .fa-layers.fa-fw {
+    width: 1em; }
+    .home .content .social-icons a .fa-layers.fa-fw .outline {
+      opacity: 0;
+      transition: 0.25s all linear; }
+    .home .content .social-icons a .fa-layers.fa-fw .solid {
+      opacity: 1;
+      transition: 0.25s all linear; }
+  .home .content .social-icons a .fa-layers:hover .outline {
+    opacity: 1; }
+  .home .content .social-icons a .fa-layers:hover .solid {
+    opacity: 0; }
+  .home .content .social-icons .emailLayers {
+    padding: 0 0.15em; }

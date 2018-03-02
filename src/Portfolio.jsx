@@ -1,5 +1,5 @@
 import React from 'react';
-import OnVisible, { setDefaultProps } from 'react-on-visible';
+import OnVisible, {setDefaultProps,} from 'react-on-visible';
 import './styles/Portfolio.css';
 
 import html from './images/skill-icons/html.svg';
@@ -46,147 +46,263 @@ setDefaultProps({
 });
 
 const Portfolio = () => (
-
   <section className="portfolio" id="Portfolio">
-    <h1>Projects</h1>
+    <h2 className="title">Projects</h2>
     <div className="deck">
-      <OnVisible id="chauffeur" className="card red chauffeur">
-        <img className="bg" src={chauffeurPreview} alt="a web dev project" />
-        <div className="overlay">
-          <h2>Chauffeur Reno</h2>
-          <p>​A promotional webpage for a ride sharing startup.</p>
-          <div className="links">
-            <a href="https://drivesafe.emerson.havener.me" target="_blank" rel="noopener noreferrer">
-              <p>View Live</p>
-            </a>
-            <a href="https://github.com/ehavener/chauffeur-ride-request" target="_blank" rel="noopener noreferrer">
-              <p>View Repository</p>
-            </a>
+      <a
+        href="https://emerson.havener.me/dontdrive/"
+        target="_blank"
+      >
+        <OnVisible
+          id="chauffeur"
+          className="card red chauffeur"
+        >
+          <img
+            className="bg"
+            src={chauffeurPreview}
+            alt="a web dev project"
+          />
+
+          <div className="overlay">
+            <h2>Don't Drive</h2>
+            <p>
+              ​A promotional webpage for a ride
+              sharing startup.
+            </p>
+            <ul className="techList">
+              <div className="object-wrap">
+                <object
+                  type="image/svg+xml"
+                  height="50"
+                  width="50"
+                  data={wordpress}
+                  aria-label="wordpress"
+                />
+              </div>
+              <div className="object-wrap">
+                <object
+                  type="image/svg+xml"
+                  height="50"
+                  width="50"
+                  data={jquery}
+                  aria-label="javascript"
+                />
+              </div>
+              <div className="object-wrap">
+                <object
+                  type="image/svg+xml"
+                  height="50"
+                  width="50"
+                  data={lumen}
+                  aria-label="lumen"
+                />
+              </div>
+              <div className="object-wrap">
+                <object
+                  type="image/svg+xml"
+                  height="50"
+                  width="50"
+                  data={mysql}
+                  aria-label="mysql"
+                />
+              </div>
+              <div className="object-wrap">
+                <object
+                  type="image/svg+xml"
+                  height="50"
+                  width="50"
+                  data={docker}
+                  aria-label="docker"
+                />
+              </div>
+            </ul>
           </div>
-          <ul className="techList">
-            <div className="object-wrap">
-              <object type="image/svg+xml" height="50" width="50" data={wordpress} aria-label="wordpress" />
-            </div>
-            <div className="object-wrap">
-              <object type="image/svg+xml" height="50" width="50" data={jquery} aria-label="javascript" />
-            </div>
-            <div className="object-wrap">
-              <object type="image/svg+xml" height="50" width="50" data={lumen} aria-label="lumen" />
-            </div>
-            <div className="object-wrap">
-              <object type="image/svg+xml" height="50" width="50" data={mysql} aria-label="mysql" />
-            </div>
-            <div className="object-wrap">
-              <object type="image/svg+xml" height="50" width="50" data={docker} aria-label="docker" />
-            </div>
-          </ul>
-        </div>
-      </OnVisible>
-      <OnVisible id="happy-hour" className="card green happyHour">
-        <img className="bg" src={happyhourPreview} alt="a web dev project" />
+        </OnVisible>
+      </a>
+      <OnVisible
+        id="happy-hour"
+        className="card green happyHour"
+      >
+        <img
+          className="bg"
+          src={happyhourPreview}
+          alt="a web dev project"
+        />
         <div className="overlay">
           <h2>Happy Hour</h2>
-          <p>​A single page web application that displays nearby happy hour specials.</p>
-          <div className="links">
-            <a href="https://drivesafe.emerson.havener.me" target="_blank" rel="noopener noreferrer">
-              <p>View Live</p>
-            </a>
-            <a href="https://github.com/ehavener/chauffeur-ride-request" target="_blank" rel="noopener noreferrer">
-              <p>View Repository</p>
-            </a>
-          </div>
+          <p>
+            ​A single page web application that
+            displays nearby happy hour specials.
+          </p>
           <ul className="techList">
             <div className="object-wrap">
-              <object type="image/svg+xml" height="50" width="50" data={react} aria-label="react" />
+              <object
+                type="image/svg+xml"
+                height="50"
+                width="50"
+                data={react}
+                aria-label="react"
+              />
             </div>
             <div className="object-wrap">
-              <object type="image/svg+xml" height="50" width="50" data={sass} aria-label="sass" />
+              <object
+                type="image/svg+xml"
+                height="50"
+                width="50"
+                data={sass}
+                aria-label="sass"
+              />
             </div>
             <div className="object-wrap">
-              <object type="image/svg+xml" height="50" width="50" data={mysql} aria-label="mysql" />
+              <object
+                type="image/svg+xml"
+                height="50"
+                width="50"
+                data={mysql}
+                aria-label="mysql"
+              />
             </div>
             <div className="object-wrap">
-              <object type="image/svg+xml" height="50" width="50" data={webpack} aria-label="webpack" />
+              <object
+                type="image/svg+xml"
+                height="50"
+                width="50"
+                data={webpack}
+                aria-label="webpack"
+              />
             </div>
           </ul>
         </div>
       </OnVisible>
-      <OnVisible id="handel" className="card purple handel" >
-        <img className="bg" src={handelPreview} style={{ backgroundColor: '#535c68' }} alt="a web dev project" />
+      <OnVisible
+        id="handel"
+        className="card purple handel"
+      >
+        <img
+          className="bg"
+          src={handelPreview}
+          style={{ backgroundColor: '#535c68' }}
+          alt="a web dev project"
+        />
         <div className="overlay">
           <h2>Handel</h2>
-          <p>​A prototype of a leap motion application for piano tutoring.
+          <p>
+            ​A prototype of a leap motion
+            application for piano tutoring.
           </p>
-          <div className="links">
-            <a href="https://drivesafe.emerson.havener.me" target="_blank" rel="noopener noreferrer">
-              <p>View Live</p>
-            </a>
-            <a href="https://github.com/ehavener/chauffeur-ride-request" target="_blank" rel="noopener noreferrer">
-              <p>View Repository</p>
-            </a>
-          </div>
           <ul className="techList">
             <div className="object-wrap">
-              <object type="image/svg+xml" height="50" width="50" data={unity} aria-label="html" />
+              <object
+                type="image/svg+xml"
+                height="50"
+                width="50"
+                data={unity}
+                aria-label="html"
+              />
             </div>
             <div className="object-wrap">
-              <object type="image/svg+xml" height="50" width="50" data={csharp} aria-label="git" />
+              <object
+                type="image/svg+xml"
+                height="50"
+                width="50"
+                data={csharp}
+                aria-label="git"
+              />
             </div>
           </ul>
         </div>
       </OnVisible>
-      <OnVisible id="arduino-i2c-drivers" className="card turquoise i2c">
-        <img className="bg" src={wi2cPreview} alt="a web dev project" />
+      <OnVisible
+        id="arduino-i2c-drivers"
+        className="card turquoise i2c"
+      >
+        <img
+          className="bg"
+          src={wi2cPreview}
+          alt="a web dev project"
+        />
         <div className="overlay">
-          <h2>​Arduino I2C Drivers</h2>
-          <p>​A minimal re-implementation of the Arduino I2C Wire library
-              for learning purposes.
+          <h2>I2C Drivers</h2>
+          <p>
+            ​A minimal re-implementation of the
+            Arduino I2C Wire library for learning
+            purposes.
           </p>
-          <div className="links">
-            <a href="https://drivesafe.emerson.havener.me" target="_blank" rel="noopener noreferrer">
-              <p>View Live</p>
-            </a>
-            <a href="https://github.com/ehavener/chauffeur-ride-request" target="_blank" rel="noopener noreferrer">
-              <p>View Repository</p>
-            </a>
-          </div>
           <ul className="techList">
             <div className="object-wrap">
-              <object type="image/svg+xml" height="50" width="50" data={c} aria-label="c" />
+              <object
+                type="image/svg+xml"
+                height="50"
+                width="50"
+                data={c}
+                aria-label="c"
+              />
             </div>
             <div className="object-wrap">
-              <object type="image/svg+xml" height="50" width="50" data={git} aria-label="git" />
+              <object
+                type="image/svg+xml"
+                height="50"
+                width="50"
+                data={git}
+                aria-label="git"
+              />
             </div>
           </ul>
         </div>
       </OnVisible>
-      <OnVisible id="fadeaway-hardcount" className="card black fadeaway" >
-        <img className="bg" src={fadeawayPreview} alt="a web dev project" style={{ backgroundColor: 'white' }} />
+      <OnVisible
+        id="fadeaway-hardcount"
+        className="card black fadeaway"
+      >
+        <img
+          className="bg"
+          src={fadeawayPreview}
+          alt="a web dev project"
+          style={{ backgroundColor: 'white' }}
+        />
         <div className="overlay">
           <h2>Fadeaway</h2>
-          <p>​A python/selenium web scraper that pushes live NBA scores
-              to a browser extension.
+          <p>
+            ​A python/selenium web scraper that
+            pushes live NBA scores to a browser
+            extension.
           </p>
-          <div className="links">
-            <a href="https://drivesafe.emerson.havener.me" target="_blank" rel="noopener noreferrer">
-              <p>View Live</p>
-            </a>
-            <a href="https://github.com/ehavener/chauffeur-ride-request" target="_blank" rel="noopener noreferrer">
-              <p>View Repository</p>
-            </a>
-          </div>
           <ul className="techList">
             <div className="object-wrap">
-              <object type="image/svg+xml" height="50" width="50" data={python} aria-label="python" />
+              <object
+                type="image/svg+xml"
+                height="50"
+                width="50"
+                data={python}
+                aria-label="python"
+              />
             </div>
             <div className="object-wrap">
-              <object type="image/svg+xml" height="50" width="50" data={html} aria-label="html" />
+              <object
+                type="image/svg+xml"
+                height="50"
+                width="50"
+                data={html}
+                aria-label="html"
+              />
             </div>
             <div className="object-wrap">
-              <object type="image/svg+xml" height="50" width="50" data={css} aria-label="css" />
+              <object
+                type="image/svg+xml"
+                height="50"
+                width="50"
+                data={css}
+                aria-label="css"
+              />
             </div>
             <div className="object-wrap">
-              <object type="image/svg+xml" height="50" width="50" data={javascript} aria-label="javascript" />
+              <object
+                type="image/svg+xml"
+                height="50"
+                width="50"
+                data={javascript}
+                aria-label="javascript"
+              />
             </div>
           </ul>
         </div>

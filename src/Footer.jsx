@@ -1,5 +1,5 @@
 import React from 'react';
-import OnVisible, { setDefaultProps } from 'react-on-visible';
+import OnVisible, {setDefaultProps,} from 'react-on-visible';
 import './styles/Footer.css';
 
 setDefaultProps({
@@ -10,7 +10,9 @@ setDefaultProps({
 
 const Footer = () => (
   <div className="footer">
-    <OnVisible percent={70} className="nImage"><p>© 2018 Emerson Havener</p></OnVisible>
+    <OnVisible percent={30} className="nImage">
+      <p>© 2018 Emerson Havener</p>
+    </OnVisible>
   </div>
 );
 

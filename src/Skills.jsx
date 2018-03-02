@@ -1,5 +1,5 @@
 import React from 'react';
-import OnVisible, { setDefaultProps } from 'react-on-visible';
+import OnVisible, {setDefaultProps,} from 'react-on-visible';
 import './styles/Skills.css';
 
 import html from './images/skill-icons/html.svg';
@@ -35,116 +35,215 @@ setDefaultProps({
 
 const Skills = () => (
   <section className="skills" id="Skills">
-    <h1>Skills & Toolset</h1>
+    <h2>Skills & Toolset</h2>
     <div className="deck">
       <OnVisible className="card front-end">
-        <h2>Front-end</h2>
+        <h3>Front-end</h3>
         <div className="deck-icons">
           <div className="card-icons">
-            <object type="image/svg+xml" data={html} aria-label="html" />
-            <p id="html-caption">HTML</p>
+            <object
+              type="image/svg+xml"
+              data={html}
+              aria-label="html"
+            />
+            <p className="html caption">HTML</p>
           </div>
           <div className="card-icons">
-            <object type="image/svg+xml" data={css} aria-label="css" />
-            <p id="css-caption">CSS</p>
+            <object
+              type="image/svg+xml"
+              data={css}
+              aria-label="css"
+            />
+            <p className="css caption">CSS</p>
           </div>
           <div className="card-icons">
-            <object type="image/svg+xml" data={javascript} aria-label="Javascript ES7" />
-            <p id="javascript-caption">ES6</p>
+            <object
+              type="image/svg+xml"
+              data={javascript}
+              aria-label="Javascript ES7"
+            />
+            <p className="javascript caption">
+              ES6
+            </p>
           </div>
           <div className="card-icons">
-            <object type="image/svg+xml" data={bootstrap} aria-label="bootstrap" />
-            <p id="bootstrap-caption">Bootstrap</p>
+            <object
+              type="image/svg+xml"
+              data={bootstrap}
+              aria-label="bootstrap"
+            />
+            <p className="bootstrap caption">
+              Bootstrap
+            </p>
           </div>
           <div className="card-icons">
-            <object type="image/svg+xml" data={sass} aria-label="SASS" />
-            <p id="sass-caption">SASS</p>
+            <object
+              type="image/svg+xml"
+              data={sass}
+              aria-label="SASS"
+            />
+            <p className="sass caption">SASS</p>
           </div>
           <div className="card-icons">
-            <object type="image/svg+xml" data={jquery} aria-label="jQuery" />
-            <p id="jquery-caption">jQuery</p>
+            <object
+              type="image/svg+xml"
+              data={jquery}
+              aria-label="jQuery"
+            />
+            <p className="jquery caption">
+              jQuery
+            </p>
           </div>
           <div className="card-icons">
-            <object type="image/svg+xml" data={react} aria-label="react" />
-            <p id="react-caption">React</p>
+            <object
+              type="image/svg+xml"
+              data={react}
+              aria-label="react"
+            />
+            <p className="react caption">React</p>
           </div>
           <div className="card-icons">
-            <object type="image/svg+xml" data={redux} aria-label="redux" />
-            <p id="redux-caption">Redux</p>
+            <object
+              type="image/svg+xml"
+              data={redux}
+              aria-label="redux"
+            />
+            <p className="redux caption">Redux</p>
           </div>
         </div>
       </OnVisible>
       <OnVisible className="card design">
-        <h2>Design & UX</h2>
+        <h3>Design & UX</h3>
         <div className="deck-icons">
           <div className="card-icons">
-            <object type="image/svg+xml" data={illustrator} aria-label="redux" />
-            <p id="illustrator-caption">Illustrator</p>
+            <object
+              type="image/svg+xml"
+              data={illustrator}
+              aria-label="redux"
+            />
+            <p className="illustrator caption">
+              Illustrator
+            </p>
           </div>
           <div className="card-icons">
-            <object type="image/svg+xml" data={photoshop} aria-label="photoshop" />
-            <p id="photoshop-caption">Photoshop</p>
+            <object
+              type="image/svg+xml"
+              data={photoshop}
+              aria-label="photoshop"
+            />
+            <p className="photoshop caption">
+              Photoshop
+            </p>
           </div>
           <div className="card-icons">
-            <object type="image/svg+xml" data={xd} aria-label="xd" />
-            <p id="xd-caption">XD</p>
+            <object
+              type="image/svg+xml"
+              data={xd}
+              aria-label="xd"
+            />
+            <p className="xd caption">XD</p>
           </div>
         </div>
       </OnVisible>
       <OnVisible className="card back-end">
-        <h2>Back-end</h2>
+        <h3>Back-end</h3>
         <div className="deck-icons">
           <div className="card-icons">
-            <object type="image/svg+xml" data={laravel} aria-label="Laravel" />
-            <p id="laravel-caption">Laravel</p>
+            <object
+              type="image/svg+xml"
+              data={laravel}
+              aria-label="Laravel"
+            />
+            <p className="laravel caption">
+              Laravel
+            </p>
           </div>
           <div className="card-icons">
-            <object type="image/svg+xml" data={mysql} aria-label="MySQL" />
-            <p id="mysql-caption">MySQL</p>
+            <object
+              type="image/svg+xml"
+              data={mysql}
+              aria-label="MySQL"
+            />
+            <p className="mysql caption">MySQL</p>
           </div>
           <div className="card-icons">
-            <object type="image/svg+xml" data={wordpress} aria-label="wordpress" />
-            <p id="wordpress-caption">Wordpress</p>
+            <object
+              type="image/svg+xml"
+              data={wordpress}
+              aria-label="wordpress"
+            />
+            <p className="wordpress caption">
+              Wordpress
+            </p>
           </div>
         </div>
       </OnVisible>
       <OnVisible className="card tooling">
-        <h2>Tooling</h2>
+        <h3>Tooling</h3>
         <div className="deck-icons">
           <div className="card-icons">
-            <object type="image/svg+xml" data={webpack} aria-label="webpack" />
-            <p id="webpack-caption">webpack</p>
+            <object
+              type="image/svg+xml"
+              data={webpack}
+              aria-label="webpack"
+            />
+            <p className="webpack caption">
+              webpack
+            </p>
           </div>
           <div className="card-icons">
-            <object type="image/svg+xml" data={git} aria-label="git" />
-            <p id="git-caption">git</p>
+            <object
+              type="image/svg+xml"
+              data={git}
+              aria-label="git"
+            />
+            <p className="git caption">git</p>
           </div>
           <div className="card-icons">
-            <object type="image/svg+xml" data={docker} aria-label="docker" />
-            <p id="docker-caption">docker</p>
+            <object
+              type="image/svg+xml"
+              data={docker}
+              aria-label="docker"
+            />
+            <p className="docker caption">
+              docker
+            </p>
           </div>
         </div>
       </OnVisible>
       <OnVisible className="card systems">
-        <h2>Systems</h2>
+        <h3>Systems</h3>
         <div className="deck-icons">
           <div className="card-icons">
-            <object type="image/svg+xml" data={c} aria-label="c" />
-            <p id="c-caption">C</p>
+            <object
+              type="image/svg+xml"
+              data={c}
+              aria-label="c"
+            />
+            <p className="c caption">C</p>
           </div>
           <div className="card-icons">
-            <object type="image/svg+xml" data={cpp} aria-label="cpp" />
-            <p id="cpp-caption">C++</p>
+            <object
+              type="image/svg+xml"
+              data={cpp}
+              aria-label="cpp"
+            />
+            <p className="cpp caption">C++</p>
           </div>
           <div className="card-icons">
-            <object type="image/svg+xml" data={arduino} aria-label="arduino" />
-            <p id="arduino-caption">Arduino</p>
+            <object
+              type="image/svg+xml"
+              data={arduino}
+              aria-label="arduino"
+            />
+            <p className="arduino caption">
+              Arduino
+            </p>
           </div>
         </div>
       </OnVisible>
     </div>
   </section>
 );
-
 
 export default Skills;

@@ -14,15 +14,15 @@ setDefaultProps({
 
 const Certs = () => (
   <section className="certs" id="Certs">
-    <h1>Certificates</h1>
+    <h2>Certificates</h2>
     <div className="deck">
       <OnVisible className="card">
-        <h2>Udacity</h2>
+        <h3>Udacity</h3>
         <p>The Advanced Web Developer Bootcamp</p>
         <img src={tawdbc} alt="Certificate" />
       </OnVisible>
       <OnVisible className="card">
-        <h2>Free Code Camp</h2>
+        <h3>Free Code Camp</h3>
         <p>Front End Development Program</p>
         <img src={fcc} alt="Certificate" />
       </OnVisible>

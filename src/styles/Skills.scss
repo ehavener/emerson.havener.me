@@ -1,196 +1,241 @@
-@mixin for-mobile-only {
-  @media (max-width: 599px) { @content; }
-}
-@mixin for-tablet-portrait-up {
-  @media (min-width: 600px) { @content; }
-}
-@mixin for-tablet-landscape-up {
-  @media (min-width: 900px) { @content; }
-}
-@mixin for-desktop-up {
-  @media (min-width: 1200px) { @content; }
-}
-@mixin for-big-desktop-up {
-  @media (min-width: 1800px) { @content; }
-}
+@import 'variables.scss';
 
-.front-end {
-  grid-area: one;
-}
-.design {
-  grid-area: two;
-}
-.back-end {
-  grid-area: three;
-}
-.tooling {
-  grid-area: four;
-}
-.systems {
-  grid-area: five;
-}
-
-.skills {
-  background-color: #fafafa;
-  padding: 40px 20px 60px 20px;
-}
-
+// The grid of different skill categories
 .skills .deck {
+  // Grid templating
+  .card {
+    background-color: $truewhite;
+    box-shadow: $card-shadow;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+
+    // A wrapper around all of a skill category's captions & icons (everything besides h3)
+    .deck-icons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    // A wrapper around a skill caption & its icon
+    .card-icons {
+      padding: 0 0.2rem 1.2rem;
+      position: relative;
+      text-align: center;
+    }
+
+    // A skill category's heading, e.g. "Front End"
+    h3 {
+      white-space: nowrap;
+    }
+
+    // A skill icon (.svg)
+    object {
+      filter: $desaturateDarken;
+      height: 5rem;
+      opacity: 0.825;
+      transition: $all25linear;
+      width: 5rem;
+    }
+
+    // A caption. Captions are revealed on mouseover on desktop
+    p {
+      filter: $desaturateDarken;
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.2rem;
+      opacity: 0.825;
+      transition: $all25linear;
+
+      @include for-tablet-landscape-up {
+        bottom: 0;
+        cursor: default;
+        float: left;
+        font-weight: 600;
+        height: 5rem;
+        left: 0;
+        margin: auto;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 35%;
+        width: 100%;
+      }
+    }
+
+    &.front-end {
+      grid-area: one;
+    }
+
+    &.design {
+      grid-area: two;
+    }
+
+    &.back-end {
+      grid-area: three;
+    }
+
+    &.tooling {
+      grid-area: four;
+    }
+
+    &.systems {
+      grid-area: five;
+    }
+
+    // On mobile, skills will highight when visible in viewport
+    &.visible {
+      object,
+      p {
+        filter: $resaturateBrighten;
+        opacity: 1;
+      }
+    }
+
+    // On desktop, skills will highight when hovered
+    @include for-tablet-landscape-up {
+      .card-icons,
+      .card-icons.visible {
+        object {
+          filter: $desaturateDarken;
+          opacity: 0.825;
+        }
+
+        p {
+          opacity: 0;
+          filter: $resaturateBrighten;
+        }
+
+        &:hover {
+          object {
+            filter: $resaturateBrighten;
+            opacity: 0.1;
+          }
+
+          p {
+            filter: $resaturateBrighten;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
   display: grid;
-  /*grid-template-rows: 400px 250px 250px;*/
-  grid-gap: 10px;
-  //justify-content: center;
+  grid-gap: 1rem;
   grid-template-areas:
-      "one one"
-      "two three"
-      "four five";
+    'one one'
+    'two three'
+    'four five';
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+
   @include for-tablet-portrait-up {
     grid-template-areas:
-      "one one"
-      "two three"
-      "four five";
+      'one one'
+      'two three'
+      'four five';
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
   }
+
   @include for-tablet-landscape-up {
     grid-template-areas:
-      "one one"
-      "two three"
-      "four five";
+      'one one'
+      'two three'
+      'four five';
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
   }
+
   @include for-desktop-up {
     grid-template-areas:
-      "one one one one"
-      "two three four five";
+      'one one one one'
+      'two three four five';
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
   }
 }
 
-.skills h2 {
-  white-space: nowrap;
+// icon colors
+.html.caption {
+  color: $html;
 }
 
-.skills .card {
-  background-color: #fff;
-  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, .1);
-  padding: 20px;
+.css.caption {
+  color: $css;
 }
 
-.skills .card object {
-  cursor: default;
-  filter: saturate(0%) brightness(0%);
-  height: 50px;
-  opacity: 0.825;
-  transition: .25s filter linear, .25s opacity linear;
-  width: 50px;
+.javascript.caption {
+  color: $javascript;
 }
 
-.skills .card .deck-icons p {
-  cursor: default;
-  filter: saturate(0%) brightness(0%);
-  float: left;
-  font-family: 'Raleway', sans-serif;
-  font-size: .7rem;
-  font-weight: bold;
-  height: 50px;
-  //margin-left: 0;
-  margin-top: -80%;
-  opacity: 0;
-  position: absolute;
-  transition: .5s all ease-out .0s;
-  width: 50px;
-  z-index: 0;
+.bootstrap.caption {
+  color: $bootstrap;
 }
 
-.skills .card-icons:hover p {
-  filter: saturate(80%) brightness(100%) contrast(100%);
-  opacity: 1;
+.sass.caption {
+  color: $sass;
 }
 
-.skills .card-icons:hover object {
-  filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
-  opacity: .1;
-  transition: filter .4s ease-out, opacity .4s ease-out .0s;
+.jquery.caption {
+  color: $jquery;
 }
 
-/* scroll hover */
-@include for-mobile-only {
-  .skills .card.visible p {
-    filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
-    opacity: 1;
-  }
-
-  .skills .card.visible object {
-    filter: saturate(80%) brightness(100%) contrast(100%) opacity(100%);
-    opacity: 1;
-  }
+.react.caption {
+  color: $react;
 }
 
-
-
-/*
-h1:after {
-  background: none repeat scroll 0 0 #2D4269;
-  bottom: -5px;
-  content: "";
-  display: block;
-  height: 0px;
-  position: relative;
-  width: 100px;
-}
-*/
-
-.deck-icons {
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
- justify-content: space-evenly;
+.redux.caption {
+  color: $redux;
 }
 
-.card-icons {
-  margin-bottom: 12px;
-  position: relative;
-  text-align: center;
+.photoshop.caption {
+  color: $photoshop;
 }
 
+.illustrator.caption {
+  color: $illustrator;
+}
 
+.xd.caption {
+  color: $xd;
+}
 
-/* icon colors */
-#html-caption {  color: #E34F26;}
-#css-caption {  color: #0A71B9;}
-#javascript-caption {  color: #F7DF1E;}
-#bootstrap-caption {  color: #563D7C; margin-left: -10px;}
-#sass-caption {  color: #CF649A;}
-#jquery-caption {  color: #0868AC;}
-#react-caption {  color: #61DAFB;}
-#redux-caption {  color: #764ABC;}
+.laravel.caption {
+  color: $laravel;
+}
 
-#photoshop-caption {  color: #87BCF6;  margin-left: -12px;}
-#illustrator-caption {  color: #FF7C00;  margin-left: -12px;}
-#xd-caption {  color: #FF2BC2;}
+.wordpress.caption {
+  color: $wordpress;
+}
 
+.mysql.caption {
+  color: $mysql;
+}
 
-#laravel-caption {  color: #1C78C0;}
-#wordpress-caption {  color: #1C78C0; margin-left: -14px;}
-#mysql-caption {  color: #1C78C0;}
+.webpack.caption {
+  color: $webpack;
+}
 
-#webpack-caption { color: #1C78C0; }
-#git-caption {  color: #DE4C36;}
-#docker-caption { color: #24B8EB; }
+.git.caption {
+  color: $git;
+}
 
-#arduino-caption {  color: #03599C;  margin-left: -3px;}
-#c-caption {  color: #5C8DBC;}
-#cpp-caption {  color: #06979C;}
+.docker.caption {
+  color: $docker;
+}
 
-#gulp-caption {  color: #DA4648;}
-#jasmine-caption {  color: #8A4182;}
+.arduino.caption {
+  color: $arduino;
+}
 
-#laravel-caption {  color: #D9574E;}
-#wordpress-caption {  color: #2F7290;}
-#webpack-caption {  color: #2C75AF; margin-left: -10px;}
-#docker-caption {  color: #3CB2DB;}
-#mysql-caption {  color: #116381;}
+.c.caption {
+  color: $c;
+}
+
+.cpp.caption {
+  color: $cpp;
+}
+
+.gulp.caption {
+  color: $gulp;
+}
+
+.jasmine.caption {
+  color: $jasmine;
+}

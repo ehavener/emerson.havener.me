@@ -1,119 +1,142 @@
-@import url('https://s3-us-west-1.amazonaws.com/public-webfonts/fonts/fonts-proxima-nova.css');
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900');
 @import url('https://s3-us-west-1.amazonaws.com/public-webfonts/fonts/fonts-akrobat.css');
+@import 'variables.scss';
 
-@mixin for-mobile-only {
-  @media (max-width: 599px) { @content; }
-}
-@mixin for-tablet-portrait-up {
-  @media (min-width: 600px) { @content; }
-}
-@mixin for-tablet-landscape-up {
-  @media (min-width: 900px) { @content; }
-}
-@mixin for-desktop-up {
-  @media (min-width: 1200px) { @content; }
-}
-@mixin for-big-desktop-up {
-  @media (min-width: 1800px) { @content; }
-}
-
+/* $rembase = 10px */
 html {
-  font-size: 16px;
-}
-@include for-tablet-portrait-up {
-  html {
-    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
-  }
-}
-@include for-desktop-up {
-  html {
-    font-size: 20px;
-  }
-}
-
-.app h1 {
-  //font-size: 26px;
-  color: #2f2f2f;
-  font-family: 'Raleway', sans-serif;
-}
-
-.app h2 {
-  //font-size: 20px;
-  color: #2f2f2f;
-  font-family: 'Raleway', sans-serif;
-}
-
-.app p {
-  //font-size: 18px;
-  color: #2f2f2f;
+  font-size: 62.5%; // 1rem ≈ 10px
+  color: $notblack;
   font-family: 'Proxima Nova', sans-serif;
+
+  @include for-tablet-portrait-up {
+    font-size: 70%;
+  }
+
+  @include for-tablet-landscape-up {
+    font-size: 78.5%;
+  }
+
+  @include for-desktop-up {
+    font-size: 85%;
+  }
 }
 
-.app li a {
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 500;
+body,
+p {
+  // 14 ÷ $rembase ≈ 14px
+  font: 1.4rem 'Proxima Nova', sans-serif;
+  margin-top: 0;
 }
 
-@include for-tablet-portrait-up {
-  .app section {
-    padding-left: 3em !important;
-    padding-right: 3em !important;
-  }
-  .home .content .name h1 {
-    //font-size: 62px;
-  }
-  .home .content h2 {
-    //font-size: 24px;
-  }
-  .app h1 {
-    margin-top: 0;
-    //font-size: 26px;
-  }
-  .app h2 {
-    margin-top: 0;
-    //font-size: 20px;
-  }
-  .app p {
-    margin-top: 0;
-    //font-size: 18px;
-  }
+h1 {
+  // 26 ÷ $rembase ≈ 26px
+  font: 800 4em 'Raleway', sans-serif;
+  margin-top: 0;
+}
+
+h2 {
+  // 24 ÷ $rembase ≈ 24px
+  font: 700 2.8rem 'Raleway', sans-serif;
+  margin-top: 0;
+}
+
+h3 {
+  // 18 ÷ $rembase ≈ 18px
+  font: 700 1.8rem 'Raleway', sans-serif;
+  margin-top: 0;
+}
+
+// buffer h2 margin between sections, add side margins
+.app section {
+  padding: 4rem 3rem 3rem;
+}
+
+// buffer navbar
+.app section.home {
+  padding-top: 6rem;
+  padding-bottom: 0;
+  box-shadow: inset 0 -10px 20px -10px black;
 }
 
 @include for-tablet-landscape-up {
   .app section {
-    padding-left: 7em !important;
-    padding-right: 7em !important;
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 }
 
 @include for-desktop-up {
   .app section {
-    padding-left: 10em !important;
-    padding-right: 10em !important;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
+
 @include for-big-desktop-up {
   .app section {
-    padding-left: 15em !important;
-    padding-right: 15em !important;
+    padding-left: 12em;
+    padding-right: 12em;
   }
 }
 
-// section intersection styling
-.app .skills {
-  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 1);
+// section specific padding and coloring
+.home {
+  height: 550px;
+
+  .content {
+    color: $notwhite;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-.app .portfolio {
-  box-shadow: inset 1px 2px 4px 0 rgba(0, 0, 0, .1);
+.portfolio {
+  background: $transparentBottomRight;
 }
 
-.app .about {
-  box-shadow: inset 1px 2px 4px 0 rgba(0, 0, 0, .1);
+.carousel {
+  background: $transparentBottomLeft;
 }
 
-.app .carousel {
-  box-shadow: inset 1px 2px 4px 0 rgba(0, 0, 0, .1);
+.skills {
+  background: $transparentBottomRight;
+}
+
+.certs {
+  background: $transparentBottomLeft;
+}
+
+.about {
+  background: linear-gradient(
+    -180deg,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.contact {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.5) 75%
+  ),
+    linear-gradient(
+    155deg,
+    rgba(250, 250, 255, 1) 10%,
+    rgba(255, 255, 255, 0.5) 40%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+}
+
+.footer {
+  background: linear-gradient(
+    147deg,
+    rgba(255, 255, 255, 0.75),
+    rgba(255, 255, 255, 0.75)
+  );
+  background: initial;
+  top: 74vh;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
 }

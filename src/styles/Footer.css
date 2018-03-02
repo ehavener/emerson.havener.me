@@ -1,37 +1,34 @@
-.footer {
-  background-color: #FAFAFA; }
-  @media (min-width: 900px) {
-    .footer {
-      position: relative;
-      padding-top: 200px; } }
-
+@import url("https://s3-us-west-1.amazonaws.com/public-webfonts/fonts/fonts-proxima-nova.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900");
 .nImage {
+  bottom: 0;
+  top: 0;
   text-align: center;
   width: 100%;
   height: 50vw;
-  max-height: 500px;
   background-image: url(../images/parallax/5.png), url(../images/parallax/6.png), url(../images/parallax/4.png), url(../images/parallax/3.png), url(../images/parallax/2.png), url(../images/parallax/1.png);
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-position: top, top, top, top, top, top;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: bottom, bottom, bottom, bottom, bottom, bottom;
   background-size: 100%;
-  transition-duration: .5s;
-  opacity: .85;
-  filter: grayscale(100%) brightness(0%); }
-  @media (min-width: 900px) {
-    .nImage {
-      padding-top: 100px;
-      background-position: center 0vw, center 0vw, center 0vw, center 0vw, center 0vw, center 0vw; } }
-  @media (min-width: 1200px) {
-    .nImage {
-      padding-top: 100px;
-      background-position: center -4vw, center -5vw, center -7vw, center -6vw, center -4vw, center -2.2vw; } }
-  @media (min-width: 1800px) {
-    .nImage {
-      padding-top: 100px;
-      background-position: center -15vw, center -14vw, center -11vw, center -8vw, center -6vw, center -2.2vw; } }
+  transition-duration: 0.5s;
+  filter: grayscale(80%) brightness(0%);
+  /*
+  @include for-desktop-up {
+    //1200+
+    background-position: center -4vw, center -5vw,
+      center -7vw, center -6vw, center -4vw,
+      center -2.2vw;
+  }
+
+  @include for-big-desktop-up {
+    //1800+
+    background-position: center -15vw,
+      center -14vw, center -11vw, center -8vw,
+      center -6vw, center -2.2vw;
+  }*/ }
 
 .footer p {
-  color: #FAFAFA;
+  color: #fafafa;
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -40,11 +37,11 @@
   bottom: 0; }
 
 .nImage:hover {
-  transition: .5s opacity linear, .5s filter linear;
+  transition: 0.5s opacity linear, 0.5s filter linear;
   opacity: 1;
-  filter: grayscale(0); }
+  filter: grayscale(20%); }
 
 .nImage.visible {
-  transition: .5s opacity linear, .5s filter linear;
+  transition: 0.5s opacity linear, 0.5s filter linear;
   opacity: 1;
-  filter: grayscale(0); }
+  filter: grayscale(20%); }

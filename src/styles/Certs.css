@@ -1,31 +1,33 @@
-.certs {
-  padding: 40px 20px 20px 20px;
-  background-color: #FAFAFA; }
+@import url("https://s3-us-west-1.amazonaws.com/public-webfonts/fonts/fonts-proxima-nova.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900");
+.certs h3 {
+  margin-bottom: 0.25em;
+  position: relative; }
 
 .certs .deck {
   display: grid;
   grid-template-columns: 1fr;
-  /*grid-template-rows: 400px 250px 250px;*/
   grid-gap: 10px;
   justify-content: center; }
 
 .certs .deck .card {
   padding: 20px;
-  background-color: #FFFFFF; }
+  background-color: #fff;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05); }
 
 .certs .card img {
   width: 150px;
   height: auto;
   opacity: 0.825;
   filter: saturate(0%);
-  transition: .25s filter linear, .25s opacity linear;
+  transition: 0.25s filter linear, 0.25s opacity linear;
   display: block;
   margin: auto; }
 
 .certs .card .deck-icons p {
   opacity: 0.825;
   filter: saturate(0%) brightness(0%);
-  transition: .5s filter linear, .5s opacity linear; }
+  transition: 0.5s filter linear, 0.5s opacity linear; }
 
 .certs .card:hover p {
   opacity: 1;

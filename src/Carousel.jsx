@@ -10,12 +10,20 @@ import logo6300 from './images/design/design06.png';
 import logo7300 from './images/design/design07.png';
 
 const images = [
-  logo1300, logo2300, logo3300, logo4300, logo5300, logo6300, logo7300,
+  logo1300,
+  logo2300,
+  logo3300,
+  logo4300,
+  logo5300,
+  logo6300,
+  logo7300,
 ];
 
 const settings = {
   customPaging(i) {
-    return <img src={images[i]} alt="Gallery Page" />;
+    return (
+      <img src={images[i]} alt="Gallery Page" />
+    );
   },
   arrows: false,
   dots: true,
@@ -27,29 +35,39 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 6000,
+  autoplaySpeed: 5000,
   pauseOnHover: true,
-  // draggable: true,
   className: 'innerSliderDiv',
-  // fade: true,
-  // pauseOnFocus: true,
   pauseOnDotsHover: true,
 };
 
 const Carousel = () => (
   <section className="carousel">
-    <h1>Design</h1>
+    <h2>Designs</h2>
     <Slider {...settings}>
-      <div><img src={logo1300} alt="logo1" /></div>
-      <div><img src={logo2300} alt="logo2" /></div>
-      <div><img src={logo3300} alt="logo3" /></div>
-      <div><img src={logo4300} alt="logo4" /></div>
-      <div><img src={logo5300} alt="logo5" /></div>
-      <div><img src={logo6300} alt="logo6" /></div>
-      <div><img src={logo7300} alt="logo7" /></div>
+      <div className="march">
+        <img src={logo1300} alt="logo1" />
+      </div>
+      <div className="ute">
+        <img src={logo2300} alt="logo2" />
+      </div>
+      <div className="snake">
+        <img src={logo3300} alt="logo3" />
+      </div>
+      <div className="bernie">
+        <img src={logo4300} alt="logo4" />
+      </div>
+      <div className="unlimited">
+        <img src={logo5300} alt="logo5" />
+      </div>
+      <div className="mtv">
+        <img src={logo6300} alt="logo6" />
+      </div>
+      <div className="kehoe">
+        <img src={logo7300} alt="logo7" />
+      </div>
     </Slider>
   </section>
-
 );
 
 export default Carousel;
