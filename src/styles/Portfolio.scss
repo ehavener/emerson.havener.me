@@ -40,8 +40,8 @@
   height: auto;
   position: relative;
   margin-bottom: 1rem;
-  max-height: 750px;
-  max-width: 523px;
+  //max-height: 750px;
+  //max-width: 523px;
 
   @include for-tablet-portrait-up {
     &:nth-of-type(1) {
@@ -79,7 +79,8 @@
 .portfolio .card .bg {
   //border: 1px solid #ccc;
   width: 100%;
-  max-height: 750px;
+  height: auto;
+  //max-height: 750px;
   box-shadow: $card-shadow;
   opacity: 0;
 }
