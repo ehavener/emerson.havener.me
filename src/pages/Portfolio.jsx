@@ -4,36 +4,36 @@ import OnVisible, {
 } from 'react-on-visible';
 import '../styles/Portfolio.scss';
 
-import html from '../images/skill-icons/html.svg';
-import css from '../images/skill-icons/css.svg';
-import javascript from '../images/skill-icons/javascript.svg';
-// import bootstrap from '../images/skill-icons/bootstrap.svg';
-import sass from '../images/skill-icons/sass.svg';
-import jquery from '../images/skill-icons/jquery.svg';
-import react from '../images/skill-icons/react.svg';
-// import redux from '../images/skill-icons/redux.svg';
+import html from '../images/skills/html.svg';
+import css from '../images/skills/css.svg';
+import javascript from '../images/skills/javascript.svg';
+// import bootstrap from '../images/skills/bootstrap.svg';
+import sass from '../images/skills/sass.svg';
+import jquery from '../images/skills/jquery.svg';
+import react from '../images/skills/react.svg';
+// import redux from '../images/skills/redux.svg';
 
-// import photoshop from '../images/skill-icons/photoshop.svg';
-// import illustrator from '../images/skill-icons/illustrator.svg';
-// import xd from '../images/skill-icons/xd.svg';
+// import photoshop from '../images/skills/photoshop.svg';
+// import illustrator from '../images/skills/illustrator.svg';
+// import xd from '../images/skills/xd.svg';
 
-// import laravel from '../images/skill-icons/laravel.svg';
-import wordpress from '../images/skill-icons/wordpress.svg';
-import mysql from '../images/skill-icons/mysql.svg';
+// import laravel from '../images/skills/laravel.svg';
+import wordpress from '../images/skills/wordpress.svg';
+import mysql from '../images/skills/mysql.svg';
 
-import webpack from '../images/skill-icons/webpack.svg';
-import git from '../images/skill-icons/git.svg';
-import docker from '../images/skill-icons/docker.svg';
+import webpack from '../images/skills/webpack.svg';
+import git from '../images/skills/git.svg';
+import docker from '../images/skills/docker.svg';
 
-// import arduino from '../images/skill-icons/arduino.svg';
-import c from '../images/skill-icons/c.svg';
-// import cpp from '../images/skill-icons/cpp.svg';
+// import arduino from '../images/skills/arduino.svg';
+import c from '../images/skills/c.svg';
+// import cpp from '../images/skills/cpp.svg';
 
-// import gulp from '../images/skill-icons/gulp.svg';
-import lumen from '../images/skill-icons/lumen.svg';
-import csharp from '../images/skill-icons/csharp.svg';
-import unity from '../images/skill-icons/unity.svg';
-import python from '../images/skill-icons/python.svg';
+// import gulp from '../images/skills/gulp.svg';
+import lumen from '../images/skills/lumen.svg';
+import csharp from '../images/skills/csharp.svg';
+import unity from '../images/skills/unity.svg';
+import python from '../images/skills/python.svg';
 
 import fadeawayPreview from '../images/portfolio/fadeaway-preview.png';
 import wi2cPreview from '../images/portfolio/wi2c-preview.png';
