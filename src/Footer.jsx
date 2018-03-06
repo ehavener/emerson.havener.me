@@ -1,5 +1,5 @@
 import React from 'react';
-import OnVisible, {setDefaultProps,} from 'react-on-visible';
+import OnVisible, { setDefaultProps } from 'react-on-visible';
 import './styles/Footer.css';
 
 setDefaultProps({

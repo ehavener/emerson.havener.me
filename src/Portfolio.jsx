@@ -1,5 +1,5 @@
 import React from 'react';
-import OnVisible, {setDefaultProps,} from 'react-on-visible';
+import OnVisible, { setDefaultProps } from 'react-on-visible';
 import './styles/Portfolio.css';
 
 import html from './images/skill-icons/html.svg';

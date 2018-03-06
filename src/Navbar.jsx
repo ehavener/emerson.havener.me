@@ -9,8 +9,8 @@ class Navbar extends Component {
     this.state = {
       theme: 'dark',
     };
-    this.handleScroll = this.handleScroll.bind(this,);
-    this.handleClick = this.handleClick.bind(this,);
+    this.handleScroll = this.handleScroll.bind(this);
+    // this.handleClick = this.handleClick.bind(this);
   }
 
   componentDidMount() {
@@ -29,10 +29,10 @@ class Navbar extends Component {
 
   handleClick() {
     // console.log("handling");
-    document.getElementById('menu-btn',).checked = false;
+    document.getElementById('menu-btn').checked = false;
   }
 
-  handleScroll(e) {
+  handleScroll() {
     // console.log(window.scrollY);
     if (window.scrollY > 0) {
       if (this.state.theme === 'dark') {
