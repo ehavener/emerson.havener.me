@@ -58,14 +58,16 @@
 }
 
 /* scroll hover */
-.certs .card.visible p {
-  opacity: 1;
-  filter: saturate(80%) brightness(100%)
-    contrast(100%);
-}
+@include for-mobile-only {
+  .certs .card.visible p {
+    opacity: 1;
+    filter: saturate(80%) brightness(100%)
+      contrast(100%);
+  }
 
-.certs .card.visible img {
-  opacity: 1;
-  filter: saturate(80%) contrast(100%)
-    opacity(100%);
+  .certs .card.visible img {
+    opacity: 1;
+    filter: saturate(80%) contrast(100%)
+      opacity(100%);
+  }
 }

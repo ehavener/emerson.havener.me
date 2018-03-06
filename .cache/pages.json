@@ -1,8 +1,86 @@
 [
     {
         "componentChunkName": "component---cache-dev-404-page-js",
-        "layout": null,
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
         "jsonName": "dev-404-page.json",
         "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---src-pages-about-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "about.json",
+        "path": "/About/"
+    },
+    {
+        "componentChunkName": "component---src-pages-carousel-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "carousel.json",
+        "path": "/Carousel/"
+    },
+    {
+        "componentChunkName": "component---src-pages-certs-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "certs.json",
+        "path": "/Certs/"
+    },
+    {
+        "componentChunkName": "component---src-pages-contact-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "contact.json",
+        "path": "/Contact/"
+    },
+    {
+        "componentChunkName": "component---src-pages-footer-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "footer.json",
+        "path": "/Footer/"
+    },
+    {
+        "componentChunkName": "component---src-pages-home-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "home.json",
+        "path": "/Home/"
+    },
+    {
+        "componentChunkName": "component---src-pages-index-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "index.json",
+        "path": "/"
+    },
+    {
+        "componentChunkName": "component---src-pages-navbar-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "navbar.json",
+        "path": "/Navbar/"
+    },
+    {
+        "componentChunkName": "component---src-pages-portfolio-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "portfolio.json",
+        "path": "/Portfolio/"
+    },
+    {
+        "componentChunkName": "component---src-pages-services-js",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "services.json",
+        "path": "/Services/"
+    },
+    {
+        "componentChunkName": "component---src-pages-skills-jsx",
+        "layout": "layout---index",
+        "layoutComponentChunkName": "component---src-layouts-index-js",
+        "jsonName": "skills.json",
+        "path": "/Skills/"
     }
 ]

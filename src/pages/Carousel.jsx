@@ -1,13 +1,13 @@
 import React from 'react';
 import Slider from 'react-slick';
-import './styles/Carousel.css';
-import logo1300 from './images/design/design01.png';
-import logo2300 from './images/design/design02.png';
-import logo3300 from './images/design/design03.png';
-import logo4300 from './images/design/design04.png';
-import logo5300 from './images/design/design05.png';
-import logo6300 from './images/design/design06.png';
-import logo7300 from './images/design/design07.png';
+import '../styles/Carousel.scss';
+import logo1300 from '../images/design/design01.png';
+import logo2300 from '../images/design/design02.png';
+import logo3300 from '../images/design/design03.png';
+import logo4300 from '../images/design/design04.png';
+import logo5300 from '../images/design/design05.png';
+import logo6300 from '../images/design/design06.png';
+import logo7300 from '../images/design/design07.png';
 
 const images = [
   logo1300,

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './styles/App.css';
+import '../styles/App.scss';
 import Navbar from './Navbar';
 import Home from './Home';
 import About from './About';
@@ -11,7 +11,7 @@ import Contact from './Contact';
 import Footer from './Footer';
 import Certs from './Certs';
 
-const App = () => (
+const IndexPage = () => (
   <div className="app">
     <Home name="home" className="section" />
     <Navbar name="navbar" className="section" />
@@ -31,4 +31,4 @@ const App = () => (
   </div>
 );
 
-export default App;
+export default IndexPage;

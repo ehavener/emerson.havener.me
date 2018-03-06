@@ -1,10 +1,10 @@
 import React from 'react';
 import OnVisible, { setDefaultProps } from 'react-on-visible';
 
-import './styles/Certs.css';
+import '../styles/Certs.scss';
 
-import fcc from './images/cert-icons/fcc-cert.jpg';
-import tawdbc from './images/cert-icons/udemy-cert.jpg';
+import fcc from '../images/cert-icons/fcc-cert.jpg';
+import tawdbc from '../images/cert-icons/udemy-cert.jpg';
 
 setDefaultProps({
   bounce: true,

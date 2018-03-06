@@ -1,6 +1,6 @@
 import React from 'react';
 import OnVisible, { setDefaultProps } from 'react-on-visible';
-import './styles/Footer.css';
+import '../styles/Footer.scss';
 
 setDefaultProps({
   bounce: true,

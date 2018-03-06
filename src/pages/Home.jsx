@@ -13,7 +13,7 @@ import fasFilePdf from '@fortawesome/fontawesome-free-solid/faFilePdf';
 import faSquare from '@fortawesome/fontawesome-free-solid/faSquare';
 // import faSquareFull from '@fortawesome/fontawesome-free-solid/faSquareFull';
 import faCircle from '@fortawesome/fontawesome-free-solid/faCircle';
-import './styles/Home.css';
+import '../styles/Home.scss';
 
 const Home = () => (
   <section className="home" id="Home">

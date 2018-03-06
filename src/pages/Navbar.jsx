@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Scroll from 'react-scroll';
-import './styles/Navbar.css';
+import '../styles/Navbar.scss';
 
 const { Link } = Scroll;
 class Navbar extends Component {
@@ -9,7 +9,7 @@ class Navbar extends Component {
     this.state = {
       theme: 'dark',
     };
-    this.handleScroll = this.handleScroll.bind(this);
+    this.handleScroll = this.handleScroll.bind(this,);
     // this.handleClick = this.handleClick.bind(this);
   }
 
@@ -29,7 +29,7 @@ class Navbar extends Component {
 
   handleClick() {
     // console.log("handling");
-    document.getElementById('menu-btn').checked = false;
+    document.getElementById('menu-btn',).checked = false;
   }
 
   handleScroll() {
@@ -73,6 +73,8 @@ class Navbar extends Component {
               activeClass="active"
               to="home"
               spy
+              smooth
+              offset={-60}
               duration={250}
               onClick={this.handleClick}
               href=" "
@@ -86,6 +88,7 @@ class Navbar extends Component {
               to="portfolio"
               spy
               smooth
+              offset={-60}
               duration={250}
               onClick={this.handleClick}
               href=" "
@@ -96,9 +99,24 @@ class Navbar extends Component {
           <li>
             <Link
               activeClass="active"
+              to="carousel"
+              spy
+              smooth
+              offset={-60}
+              duration={250}
+              onClick={this.handleClick}
+              href=" "
+            >
+              Designs
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass="active"
               to="skills"
               spy
               smooth
+              offset={-60}
               duration={250}
               onClick={this.handleClick}
               href=" "
@@ -113,6 +131,7 @@ class Navbar extends Component {
               to="about"
               spy
               smooth
+              offset={-60}
               duration={250}
               onClick={this.handleClick}
               href=" "
@@ -126,11 +145,12 @@ class Navbar extends Component {
               to="contact"
               spy
               smooth
+              offset={-60}
               duration={250}
               onClick={this.handleClick}
               href=" "
             >
-              Contact
+              Contact Me
             </Link>
           </li>
         </ul>
