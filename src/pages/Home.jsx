@@ -78,7 +78,7 @@ const Home = () => (
         <a
           title="email"
           className="emailLayers"
-          href="#Contact"
+          href="mailto:emerson@havener.me"
           rel="noopener noreferrer"
         >
           <span className="fa-layers fa-fw">
