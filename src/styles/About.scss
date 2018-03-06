@@ -1,6 +1,7 @@
 @import 'variables.scss';
 
-.about {
+.about * {
+  max-width: 700px;
 }
 
 .about h2 {
@@ -9,7 +10,7 @@
 }
 
 .about p {
-  text-indent: 0.3em;
+  //text-indent: 0.3em;
   font-family: 'Proxima Nova', sans-serif;
   //font-size: 18px;
 }
