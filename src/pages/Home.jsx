@@ -54,7 +54,7 @@ const Home = () => (
         </a>
         <a
           title="LinkedIn"
-          href="https://www.linkedin.com/in/emerson-havener-8737a1121/"
+          href="https://www.linkedin.com/in/emersonhavener/"
           target="_blank"
           rel="noopener noreferrer"
         >
