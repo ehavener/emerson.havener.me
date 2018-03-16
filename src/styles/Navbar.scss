@@ -1,4 +1,5 @@
 @import 'variables.scss';
+
 /*
   A responsive, mobile first, navbar with two color themes,
   light & dark.
@@ -12,7 +13,7 @@
 
 .header {
   background-color: $notwhite;
-  border-bottom: 1px solid $notwhite;
+  border-bottom: 0 solid $notwhite;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
@@ -31,7 +32,7 @@
 }
 
 .header li a {
-  border-right: 1px solid $notwhite;
+  border-right: 0 solid $notwhite;
   color: $notblack;
   display: block;
   padding: 20px 20px;
@@ -74,7 +75,7 @@
   float: left;
   line-height: 0;
   padding: 0;
-  margin: 6px 0px 0px 6px;
+  margin: 6px 0 0 6px;
   text-decoration: none;
   background-image: url('../images/eh_imperfect_333333.png');
   background-size: 48px 48px;
@@ -138,28 +139,16 @@
   background: transparent;
 }
 
-.header
-  .menu-btn:checked
-  ~ .menu-icon
-  .navicon:before {
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-.header
-  .menu-btn:checked
-  ~ .menu-icon
-  .navicon:after {
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-.header
-  .menu-btn:checked
-  ~ .menu-icon:not(.steps)
-  .navicon:before,
-.header
-  .menu-btn:checked
-  ~ .menu-icon:not(.steps)
-  .navicon:after {
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
@@ -170,14 +159,22 @@
   .header li {
     float: left;
   }
+
   .header li a {
     padding: 20px 30px;
   }
+
+  .header li a:before {
+    height: 0.4rem;
+    bottom: 0.125vw;
+  }
+
   .header .menu {
     clear: none;
     float: right;
     max-height: 60px;
   }
+
   .header .menu-icon {
     display: none;
   }
@@ -188,8 +185,7 @@
 
   .header.dark {
     background-color: rgba(0, 0, 0, 0) !important;
-    border-bottom: 1px solid
-      rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   }
 
   .header.dark ul {
@@ -198,7 +194,7 @@
 
   .header.dark li a {
     color: $notwhite;
-    border-right: 1px solid rgba(255, 255, 255, 0);
+    border-right: 0 solid rgba(255, 255, 255, 0);
     transition: all 0s linear;
   }
 
@@ -215,14 +211,19 @@
   .header.dark .menu-icon .navicon:after {
     background: $notwhite;
   }
+
   .header.dark .logo {
     background-image: url(../images/eh_imperfect_EEEEEE.png);
   }
+
   .header.dark li > a:hover {
     color: $notwhite;
   }
+
   .header.dark li > a:before {
     background-color: $notwhite;
+    height: 0.4rem;
+    bottom: 0.15vw;
   }
 }
 

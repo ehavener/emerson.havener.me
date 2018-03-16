@@ -9,7 +9,7 @@ import '../styles/index.css';
 
 const TemplateWrapper = () => (
   <div>
-    <Helmet title="Emerson Havener" />
+    <Helmet title="Emerson Havener 👋" />
     <App />
   </div>
 );
