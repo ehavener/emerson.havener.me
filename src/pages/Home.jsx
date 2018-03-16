@@ -13,6 +13,7 @@ import fasFilePdf from '@fortawesome/fontawesome-free-solid/faFilePdf';
 import faSquare from '@fortawesome/fontawesome-free-solid/faSquare';
 // import faSquareFull from '@fortawesome/fontawesome-free-solid/faSquareFull';
 import faCircle from '@fortawesome/fontawesome-free-solid/faCircle';
+import resume from '../documents/resumeEmersonHavener.pdf';
 import '../styles/Home.scss';
 
 const Home = () => (
@@ -112,7 +113,7 @@ const Home = () => (
         <a
           title="Resume"
           className="resumeLayers"
-          href="https://www.emerson.havener.me"
+          href={resume}
           target="_blank"
           rel="noopener noreferrer"
         >
