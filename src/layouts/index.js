@@ -9,7 +9,10 @@ import '../styles/index.css';
 
 const TemplateWrapper = () => (
   <div>
-    <Helmet title="Emerson Havener 👋" />
+    <Helmet>
+      <title>Emerson Havener</title>
+      <link rel="icon" href="https://emerson.havener.me/favicon.ico" type="image/x-icon" />
+    </Helmet>
     <App />
   </div>
 );
