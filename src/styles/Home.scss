@@ -1,4 +1,3 @@
-@import url('https://s3-us-west-1.amazonaws.com/public-webfonts/fonts/fonts-akrobat.css');
 @import 'variables.scss';
 
 .app section.home .heading {
@@ -15,10 +14,8 @@
   //box-shadow: inset 0 0 60px $notblack;
   content: '';
   display: block;
-  -webkit-filter: grayscale(0.3) brightness(0.45)
-    contrast(1.05);
-  filter: grayscale(0.3) brightness(0.45)
-    contrast(1.05);
+  -webkit-filter: grayscale(0.3) brightness(0.45) contrast(1.05);
+  filter: grayscale(0.3) brightness(0.45) contrast(1.05);
   height: 100vh;
   left: 0;
   position: fixed;

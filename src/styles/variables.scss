@@ -1,5 +1,5 @@
 @import url('https://s3-us-west-1.amazonaws.com/public-webfonts/fonts/fonts-proxima-nova.css');
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:600,700');
 
 // responsive breakpoints
 @mixin for-mobile-only {
@@ -33,20 +33,17 @@
 }
 
 // box shadows
-$card-shadow: 0 3px 3px rgba(0, 0, 0, 0.05),
-  0 6px 6px rgba(0, 0, 0, 0.05);
-$heading-shadow: 0em 0em 0.05em #2f2f2f;
+$card-shadow: 0 3px 3px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.05);
+$heading-shadow: 0 0 0.05em #2f2f2f;
 
 // transitions
 $all25linear: 0.25s all linear;
-$opacity-25-easein-filter-50-easeout: 0.25s
-  opacity ease-in,
+$opacity-25-easein-filter-50-easeout: 0.25s opacity ease-in,
   0.5s filter ease-out !important;
 
 //filters
 $desaturateDarken: saturate(0%) brightness(0%);
-$resaturateBrighten: saturate(80%)
-  brightness(100%) contrast(100%);
+$resaturateBrighten: saturate(80%) brightness(100%) contrast(100%);
 
 // gradients
 $transparentBottomRight: linear-gradient(
@@ -108,7 +105,7 @@ $mysql: #116381;
 $march-blue: #00458a;
 $ute-white: #fff;
 $snake-green: #6ec5ac;
-$bernie-gold: #D29E4A;
+$bernie-gold: #d29e4a;
 $unlimited-black: #000;
-$mtv-red: #BE2226;
+$mtv-red: #be2226;
 $kehoe-cyan: #6dceea;
